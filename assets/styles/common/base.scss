@@ -9,9 +9,6 @@ dl, dd, ol, ul, figure {
     margin: 0;
     padding: 0;
 }
-html, body {
-    height: 100%;
-}
 html {
     margin: 0;
     padding: 0;
@@ -30,16 +27,6 @@ body {
     //background: url("../images/placeholder-bg.jpg") no-repeat 50% 0;
 }
 // .page-wrap is used for the sticky footer
-.page-wrap {
-    min-height: 100%;
-    margin-bottom: -$footer-height;
-
-    &:after {
-        content: "";
-        display: block;
-        height: $footer-height;
-    }
-}
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -70,20 +57,6 @@ li {
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font-family;
     font-weight: $base-font-weight;
-}
-a {
-    padding: 5%;
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-    &:hover {
-        color: $text-color;
-        text-decoration: none;
-        background: lighten($background-color, 1%);
-    }
 }
 blockquote {
     color: $grey-color;
@@ -119,13 +92,6 @@ pre {
         padding-left: 0;
     }
 }
-%clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-}
 .icon {
 
     > svg {
@@ -156,6 +122,25 @@ tbody tr:nth-child(odd) th {
 }
 .rss-subscribe {
 	margin-bottom: 0;
+}
+
+
+
+
+
+
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+    &:hover {
+        color: $text-color;
+        text-decoration: none;
+        //background: lighten($background-color, 1%);
+    }
 }
 
 

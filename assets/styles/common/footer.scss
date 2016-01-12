@@ -1,4 +1,18 @@
 footer#site-footer {
+    position: relative;
 
+    .footer-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+
+        a.site-title {
+            display: block;
+            margin: 5% auto 0;
+            width: 20%;
+        }
+    }
 
 }

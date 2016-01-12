@@ -1,3 +1,24 @@
+/*%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}*/
+/*@mixin clearix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}*/
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
 @mixin absolute-right-top($right: 0, $top: 0) {
     position: absolute;
     right: $right;
@@ -70,7 +91,7 @@
     height: $h;
 }
 
-@mixin inner-indent($p-top-bottom: 15%, $p-left-right: 15%) {
+@mixin inner-indent($p-top-bottom: $default-padding-top-bottom, $p-left-right: $default-padding-left-right) {
     padding: $p-top-bottom $p-left-right;
 }
 

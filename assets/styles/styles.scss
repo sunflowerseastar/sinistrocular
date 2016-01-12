@@ -11,10 +11,26 @@
  */
 
 $light-gray-copy: #f1f1f1;
-$body-copy: $light-gray-copy;
+$body-copy: #b3998c;
+$body-copy-alt: #f4c8ab;
 $gray-copy: #555;
 
+
+$light-background: #fafdff;
+$light-background-alt: #f9f8f6;
+
+
+
 $footer-height: 300px;
+
+$default-padding-left-right: 5%;
+$default-padding-top-bottom: 5%;
+
+body {
+    //background: url("../images/placeholder-bg2.jpg") no-repeat 50% 0;
+    //background-size: cover;
+}
+
 
 
 
@@ -24,17 +40,17 @@ $footer-height: 300px;
  */
 
 
-$base-font-family: "PT Sans", Arial, sans-serif;
-$base-font-size:   20px;
+$base-font-family: "Sorts Mill Goudy", Times, "Times New Roman", serif;
+$base-font-size:   17px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 3;
-$heading-font-family: "PT Sans Narrow", Arial, sans-serif;
+$small-font-size:  $base-font-size * 0.9;
+$base-line-height: 2;
+$heading-font-family: $base-font-family;
 
 $spacing-unit:     60px;
 
 $text-color:       $body-copy;
-$background-color: #2d3132;
+$background-color: $light-background;
 $brand-color:      $light-gray-copy;
 
 $grey-color:       $light-gray-copy;
@@ -46,7 +62,7 @@ $content-width:    800px;
 
 $mobile:          600px;
 $laptop:        800px;
-$desktop:        $laptop + 1;
+$desktop:        1200px;
 
 // Use media queries like this:
 // @include media-query($mobile) {
@@ -60,8 +76,8 @@ $desktop:        $laptop + 1;
         @content;
     }
 }
-@mixin desktop {
-    @media screen and (min-width: $desktop) {
+@mixin mq($device) {
+    @media screen and (min-width: $device) {
         @content;
     }
 }
