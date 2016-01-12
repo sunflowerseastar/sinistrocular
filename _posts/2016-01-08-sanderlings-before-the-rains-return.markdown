@@ -12,7 +12,7 @@ Ocean Beach's personality came through, as it always does.
 
 {% include helpers/figure.html url="/2016/01/MG_4336_Jan_11_2016_1920.jpg" alt="Ocean Beach waves" %}
 
-Gulls were absent, but sanderlings exercized with the tides.
+Gulls were absent, but sanderlings exercised with the tides.
 
 {% include helpers/figure.html url="/2016/01/MG_4365_Jan_11_2016_1920.jpg" alt="Sanderling" %}
 
