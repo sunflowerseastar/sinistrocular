@@ -1,11 +1,5 @@
 .home {
-    .inner {
-        @include inner-indent();
-    }
 }
 
 .post-list {
-    h2 {
-        margin-bottom: 0;
-    }
 }

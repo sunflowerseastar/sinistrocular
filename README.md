@@ -1,6 +1,6 @@
-Computer creation comet dust.
+Photography and birds.
 
 ## License
 
-* Content: [Creative Commons, BY](http://creativecommons.org/licenses/by/3.0/)
+* Content: [Creative Commons](http://creativecommons.org/licenses/by/3.0/)
 * Code: [MIT](http://opensource.org/licenses/mit-license.php)

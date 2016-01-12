@@ -158,3 +158,8 @@ tbody tr:nth-child(odd) th {
 	margin-bottom: 0;
 }
 
+
+
+.inner {
+    @include inner-indent();
+}
