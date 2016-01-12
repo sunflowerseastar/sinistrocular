@@ -1,0 +1,76 @@
+@mixin absolute-right-top($right: 0, $top: 0) {
+    position: absolute;
+    right: $right;
+    top: $top;
+}
+@mixin absolute-left-top($left: 0, $top: 0) {
+    position: absolute;
+    left: $left;
+    top: $top;
+}
+@mixin absolute-left-bottom($left: 0, $bottom: 0) {
+    position: absolute;
+    left: $left;
+    bottom: $bottom;
+}
+/*@mixin margin-top-bottom($top-possibly-bottom: 0, $bottom: "") {
+    @if $bottom = "" {
+        margin-top: $top-possibly-bottom;
+        margin-bottom: $top-possibly-bottom;
+    } @else {
+        margin-top: $top-possibly-bottom;
+        margin-bottom: $bottom;
+    }
+}
+@mixin margin-lr($left-possibly-right: 0, $right: "") {
+    @if $right = "" {
+        margin-left: $left-possibly-right;
+        margin-right: $left-possibly-right;
+    } @else {
+        margin-left: $left-possibly-right;
+        margin-right: $right;
+    }
+}
+@mixin padding-top-bottom($top-possibly-bottom: 0, $bottom: "") {
+    @if $bottom = "" {
+        padding-top: $top-possibly-bottom;
+        padding-bottom: $top-possibly-bottom;
+    } @else {
+        padding-top: $top-possibly-bottom;
+        padding-bottom: $bottom;
+    }
+}
+@mixin padding-lr($left-possibly-right: 0, $right: "") {
+    @if $right = "" {
+        padding-left: $left-possibly-right;
+        padding-right: $left-possibly-right;
+    } @else {
+        padding-left: $left-possibly-right;
+        padding-right: $right;
+    }
+}*/
+@mixin transition-basic($property: all, $duration: $transition-speed-default) {
+    transition: $property $duration;
+}
+@mixin transition-s-curve($property: all, $duration: $transition-speed-default) {
+    transition: $property $duration cubic-bezier(0.3, 0.8, 0.1, 0.95);
+}
+
+@mixin vertical-align($position: relative) {
+    .csstransforms & {
+        position: $position;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+@mixin pseudo($w: 0, $h: 0, $display: block) {
+    content: "";
+    display: $display;
+    width: $w;
+    height: $h;
+}
+
+@mixin inner-indent($p-top-bottom: 5%, $p-left-right: 5%) {
+    padding: $p-top-bottom $p-left-right;
+}
+

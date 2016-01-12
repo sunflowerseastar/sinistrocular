@@ -1,0 +1,34 @@
+#Jekyll config file
+
+# Setup
+name: Grant Surratt
+author: Grant Surratt
+title: Sinsitrocular
+url: http://sinistrocular.com
+baseurl: ""
+
+#files to exclude, array
+exclude:
+  - README.md
+  - __reference
+
+# Syntax highlighting
+#highlighter:         pygments
+
+# Permalinks
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+#relative_permalinks: true
+
+#twitter_username: cozywigwam
+github_username:  cozywigwam
+
+# Build settings
+markdown: kramdown
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          assets/styles
+  style:            :compressed

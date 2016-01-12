@@ -1,0 +1,87 @@
+---
+---
+
+
+@charset "utf-8";
+
+
+
+/*
+ * My stuff
+ */
+
+$light-gray-copy: #f1f1f1;
+$body-copy: $light-gray-copy;
+$gray-copy: #555;
+
+$footer-height: 300px;
+
+
+
+
+/*
+ * Jekyll stuff
+ */
+
+
+$base-font-family: "PT Sans", Arial, sans-serif;
+$base-font-size:   20px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 2;
+$heading-font-family: "PT Sans Narrow", Arial, sans-serif;
+
+$spacing-unit:     60px;
+
+$text-color:       $body-copy;
+$background-color: #2d3132;
+$brand-color:      $light-gray-copy;
+
+$grey-color:       $light-gray-copy;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+
+$mobile:          600px;
+$laptop:        800px;
+$desktop:        $laptop + 1;
+
+// Use media queries like this:
+// @include media-query($mobile) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+
+
+
+
+
+
+
+// see hidden `sass_dir` in _config.yml
+@import
+        "common/_mixins",
+        "common/base",
+        "common/type",
+        "common/header",
+        "common/footer",
+        "common/layout",
+        "common/syntax-highlighting",
+        "pages/home"
+;
+
