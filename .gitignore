@@ -8,3 +8,4 @@ Gemfile.lock
 .sass-cache
 node_modules
 comments.json
+_drafts/

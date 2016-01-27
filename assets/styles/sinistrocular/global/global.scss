@@ -90,7 +90,6 @@ img {
 
 
 
-
 /*
  * Overall layout
  */
@@ -99,10 +98,15 @@ header#site-header {
 	position: relative;
 	border-bottom: 1px solid $border-color;
 
+	&.header-home {
+		height:100%;
+		background: url("../images/bg-header-black-phoebe_1920.jpg") no-repeat 50% 50%;
+		background-size: cover;
+	}
 	a.logo-and-title {
 		display: block;
 		position: absolute;
-		top: 41%;
+		top: 36%;
 		right: 10%;
 		width: 30%;
 		padding: 2%;
