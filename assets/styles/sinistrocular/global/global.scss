@@ -22,13 +22,13 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 h1 {
-	font-size: 2rem;
-	text-shadow: 11px 9px 0 $background-color-alt;
+	font-size: 1.6rem;
+	//text-shadow: 11px 9px 0 $background-color-alt;
 }
 h2 {
 	margin-top: 3rem;
-	font-size: 2.4rem;
-	text-shadow: 7px 4px 0 $background-color-alt;
+	font-size: 1.4rem;
+	//text-shadow: 7px 4px 0 $background-color-alt;
 
 	a {
 		color: inherit;
@@ -36,9 +36,8 @@ h2 {
 }
 h3 {
 	margin-top: 1.5rem;
-	font-size: 1.3rem;
-
-	text-shadow: 5px 3px 0 $background-color-alt;
+	font-size: 1.2rem;
+	//text-shadow: 5px 3px 0 $background-color-alt;
 }
 h4, h5, h6 {
 	margin-top: 1rem;
@@ -50,17 +49,21 @@ h4, h5, h6 {
  */
 p {
 	margin-top: 0;
-	margin-bottom: 2rem;
+	margin-bottom: 1.4rem;
 }
 a {
 	color: $body-copy;
 	text-decoration: none;
 
 	&:visited {
-		color: lighten($body-copy, 2%);
+		color: lighten($body-copy, 4%);
+
+		&:hover {
+			color: darken($body-copy, 4%);
+		}
 	}
 	&:hover {
-		color: lighten($body-copy, 6%);
+		color: darken($body-copy, 8%);
 		text-decoration: none;
 	}
 }
@@ -93,59 +96,56 @@ header#site-header {
 	position: relative;
 	//background: url("../images/bg-header.jpg") no-repeat 0 0;
 
-	a.site-title {
-		position: absolute;
-		top: 0;
-		left: 0;
+	a.logo-and-title {
 		display: block;
-		width: 40%;
-		padding: 5%;
+		position: absolute;
+		top: 41%;
+		right: 10%;
+		width: 30%;
+		padding: 2%;
+	}
+	a.logo-only {
+		display: block;
+		position: absolute;
+		top: 15%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 8%;
+		padding: 1%;
 	}
 }
-
 .page-content {
-	padding: 8% 0;
+	padding: 16% 4%;
+	//border: 1px solid orange;
 }
-.post-list {
-	margin-top: 6%;
-	list-style: none;
+.post-preview {
+	@include clearfix();
+	display: block;
+	margin: 20em 0;
+	color: inherit;
+	//border: 1px solid magenta;
 
-	a.post-link {
-		@include clearfix();
-		display: block;
-		padding: 6%;
-		margin-bottom: 12em;
-		color: inherit;
-
-		span.post-meta {
-			display: block;
-			font-size: $small-font-size;
-			color: $body-copy-alt;
-			margin-bottom: 2em;
+	&:first-child {
+		margin-top: 0;
+	}
+	@include mq($desktop) {
+		img {
+			float: left;
+			width: 55%;
+			height: auto;
 		}
-		@include mq($desktop) {
-			img {
-				float: left;
-				width: 55%;
-				height: auto;
-			}
-			.index-content {
-				margin-left: 65%;
-				padding-right: 4%;
-
-				h2 {
-					margin: 0;
-					padding-top: 0.5em;
-					line-height: 1;
-				}
-			}
+		.post-preview-copy {
+			margin-left: 65%;
+			padding-right: 4%;
+			//border: 1px solid red;
 		}
 	}
 }
 .post-header {
-	h2 {
+	h1, h2 {
 		margin: 0;
-		padding-top: 0.5em;
+		padding-top: 0;
 		line-height: 1.4;
 	}
 	h3 {
@@ -156,13 +156,38 @@ header#site-header {
 	}
 	span.post-meta {
 		display: block;
-		margin-bottom: 2em;
+		font-size: $small-font-size;
 		color: $body-copy-alt;
-		font-size: 0.9em;
+		margin-bottom: 2em;
+	}
+}
+.post {
+	img {
+		margin: 6rem 0 8rem;
 	}
 }
 
 
 
 footer#site-footer {
+	position: relative;
+	height: 360px;
+	background: $background-color-alt;
+
+	a.logo {
+		display: block;
+		position: absolute;
+		top: 36%;
+		left: 38%;
+		width: 20%;
+		padding: 1%;
+	}
+	a.github {
+		display: block;
+		position: absolute;
+		top: 42%;
+		right: 38%;
+		width: 4.8%;
+		padding: 1%;
+	}
 }

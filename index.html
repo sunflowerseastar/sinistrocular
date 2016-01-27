@@ -1,23 +1,23 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="inner">
+<div class="post-list">
+	{% for post in site.posts %}
 
-	<div class="post-list">
-		{% for post in site.posts %}
-		<a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+	<div class="post-preview">
 
-			<img src={{ site.baseurl }}/assets/images{{post.feature}}>
+		<img src={{ site.baseurl }}/assets/images{{post.feature}}>
 
-			<div class="index-content">
-				<h2>{{ post.title }}</h2>
+		<div class="post-preview-copy">
+			<div class="post-header">
+				<h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 				<span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
-
-				<p>{{ post.intro }}</p>
 			</div>
-		</a>
-		{% endfor %}
+
+			<p>{{ post.intro }}</p>
+		</div>
 	</div>
 
+	{% endfor %}
 </div>

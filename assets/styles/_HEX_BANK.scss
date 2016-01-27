@@ -10,9 +10,22 @@
 
 
 
-$light-gray-copy: #f1f1f1;
-$body-copy: #b3998c;
-$body-copy-alt: #f4c8ab;
+
+$primary-color: #3f4538;
+$primary-color-light: lighten($primary-color, 12%);
+
+//$secondary-color: #e26b8a;
+$secondary-color: #967b5d;
+$secondary-color-light: lighten($secondary-color, 5%);
+
+$background-color: #e8efe1;
+$background-color-alt: $primary-color;
+
+
+
+
+$body-copy: $primary-color;
+$body-copy-alt: $secondary-color;
 $gray-copy: #555;
 
 
@@ -24,19 +37,9 @@ $light-background-alt: #f9f8f6;
 
 // sunflower sea star TODO: subsume/delete
 
-$primary-color: #a0d1f0;
-$primary-color-light: lighten($primary-color, 12%);
 
-$secondary-color: #ff966f;
-$secondary-color-light: #ff966f;
-$secondary-color-alt: #ac6b54;
+//$background-color-alt-2: lighten($background-color, 1%);
 
-$tertiary-color: lightgreen;
-
-
-$background-color: #2d3132;
-$background-color-alt: darken($background-color, 2.5%);
-$background-color-alt-2: lighten($background-color, 1%);
 
 /* -------- */
 // HEX BANK
