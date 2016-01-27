@@ -1,103 +1,39 @@
 ---
 ---
 
-
 @charset "utf-8";
 
 
 
+
 /*
- * My stuff
+ * STYLE SETUP
  */
 
-$light-gray-copy: #f1f1f1;
-$body-copy: #b3998c;
-$body-copy-alt: #f4c8ab;
-$gray-copy: #555;
+@import "site-agnostic/_resets-and-normalization",
 
+// colors
+"_HEX_BANK", 								// <-- site-specific
 
-$light-background: #fafdff;
-$light-background-alt: #f9f8f6;
+// mixed variables
+"site-agnostic/_site_agnostic_variables",
+"sinistrocular/global/_VARIABLES", 			// <-- site-specific
 
-
-
-$footer-height: 300px;
-
-$default-padding-left-right: 5%;
-$default-padding-top-bottom: 5%;
-
-body {
-    //background: url("../images/placeholder-bg2.jpg") no-repeat 50% 0;
-    //background-size: cover;
-}
-
+// site-agnostic mixins
+"site-agnostic/_site-agnostic-mixins",
 
 
 
 
 /*
- * Jekyll stuff
+ * SITE STYLES
  */
 
+// fonts (regardless if webfont or system)
+"sinistrocular/global/fonts",
 
-$base-font-family: "Sorts Mill Goudy", Times, "Times New Roman", serif;
-$base-font-size:   17px;
-$base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.9;
-$base-line-height: 2;
-$heading-font-family: $base-font-family;
+// local mixins
+"sinistrocular/global/_MIXINS",
+"sinistrocular/global/global";
 
-$spacing-unit:     60px;
-
-$text-color:       $body-copy;
-$background-color: $light-background;
-$brand-color:      $light-gray-copy;
-
-$grey-color:       $light-gray-copy;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$mobile:          600px;
-$laptop:        800px;
-$desktop:        1200px;
-
-// Use media queries like this:
-// @include media-query($mobile) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-@mixin mq($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
-}
-
-
-
-
-
-
-
-
-// see hidden `sass_dir` in _config.yml
-@import
-        "common/_mixins",
-        "common/base",
-        "common/type",
-        "common/header",
-        "common/footer",
-        "common/layout",
-        "common/syntax-highlighting",
-        "pages/home"
-;
 

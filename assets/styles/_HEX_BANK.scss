@@ -1,0 +1,48 @@
+
+/* -------- */
+// HEX BANK
+/* -------- */
+// IF IT'S A HEX,
+// AND IT AIN'T #FFF,
+// AND IT AIN'T #000,
+// HIT UP HEX BANK
+/* -------- */
+
+
+
+$light-gray-copy: #f1f1f1;
+$body-copy: #b3998c;
+$body-copy-alt: #f4c8ab;
+$gray-copy: #555;
+
+
+$light-background: #fafdff;
+$light-background-alt: #f9f8f6;
+
+
+
+
+// sunflower sea star TODO: subsume/delete
+
+$primary-color: #a0d1f0;
+$primary-color-light: lighten($primary-color, 12%);
+
+$secondary-color: #ff966f;
+$secondary-color-light: #ff966f;
+$secondary-color-alt: #ac6b54;
+
+$tertiary-color: lightgreen;
+
+
+$background-color: #2d3132;
+$background-color-alt: darken($background-color, 2.5%);
+$background-color-alt-2: lighten($background-color, 1%);
+
+/* -------- */
+// HEX BANK
+/* -------- */
+// IF IT'S A HEX,
+// AND IT AIN'T NAH,
+// AIN'T IN HEX BANK,
+// HEX BANK GET MAD
+/* -------- */
