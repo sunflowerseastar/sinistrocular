@@ -1,0 +1,3 @@
+[submodule "assets/styles/site-agnostic"]
+	path = assets/styles/site-agnostic
+	url = git@github.com:cozywigwam/site-agnostic-styles.git
