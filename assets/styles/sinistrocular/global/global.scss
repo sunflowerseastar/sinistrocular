@@ -56,14 +56,17 @@ a {
 	text-decoration: none;
 
 	&:visited {
-		color: lighten($body-copy, 4%);
+		//color: lighten($body-copy, 4%);
+		color: $body-copy;
 
 		&:hover {
-			color: darken($body-copy, 4%);
+			//color: darken($body-copy, 4%);
+			color: $body-copy;
 		}
 	}
 	&:hover {
-		color: darken($body-copy, 8%);
+		//color: darken($body-copy, 8%);
+		color: $body-copy;
 		text-decoration: none;
 	}
 }
@@ -94,7 +97,7 @@ img {
 
 header#site-header {
 	position: relative;
-	//background: url("../images/bg-header.jpg") no-repeat 0 0;
+	border-bottom: 1px solid $border-color;
 
 	a.logo-and-title {
 		display: block;
@@ -171,8 +174,8 @@ header#site-header {
 
 footer#site-footer {
 	position: relative;
-	height: 360px;
 	background: $background-color-alt;
+	border-top: 1px solid $border-color;
 
 	a.logo {
 		display: block;
