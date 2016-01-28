@@ -6,6 +6,11 @@ body {
 	font-weight: 400;
 	color: $body-copy;
 	background-color: $background-color;
+
+	@include mq($mobile) {
+		font-size: 17px;
+		line-height: 2;
+	}
 }
 
 /*
@@ -23,13 +28,34 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-size: 1.6rem;
-	text-shadow: 5px 3px 0 $background-color-alt;
+	text-shadow: 4px 3px 0 $background-color-alt;
+
+	@include mq($laptop) {
+		font-size: 1.65rem;
+		text-shadow: 6px 4px 0 $background-color-alt;
+	}
+	@include mq($desktop) {
+		font-size: 1.7rem;
+	}
+	@include mq(1400px) {
+		font-size: 1.8rem;
+	}
 }
 h2 {
 	margin-top: 3rem;
 	font-size: 1.4rem;
-	text-shadow: 5px 4px 0 $background-color-alt;
+	text-shadow: 4px 3px 0 $background-color-alt;
 
+	@include mq($laptop) {
+		font-size: 1.45rem;
+		text-shadow: 5px 4px 0 $background-color-alt;
+	}
+	@include mq($desktop) {
+		font-size: 1.5rem;
+	}
+	@include mq(1400px) {
+		font-size: 1.6rem;
+	}
 	a {
 		color: inherit;
 	}
@@ -103,13 +129,23 @@ header#site-header {
 			background: url("../images/bg-header-blur.jpg") no-repeat 50% 50%;
 			background-size: cover;
 
+			@include mq($laptop) {
+				padding: 3%;
+			}
+			@include mq($desktop) {
+				padding: 2%;
+			}
 			img {
 				margin: 0 auto;
+				max-width: 50px;
+
+				@include mq($laptop) {
+					max-width: 60px;
+				}
+				@include mq($desktop) {
+					max-width: 80px;
+				}
 			}
-		}
-		@include mq($laptop) {
-		}
-		@include mq($desktop) {
 		}
 	}
 	&.header-home {
@@ -150,16 +186,16 @@ header#site-header {
 	}
 }
 .page-content {
-	padding: 36% 4%;
+	padding: 26% 8% 20% 8%;
 
 	@include mq($mobile) {
-		@include padding-top-bottom(26%, 20%);
+		padding: 22% 4% 20% 4%;
 	}
 	@include mq($laptop) {
-		@include padding-top-bottom(20%, 20%);
+		@include padding-top-bottom(16%, 20%);
 	}
 	@include mq($desktop) {
-		@include padding-top-bottom(16%, 20%);
+		@include padding-top-bottom(14%, 20%);
 	}
 }
 .post-preview {
@@ -171,16 +207,15 @@ header#site-header {
 	&:first-child {
 		margin-top: 0;
 	}
-	@include mq($laptop) {
-		> a {
-			@include hover-fade(0.9);
-		}
-	}
 	.post-preview-copy {
-		margin-top: 7%;
+		margin-top: 10%;
 	}
 	@include mq($laptop) {
 		margin: 12em 0;
+
+		> a {
+			@include hover-fade(0.9);
+		}
 	}
 	@include mq($desktop) {
 		margin: 20em 0;
@@ -212,22 +247,60 @@ header#site-header {
 	}
 	span.post-meta {
 		display: block;
-		margin: 0.5rem 0 2rem;
+		margin: 0.1rem 0 0;
 		font-size: $small-font-size;
 		color: $body-copy-alt;
-		text-shadow: 5px 3px 0 $background-color-alt;
+		text-shadow: 3px 2px 0 $background-color-alt;
 		cursor: default;
+
+		@include mq($laptop) {
+			font-size: 16px;
+			text-shadow: 5px 3px 0 $background-color-alt;
+		}
+		@include mq(1400px) {
+			font-size: 17px;
+		}
 	}
+}
+.post-excerpt {
+	margin-top: 0.9rem;
+
+	@include mq($mobile) {
+		margin-top: 1.5rem;
+	}
+	@include mq($laptop) {
+		//margin-top: 1rem;
+	}
+	@include mq($desktop) {
+		//margin-top: 1rem;
+	}
+}
+.post-content {
+	margin-top: 2rem;
 }
 .post {
 	img {
-		margin: 4rem 0 6rem;
+		margin: 2rem 0 3rem;
 
+		@include mq($mobile) {
+			margin: 4rem 0 6rem;
+		}
 		@include mq($laptop) {
 			margin: 5rem 0 7rem;
 		}
 		@include mq($desktop) {
 			margin: 6rem 0 8rem;
+		}
+	}
+	p {
+		@include mq($laptop) {
+			font-size: 18px;
+		}
+		@include mq($desktop) {
+			font-size: 19px;
+		}
+		@include mq(1400px) {
+			font-size: 20px;
 		}
 	}
 }
