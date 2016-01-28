@@ -23,12 +23,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-size: 1.6rem;
-	//text-shadow: 11px 9px 0 $background-color-alt;
+	text-shadow: 5px 3px 0 $background-color-alt;
 }
 h2 {
 	margin-top: 3rem;
 	font-size: 1.4rem;
-	//text-shadow: 7px 4px 0 $background-color-alt;
+	text-shadow: 5px 4px 0 $background-color-alt;
 
 	a {
 		color: inherit;
@@ -37,7 +37,7 @@ h2 {
 h3 {
 	margin-top: 1.5rem;
 	font-size: 1.2rem;
-	//text-shadow: 5px 3px 0 $background-color-alt;
+	text-shadow: 3px 2px 0 $background-color-alt;
 }
 h4, h5, h6 {
 	margin-top: 1rem;
@@ -54,19 +54,13 @@ p {
 a {
 	color: $body-copy;
 	text-decoration: none;
+	@include transition-basic();
 
 	&:visited {
-		//color: lighten($body-copy, 4%);
 		color: $body-copy;
-
-		&:hover {
-			//color: darken($body-copy, 4%);
-			color: $body-copy;
-		}
 	}
 	&:hover {
-		//color: darken($body-copy, 8%);
-		color: $body-copy;
+		color: lighten($body-copy, 6%);
 		text-decoration: none;
 	}
 }
@@ -98,51 +92,106 @@ header#site-header {
 	position: relative;
 	border-bottom: 1px solid $border-color;
 
+	&.header-post {
+		@include clearfix();
+
+		a.logo-only {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			padding: 5%;
+			background: url("../images/bg-header-blur.jpg") no-repeat 50% 50%;
+			background-size: cover;
+
+			img {
+				margin: 0 auto;
+			}
+		}
+		@include mq($laptop) {
+		}
+		@include mq($desktop) {
+		}
+	}
 	&.header-home {
 		height:100%;
-		background: url("../images/bg-header-black-phoebe_1920.jpg") no-repeat 50% 50%;
+		background-image: url("../images/bg-header-black-phoebe_1920.jpg");
+		background-repeat: no-repeat;
+		background-position: 20% 50%;
 		background-size: cover;
+
+		@include mq($laptop) {
+			background-position: 20% 50%;
+		}
+		@include mq($desktop) {
+			background-position: 50% 50%;
+		}
 	}
 	a.logo-and-title {
 		display: block;
 		position: absolute;
-		top: 36%;
-		right: 10%;
-		width: 30%;
-		padding: 2%;
-	}
-	a.logo-only {
-		display: block;
-		position: absolute;
-		top: 15%;
+		top: 6%;
 		left: 0;
 		right: 0;
+		width: 90%;
 		margin: 0 auto;
-		width: 8%;
-		padding: 1%;
+		padding: 2%;
+		//@include hover-fade(0.8);
+
+		@include mq($laptop) {
+			top: 36%;
+			left: auto;
+			right: 10%;
+			width: 30%;
+			padding: 2%;
+		}
+		img {
+			margin: 0 auto;
+		}
 	}
 }
 .page-content {
-	padding: 16% 4%;
-	//border: 1px solid orange;
+	padding: 36% 4%;
+
+	@include mq($mobile) {
+		@include padding-top-bottom(26%, 20%);
+	}
+	@include mq($laptop) {
+		@include padding-top-bottom(20%, 20%);
+	}
+	@include mq($desktop) {
+		@include padding-top-bottom(16%, 20%);
+	}
 }
 .post-preview {
 	@include clearfix();
 	display: block;
-	margin: 20em 0;
+	margin: 8em 0;
 	color: inherit;
-	//border: 1px solid magenta;
 
 	&:first-child {
 		margin-top: 0;
 	}
+	@include mq($laptop) {
+		> a {
+			@include hover-fade(0.9);
+		}
+	}
+	.post-preview-copy {
+		margin-top: 7%;
+	}
+	@include mq($laptop) {
+		margin: 12em 0;
+	}
 	@include mq($desktop) {
+		margin: 20em 0;
+
 		img {
 			float: left;
 			width: 55%;
 			height: auto;
 		}
 		.post-preview-copy {
+			margin-top: 0;
 			margin-left: 65%;
 			padding-right: 4%;
 			//border: 1px solid red;
@@ -153,7 +202,7 @@ header#site-header {
 	h1, h2 {
 		margin: 0;
 		padding-top: 0;
-		line-height: 1.4;
+		line-height: 1.3;
 	}
 	h3 {
 		margin: 0;
@@ -163,38 +212,73 @@ header#site-header {
 	}
 	span.post-meta {
 		display: block;
+		margin: 0.5rem 0 2rem;
 		font-size: $small-font-size;
 		color: $body-copy-alt;
-		margin-bottom: 2em;
+		text-shadow: 5px 3px 0 $background-color-alt;
+		cursor: default;
 	}
 }
 .post {
 	img {
-		margin: 6rem 0 8rem;
+		margin: 4rem 0 6rem;
+
+		@include mq($laptop) {
+			margin: 5rem 0 7rem;
+		}
+		@include mq($desktop) {
+			margin: 6rem 0 8rem;
+		}
 	}
 }
-
-
-
 footer#site-footer {
-	position: relative;
-	background: $background-color-alt;
+	padding: 5% 0;
+	background: url("../images/bg-footer-blur.jpg") no-repeat 50% 50%;
+	background-size: cover;
 	border-top: 1px solid $border-color;
+	overflow-x: hidden;
+
+	a {
+		display: block;
+		@include hover-fade(0.6);
+
+		img {
+			margin: 0 auto;
+		}
+	}
 
 	a.logo {
-		display: block;
-		position: absolute;
-		top: 36%;
-		left: 38%;
-		width: 20%;
-		padding: 1%;
+		width: 50%;
+		margin-left: 25%;
+
+		@include mq($mobile) {
+			display: none;
+		}
+	}
+	a.logo-and-title {
+		display: none;
+
+		@include mq($mobile) {
+			display: block;
+			position: relative;
+			left: 2%;
+		}
+		@include mq($desktop) {
+			left: 0;
+		}
 	}
 	a.github {
-		display: block;
-		position: absolute;
-		top: 42%;
-		right: 38%;
-		width: 4.8%;
-		padding: 1%;
+		width: 50%;
+		margin: 5% 0 0 25%;
+
+		@include mq($mobile) {
+			position: relative;
+			left: -1%;
+		}
+		@include mq($desktop) {
+			left: -2%;
+		}
 	}
+
+
 }

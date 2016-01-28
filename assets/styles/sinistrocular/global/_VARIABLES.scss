@@ -5,3 +5,5 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.9;
 $base-line-height: 2;
 
+// site-agnostic overrides
+$transition-speed-default: 400ms;

@@ -12,14 +12,9 @@
 
 
 $primary-color: #d3d9ca;
-//$primary-color-light: lighten($primary-color, 12%);
-
-//$secondary-color: #e26b8a;
 $secondary-color: #d9a6a3;
-$secondary-color-light: lighten($secondary-color, 5%);
-
 $background-color: #2c3028;
-$background-color-alt: $primary-color;
+$background-color-alt: darken($background-color, 4%);
 
 $border-color: desaturate(darken($primary-color, 12%), 12%);
 
@@ -27,17 +22,9 @@ $border-color: desaturate(darken($primary-color, 12%), 12%);
 
 $body-copy: $primary-color;
 $body-copy-alt: $secondary-color;
-$gray-copy: #555;
 
 
 
-
-
-
-// sunflower sea star TODO: subsume/delete
-
-
-//$background-color-alt-2: lighten($background-color, 1%);
 
 
 /* -------- */

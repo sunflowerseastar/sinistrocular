@@ -1,0 +1,13 @@
+@mixin hover-fade($base-opacity: 0.9) {
+	@include mq($laptop) {
+		img {
+			opacity: $base-opacity;
+			@include transition-basic();
+		}
+		&:hover {
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}
