@@ -209,6 +209,18 @@ header#site-header {
 	}
 	.post-preview-copy {
 		margin-top: 10%;
+
+		@include mq($mobile) {
+			margin-top: 6%;
+		}
+		@include mq($laptop) {
+			margin-top: 5%;
+		}
+		@include mq($desktop) {
+			margin-top: 0;
+			margin-left: 65%;
+			padding-right: 4%;
+		}
 	}
 	@include mq($laptop) {
 		margin: 12em 0;
@@ -224,12 +236,6 @@ header#site-header {
 			float: left;
 			width: 55%;
 			height: auto;
-		}
-		.post-preview-copy {
-			margin-top: 0;
-			margin-left: 65%;
-			padding-right: 4%;
-			//border: 1px solid red;
 		}
 	}
 }
