@@ -150,7 +150,8 @@ header#site-header {
 	}
 	&.header-home {
 		height:100%;
-		background-image: url("../images/bg-header-black-phoebe_1920.jpg");
+		//background-image: url("../images/bg-header-black-phoebe_1920.jpg");
+		background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");
 		background-repeat: no-repeat;
 		background-position: 20% 50%;
 		background-size: cover;
@@ -163,7 +164,8 @@ header#site-header {
 		}
 	}
 	a.logo-and-title {
-		display: block;
+		display: none;
+		/*display: block;
 		position: absolute;
 		top: 6%;
 		left: 0;
@@ -182,7 +184,7 @@ header#site-header {
 		}
 		img {
 			margin: 0 auto;
-		}
+		}*/
 	}
 }
 .page-content {
