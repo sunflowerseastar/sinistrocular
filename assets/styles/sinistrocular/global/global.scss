@@ -154,18 +154,8 @@ header#site-header {
 		}
 	}
 	&.header-home {
-
-		// Latest Post main 1920 image
-		background: $IMAGE_URL-home-hero no-repeat 50% 50%;
-
-		// Prior main 1920 post images
-		//background-image: url("../images/bg-header-black-phoebe_1920.jpg");
-		//background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");
-
 		height:100%;
-
-		background-repeat: no-repeat;
-		background-position: 20% 50%;
+		background: $IMAGE_URL-home-hero no-repeat 50% 50%;
 		background-size: cover;
 
 		@include mq($laptop) {
