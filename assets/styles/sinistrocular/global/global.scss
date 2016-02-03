@@ -126,8 +126,13 @@ header#site-header {
 			width: 100%;
 			margin: 0 auto;
 			padding: 5%;
-			background: url("../images/bg-header-blur.jpg") no-repeat 50% 50%;
+			background: $IMAGE_URL-header-non-home no-repeat 50% 50%;
 			background-size: cover;
+
+			//background-repeat: no-repeat;
+			//background-position: 20% 50%;
+			//background-size: cover;
+
 
 			@include mq($laptop) {
 				padding: 3%;
@@ -149,9 +154,16 @@ header#site-header {
 		}
 	}
 	&.header-home {
-		height:100%;
+
+		// Latest Post main 1920 image
+		background: $IMAGE_URL-home-hero no-repeat 50% 50%;
+
+		// Prior main 1920 post images
 		//background-image: url("../images/bg-header-black-phoebe_1920.jpg");
-		background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");
+		//background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");
+
+		height:100%;
+
 		background-repeat: no-repeat;
 		background-position: 20% 50%;
 		background-size: cover;
@@ -165,26 +177,6 @@ header#site-header {
 	}
 	a.logo-and-title {
 		display: none;
-		/*display: block;
-		position: absolute;
-		top: 6%;
-		left: 0;
-		right: 0;
-		width: 90%;
-		margin: 0 auto;
-		padding: 2%;
-		//@include hover-fade(0.8);
-
-		@include mq($laptop) {
-			top: 36%;
-			left: auto;
-			right: 10%;
-			width: 30%;
-			padding: 2%;
-		}
-		img {
-			margin: 0 auto;
-		}*/
 	}
 }
 .page-content {
@@ -276,12 +268,6 @@ header#site-header {
 	@include mq($mobile) {
 		margin-top: 1.5rem;
 	}
-	@include mq($laptop) {
-		//margin-top: 1rem;
-	}
-	@include mq($desktop) {
-		//margin-top: 1rem;
-	}
 }
 .post-content {
 	margin-top: 2rem;
@@ -314,7 +300,7 @@ header#site-header {
 }
 footer#site-footer {
 	padding: 5% 0;
-	background: url("../images/bg-footer-blur.jpg") no-repeat 50% 50%;
+	background: $IMAGE_URL-footer no-repeat 50% 50%;
 	background-size: cover;
 	border-top: 1px solid $border-color;
 	overflow-x: hidden;
@@ -327,7 +313,6 @@ footer#site-footer {
 			margin: 0 auto;
 		}
 	}
-
 	a.logo {
 		width: 50%;
 		margin-left: 25%;
@@ -360,6 +345,4 @@ footer#site-footer {
 			left: -2%;
 		}
 	}
-
-
 }
