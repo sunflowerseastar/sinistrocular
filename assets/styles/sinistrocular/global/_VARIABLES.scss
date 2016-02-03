@@ -9,11 +9,19 @@ $base-line-height: 1.85;
 $transition-speed-default: 400ms;
 
 
+$static-url: 'http://static.sinistrocular.com';
 
-$IMAGE_URL-header-non-home: url("../images/COMMITSWAP_FILE_bg-header-non-home.jpg");
-$IMAGE_URL-footer: url("../images/COMMITSWAP_FILE_bg-footer.jpg");
 
-$IMAGE_URL-home-hero: url("../images/2016/02/ocean-beach-3_1920_50q.jpg");
+$IMAGE_URL-header-non-home: '#{$static-url}/_images/COMMITSWAP_FILE_bg-header-non-home.jpg';
+$IMAGE_URL-footer: '#{$static-url}/_images/COMMITSWAP_FILE_bg-footer.jpg';
+
+// CURRENT HOME HERO
+$year: '2016';
+$month: '02';
+$filename: 'ocean-beach-3_1920_50q.jpg';
+
+$IMAGE_URL-home-hero: '#{$static-url}/_photographs/#{$year}/#{$month}/#{$filename}';
+//$IMAGE_URL-home-hero: url("#{static-url}/_photographs/2016/02/ocean-beach-3_1920_50q.jpg");
 // Prior main 1920 post images
 //background-image: url("../images/bg-header-black-phoebe_1920.jpg");
 //background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");

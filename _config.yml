@@ -5,6 +5,7 @@ name: Grant Surratt
 author: Grant Surratt
 title: Sinsitrocular
 url: http://sinistrocular.com
+static_url: http://static.sinistrocular.com
 baseurl: ""
 
 #files to exclude, array
