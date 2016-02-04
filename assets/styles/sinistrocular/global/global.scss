@@ -115,7 +115,7 @@ img {
  */
 
 
-.page-content {
+#content-container {
 	padding: 26% 8% 20% 8%;
 
 	@include mq($mobile) {
@@ -126,6 +126,20 @@ img {
 	}
 	@include mq($desktop) {
 		@include padding-top-bottom(14%, 20%);
+	}
+
+	&.page {
+		padding: 10% 10% 20% 10%;
+
+		@include mq($mobile) {
+			padding: 10% 12% 20% 14%;
+		}
+		@include mq($laptop) {
+			@include padding-top-bottom(12%, 20%);
+		}
+		@include mq($desktop) {
+			@include padding-top-bottom(14%, 20%);
+		}
 	}
 }
 .post-preview {
