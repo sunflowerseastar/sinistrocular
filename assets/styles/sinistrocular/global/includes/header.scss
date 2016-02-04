@@ -1,0 +1,50 @@
+header#site-header {
+	position: relative;
+	border-bottom: 1px solid $border-color;
+
+	&.header-post {
+		@include clearfix();
+
+		a.logo-only {
+			display: block;
+			width: 100%;
+			margin: 0 auto;
+			padding: 5%;
+			background: url($IMAGE_URL-header-non-home) no-repeat 50% 50%;
+			background-size: cover;
+
+			@include mq($laptop) {
+				padding: 3%;
+			}
+			@include mq($desktop) {
+				padding: 2%;
+			}
+			img {
+				margin: 0 auto;
+				max-width: 50px;
+
+				@include mq($laptop) {
+					max-width: 60px;
+				}
+				@include mq($desktop) {
+					max-width: 80px;
+				}
+			}
+		}
+	}
+	&.header-home {
+		height:100%;
+		background: url($IMAGE_URL-home-hero) no-repeat 50% 50%;
+		background-size: cover;
+
+		@include mq($laptop) {
+			background-position: 20% 50%;
+		}
+		@include mq($desktop) {
+			background-position: 50% 50%;
+		}
+	}
+	a.logo-and-title {
+		display: none;
+	}
+}

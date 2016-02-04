@@ -1,0 +1,1 @@
+All photography and images are copyright 2016 Grant Surratt, all rights reserved.

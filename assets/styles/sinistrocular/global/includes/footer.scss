@@ -1,0 +1,48 @@
+footer#site-footer {
+	padding: 5% 0;
+	background: url($IMAGE_URL-footer) no-repeat 50% 50%;
+	background-size: cover;
+	border-top: 1px solid $border-color;
+	overflow-x: hidden;
+
+	a {
+		display: block;
+		@include hover-fade(0.6);
+
+		img {
+			margin: 0 auto;
+		}
+	}
+	a.logo {
+		width: 50%;
+		margin-left: 25%;
+
+		@include mq($mobile) {
+			display: none;
+		}
+	}
+	a.logo-and-title {
+		display: none;
+
+		@include mq($mobile) {
+			display: block;
+			position: relative;
+			left: 2%;
+		}
+		@include mq($desktop) {
+			left: 0;
+		}
+	}
+	a.github {
+		width: 50%;
+		margin: 5% 0 0 25%;
+
+		@include mq($mobile) {
+			position: relative;
+			left: -1%;
+		}
+		@include mq($desktop) {
+			left: -2%;
+		}
+	}
+}

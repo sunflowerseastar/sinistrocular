@@ -114,57 +114,8 @@ img {
  * Overall layout
  */
 
-header#site-header {
-	position: relative;
-	border-bottom: 1px solid $border-color;
 
-	&.header-post {
-		@include clearfix();
-
-		a.logo-only {
-			display: block;
-			width: 100%;
-			margin: 0 auto;
-			padding: 5%;
-			background: url($IMAGE_URL-header-non-home) no-repeat 50% 50%;
-			background-size: cover;
-
-			@include mq($laptop) {
-				padding: 3%;
-			}
-			@include mq($desktop) {
-				padding: 2%;
-			}
-			img {
-				margin: 0 auto;
-				max-width: 50px;
-
-				@include mq($laptop) {
-					max-width: 60px;
-				}
-				@include mq($desktop) {
-					max-width: 80px;
-				}
-			}
-		}
-	}
-	&.header-home {
-		height:100%;
-		background: url($IMAGE_URL-home-hero) no-repeat 50% 50%;
-		background-size: cover;
-
-		@include mq($laptop) {
-			background-position: 20% 50%;
-		}
-		@include mq($desktop) {
-			background-position: 50% 50%;
-		}
-	}
-	a.logo-and-title {
-		display: none;
-	}
-}
-.page-content {
+#content-container {
 	padding: 26% 8% 20% 8%;
 
 	@include mq($mobile) {
@@ -175,6 +126,20 @@ header#site-header {
 	}
 	@include mq($desktop) {
 		@include padding-top-bottom(14%, 20%);
+	}
+
+	&.page {
+		padding: 10% 10% 20% 10%;
+
+		@include mq($mobile) {
+			padding: 10% 12% 20% 14%;
+		}
+		@include mq($laptop) {
+			@include padding-top-bottom(12%, 20%);
+		}
+		@include mq($desktop) {
+			@include padding-top-bottom(14%, 20%);
+		}
 	}
 }
 .post-preview {
@@ -280,54 +245,6 @@ header#site-header {
 		}
 		@include mq(1400px) {
 			font-size: 20px;
-		}
-	}
-}
-footer#site-footer {
-	padding: 5% 0;
-	background: url($IMAGE_URL-footer) no-repeat 50% 50%;
-	background-size: cover;
-	border-top: 1px solid $border-color;
-	overflow-x: hidden;
-
-	a {
-		display: block;
-		@include hover-fade(0.6);
-
-		img {
-			margin: 0 auto;
-		}
-	}
-	a.logo {
-		width: 50%;
-		margin-left: 25%;
-
-		@include mq($mobile) {
-			display: none;
-		}
-	}
-	a.logo-and-title {
-		display: none;
-
-		@include mq($mobile) {
-			display: block;
-			position: relative;
-			left: 2%;
-		}
-		@include mq($desktop) {
-			left: 0;
-		}
-	}
-	a.github {
-		width: 50%;
-		margin: 5% 0 0 25%;
-
-		@include mq($mobile) {
-			position: relative;
-			left: -1%;
-		}
-		@include mq($desktop) {
-			left: -2%;
 		}
 	}
 }
