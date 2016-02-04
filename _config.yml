@@ -6,6 +6,7 @@ author: Grant Surratt
 title: Sinsitrocular
 url: http://sinistrocular.com
 static_url: http://static.sinistrocular.com
+github_url: https://github.com/cozywigwam/sinistrocular/blob/master
 baseurl: ""
 
 #files to exclude, array
