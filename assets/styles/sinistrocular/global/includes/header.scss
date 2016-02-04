@@ -10,7 +10,7 @@ header#site-header {
 			width: 100%;
 			margin: 0 auto;
 			padding: 5%;
-			background: url($IMAGE_URL-header-non-home) no-repeat 50% 50%;
+			background: url($IMAGE_URL-header-non-home) no-repeat 50% 100%;
 			background-size: cover;
 
 			@include mq($laptop) {
