@@ -23,7 +23,17 @@ h1, h2, h3, h4, h5, h6 {
 	cursor: default;
 
 	a {
+		color: $body-copy;
+		text-decoration: none;
 		cursor: pointer;
+
+		&:visited {
+			color: $body-copy;
+		}
+		&:hover {
+			color: lighten($body-copy, 10%);
+			text-decoration: none;
+		}
 	}
 }
 h1 {
@@ -78,16 +88,14 @@ p {
 	margin-bottom: 1.4rem;
 }
 a {
-	color: $body-copy;
-	text-decoration: none;
+	color: $body-copy-alt;
 	@include transition-basic();
 
 	&:visited {
-		color: $body-copy;
+		color: $body-copy-alt;
 	}
 	&:hover {
-		color: lighten($body-copy, 6%);
-		text-decoration: none;
+		color: lighten($body-copy-alt, 6%);
 	}
 }
 ul, ol {
