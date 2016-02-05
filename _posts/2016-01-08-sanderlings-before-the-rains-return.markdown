@@ -2,9 +2,10 @@
 layout: post
 title:  "Sanderlings Before the Rains Return"
 date:   2016-01-08 18:26:33 -0800
-categories: misc
+categories: birds 
 intro: When days-long rains ease in the afternoon, cameras and lenses yearn for the sunset. This time around, though, the reprieve was not full. New rains approached the shore, and the sunset's colors could only reach from angles midway up the sky.
-feature: /_photographs/2016/01/sanderling-_MG_4441_1920.jpg 
+
+photo_main: /_photographs/2016/01/sanderling-_MG_4441_1920.jpg 
 ---
 When days-long rains ease in the afternoon, cameras and lenses yearn for the sunset. This time around, though, the reprieve was not full: new rains approached the shore, and the sunset's colors could only reach from angles midway up the sky.
 
