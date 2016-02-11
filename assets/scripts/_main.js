@@ -1,0 +1,54 @@
+(function ($) {
+
+	var Main = {
+		'common': {
+			init: function () {
+				console.log('common.init');
+
+				Module.init();
+
+				Main.common.logMe();
+
+			},
+			logMe: function () {
+				console.log('logMe()');
+			},
+			finalize: function () {
+			}
+		},
+		'page': {
+			init: function () {
+				console.log('the body has class `page`');
+			}
+		}
+	};
+
+	// The routing fires all common scripts, followed by the page specific scripts.
+	var UTIL = {
+		fire: function (func, funcname, args) {
+			var fire;
+			var namespace = Main;
+			funcname = (funcname === undefined) ? 'init' : funcname;
+			fire = func !== '';
+			fire = fire && namespace[func];
+			fire = fire && typeof namespace[func][funcname] === 'function';
+
+			if (fire) {
+				namespace[func][funcname](args);
+			}
+		},
+		loadEvents: function () {
+			UTIL.fire('common');
+
+			// Fire page-specific init JS, and then finalize JS
+			$.each(document.body.className.replace(/-/g, '_').split(/\s+/), function (i, classnm) {
+				UTIL.fire(classnm);
+				UTIL.fire(classnm, 'finalize');
+			});
+
+			UTIL.fire('common', 'finalize');
+		}
+	};
+	$(document).ready(UTIL.loadEvents);
+
+})(jQuery);
