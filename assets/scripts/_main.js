@@ -9,6 +9,11 @@
 
 				Main.common.logMe();
 
+
+				$('.post-preview').waypoint(function(direction) {
+					console.log('Scrolled to waypoint2', direction);
+				});
+
 			},
 			logMe: function () {
 				console.log('logMe()');

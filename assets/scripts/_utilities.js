@@ -22,15 +22,12 @@
 	Utilities.listener = {
 		resize: Utilities.debounce(function () {
 			// on resize debounced
-			console.log('resize debounced');
 		}, 150, false),
 		scrollStartUpAndDown: Utilities.debounce(function () {
 			// on scroll start either direction debounced
-			console.log('scroll start debounced');
 		}, 300, true),
 		scrollEnd: Utilities.debounce(function () {
 			// on scroll end debounced
-			console.log('scroll end debounced');
 		}, 300, false)
 	};
 	$(window).resize(Utilities.listener.resize);
