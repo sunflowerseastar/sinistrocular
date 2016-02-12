@@ -13,6 +13,8 @@ baseurl: ""
 exclude:
   - README.md
   - __reference
+  - node_modules
+  - bower_components
 
 # Syntax highlighting
 #highlighter:         pygments
