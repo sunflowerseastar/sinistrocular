@@ -19,20 +19,12 @@
 				$('.animation-fade-in').waypoint(function(direction) {
 					$el = $(this.element);
 					if (!$el.hasClass('animation-complete')) {
-						Main.common.animateInOne($el);
-						$el.addClass('animation-complete')
+						$el.velocity({ opacity: 1}, 2500, "easeOutQuart")
+								.addClass('animation-complete')
 					}
 				}, {
 					offset: '90%'
 				});
-
-			},
-			animateInOne: function ($this) {
-				console.log('animateInOne()', $this);
-
-				$this.velocity(
-						{opacity: 1},
-						{duration: 1000, easing: 'linear'});
 
 			},
 			animateInThree: function ($this) {
@@ -58,15 +50,15 @@
 					{
 						e: $animation2,
 						p : "upFadeIn",
-						o : { duration: 1000,
+						o : { duration: 1100,
 							delay: 400,
 							sequenceQueue: false }
 					},
 					{
 						e: $animation3,
 						p : "upFadeIn",
-						o : { duration: 1200,
-							delay: 600,
+						o : { duration: 1500,
+							delay: 400,
 							sequenceQueue: false  }
 					}
 				];
