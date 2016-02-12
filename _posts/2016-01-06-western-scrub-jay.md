@@ -12,4 +12,4 @@ To hyphen or not to hyphen, that is the question.
 
 ![Western scrub jay]({{ site.static_url }}/_photographs/2015/12/western-scrub-jay--_MG_2460_1920.jpg)
 
-Wikipedia's [Western scrub jay entry](https://en.wikipedia.org/wiki/Western_scrub_jay) lacks the hypen: Western scrub jay. The Cornell Lab of Ornithology's All About Birds [entry](https://www.allaboutbirds.org/guide/Western_Scrub-Jay/id), however, features an n-dash, and has all three leading words capitalized: Western Scrub-Jay.
+Wikipedia's [Western scrub jay entry](https://en.wikipedia.org/wiki/Western_scrub_jay) lacks the hypen: Western scrub jay. The Cornell Lab of Ornithology's All About Birds [entry](https://www.allaboutbirds.org/guide/Western_Scrub-Jay/id), however, features an n-dash, and has all three leading words capitalized: Western Scrub-Jay. Pete Dunne, in his Field Guide Companion, and David Sibley, in his Western Field Guide, use the all-capitalized and hyphen approach like The Cornell Lab of Ornithology: Western Scrub-Jay.
