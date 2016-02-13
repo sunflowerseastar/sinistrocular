@@ -34,7 +34,7 @@ header#site-header {
 	}
 	&.header-home {
 		height:100%;
-		background: url($IMAGE_URL-home-hero) no-repeat 50% 50%;
+		background: url($IMAGE_URL-home-hero) no-repeat 50% 50% fixed;
 		background-size: cover;
 
 		@include mq($laptop) {

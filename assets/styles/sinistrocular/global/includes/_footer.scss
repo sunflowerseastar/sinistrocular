@@ -1,6 +1,6 @@
 footer#site-footer {
 	padding: 5% 0;
-	background: url($IMAGE_URL-footer) no-repeat 50% 50%;
+	background: url($IMAGE_URL-footer) no-repeat 50% 50% fixed;
 	background-size: cover;
 	border-top: 1px solid $border-color;
 	overflow-x: hidden;
