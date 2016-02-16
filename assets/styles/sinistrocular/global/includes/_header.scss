@@ -2,6 +2,9 @@ header#site-header {
 	position: relative;
 	border-bottom: 1px solid $border-color;
 
+	@include mq($desktop) {
+		border-bottom: none;
+	}
 	&.header-post {
 		@include clearfix();
 
@@ -37,7 +40,6 @@ header#site-header {
 		//background: url($IMAGE_URL-home-hero) no-repeat 50% 50% fixed;
 		background-size: cover;
 
-
 		.video-container {
 			position: absolute;
 			z-index: -1;
@@ -61,14 +63,9 @@ header#site-header {
 				transform: translate(-50%, -50%);
 				visibility: visible;
 				opacity: 1;
-				//width: 100%;
-				width: auto;
-				height: auto;
+				min-width: 100%;
+				min-height: 100%;
 			}
-		}
-		video {
-			//width: 100%;
-			//max-height: 100%;
 		}
 
 		@include mq($laptop) {
