@@ -37,36 +37,45 @@ header#site-header {
 	}
 	&.header-home {
 		height: 100%;
-		//background: url($IMAGE_URL-home-hero) no-repeat 50% 50% fixed;
 		background-size: cover;
 
-		.video-container {
-			position: absolute;
-			z-index: -1;
-			top: 0px;
-			left: 0px;
-			bottom: 0px;
-			right: 0px;
-			overflow: hidden;
-			background-image: none;
-			background-color: transparent;
-			background-size: cover;
-			background-position: 50% 50%;
-			background-repeat: no-repeat;
+		@include mq-max($mobile) {
+			background: url($IMAGE_URL-home-hero-mobile) no-repeat 50% 50% fixed;
 
-			video {
-				margin: auto;
-				position: fixed;
-				z-index: -1;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-				visibility: visible;
-				opacity: 1;
-				min-width: 100%;
-				min-height: 100%;
+			.video-container {
+				display: none;
 			}
 		}
+		@include mq($mobile) {
+			.video-container {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				background-image: none;
+				background-color: transparent;
+				background-size: cover;
+				background-position: 50% 50%;
+				background-repeat: no-repeat;
+				overflow: hidden;
+
+				video {
+					margin: auto;
+					position: fixed;
+					top: 50%;
+					left: 50%;
+					z-index: -1;
+					min-width: 100%;
+					min-height: 100%;
+					transform: translate(-50%, -50%);
+					visibility: visible;
+					opacity: 1;
+				}
+			}
+		}
+
 
 		@include mq($laptop) {
 			background-position: 20% 50%;

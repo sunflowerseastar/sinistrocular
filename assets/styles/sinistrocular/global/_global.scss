@@ -258,3 +258,41 @@ img {
 		}
 	}
 }
+
+
+
+/*
+
+// from _site-agnostic-variables.scss
+
+$small: 460px;
+$mobile: 600px;
+$laptop: 800px;
+$desktop: 1200px;
+
+
+// from _site-agnostic-mixins.scss
+
+@mixin mq($min) {
+	@media screen and (min-width: $min) {
+		@content;
+	}
+}
+@mixin mq-max($max) {
+	@media screen and (max-width: $max - 1) {
+		@content;
+	}
+}
+
+@include mq-max($mobile) {
+}
+@include mq($mobile) {
+}
+@include mq($laptop) {
+}
+@include mq($desktop) {
+}
+
+
+
+*/
