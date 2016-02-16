@@ -33,9 +33,43 @@ header#site-header {
 		}
 	}
 	&.header-home {
-		height:100%;
-		background: url($IMAGE_URL-home-hero) no-repeat 50% 50% fixed;
+		height: 100%;
+		//background: url($IMAGE_URL-home-hero) no-repeat 50% 50% fixed;
 		background-size: cover;
+
+
+		.video-container {
+			position: absolute;
+			z-index: -1;
+			top: 0px;
+			left: 0px;
+			bottom: 0px;
+			right: 0px;
+			overflow: hidden;
+			background-image: none;
+			background-color: transparent;
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+
+			video {
+				margin: auto;
+				position: fixed;
+				z-index: -1;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				visibility: visible;
+				opacity: 1;
+				//width: 100%;
+				width: auto;
+				height: auto;
+			}
+		}
+		video {
+			//width: 100%;
+			//max-height: 100%;
+		}
 
 		@include mq($laptop) {
 			background-position: 20% 50%;
