@@ -135,7 +135,6 @@ img {
 	}
 	@include mq($desktop) {
 		@include padding-top-bottom(14%, 20%);
-		background: none;
 	}
 
 	&.page {
