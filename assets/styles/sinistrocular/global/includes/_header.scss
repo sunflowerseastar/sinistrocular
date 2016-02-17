@@ -40,7 +40,7 @@ header#site-header {
 		background-size: cover;
 
 		@include mq-max($mobile) {
-			background: url($IMAGE_URL-home-hero-mobile) no-repeat 50% 50% fixed;
+			background: url($IMAGE_URL-home-hero-mobile) no-repeat 53% 50% fixed;
 
 			.video-container {
 				display: none;
