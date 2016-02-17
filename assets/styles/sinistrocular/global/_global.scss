@@ -245,6 +245,21 @@ img {
 			margin: 6rem 0 8rem;
 		}
 	}
+	img + em {
+		display: block;
+		margin: -2rem 0 2em;
+		font-size: 0.9em;
+
+		@include mq($mobile) {
+			margin: -5rem 0 3rem;
+		}
+		@include mq($laptop) {
+			margin: -6rem 0 4rem;
+		}
+		@include mq($desktop) {
+			margin: -7rem 0 5rem;
+		}
+	}
 	p {
 		@include mq($laptop) {
 			font-size: 18px;
