@@ -6,9 +6,9 @@ categories: birds
 
 photo_main: /_photographs/2016/02/avocet-neck-turned-around__MG_3770_full-1603px.jpg
 
-intro: It's always a special day when I see a woodpecker, I heard once. That's how I feel about avocets.
+intro: It's always a special day when I see a woodpecker, I heard once. That's how I feel about avocets. A few sought food toward the eastern edge of Bolinas Lagoon, not far from two small rafts of ducks. 
 ---
-"It's always a special day when I see a woodpecker," I heard once. That's how I feel about avocets. A few sought fish along the eastern edge of Bolinas Lagoon, not far from a couple rafts of ducks.
+"It's always a special day when I see a woodpecker," I heard once. That's how I feel about avocets. A few sought food toward the eastern edge of Bolinas Lagoon, not far from two small rafts of ducks.
 
 ![American avocet - 2016-01-02]({{ site.static_url }}{{ page.photo_main }})
 *American avocet, all photos taken January 2016*
