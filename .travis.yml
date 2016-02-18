@@ -1,0 +1,19 @@
+language: node_js
+
+node_js:
+  - "4.1"
+  - "0.12"
+  - stable
+
+before_install:
+  - npm install -g gulp
+  - npm install -g grunt-cli
+  - npm install -g bower
+  - rvm list
+  - rvm install ruby
+  - rvm use ruby --default
+  - gem install jekyll
+
+install:
+  - git submodule update --init
+  - jekyll build
