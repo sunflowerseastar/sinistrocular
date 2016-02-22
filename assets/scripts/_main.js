@@ -36,6 +36,15 @@
 			},
 			scrollStartExample: function() {
 				console.log('scrollStartExample()');
+
+				$('.video-container').each(function() {
+					$this = $(this);
+					if (Utilities.isElInViewport($this)) {
+						console.log('yes vid is in vp', $this);
+					} else {
+						console.log('no vid is not in vp', $this);
+					}
+				})
 			},
 			animateInThree: function ($this) {
 				console.log('animateInThree()', $this);

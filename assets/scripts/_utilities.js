@@ -19,6 +19,19 @@
 		};
 	};
 
+	Utilities.isElInViewport = function (el) {
+		if (typeof jQuery === "function" && el instanceof jQuery) {
+			el = el[0];
+		}
+		var rect = el.getBoundingClientRect();
+		return (
+			rect.bottom >= 0 &&
+			rect.right >= 0 &&
+			rect.top <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
+			rect.left <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+		);
+	};
+
 	Utilities.listener = {
 		resize: Utilities.debounce(function () {
 			// on resize debounced

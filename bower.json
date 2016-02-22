@@ -6,8 +6,8 @@
   ],
   "dependencies": {
     "jquery": "^2.2.0",
-    "amplify": "~1.1.2",
     "velocity": "^1.2.3",
+    "amplify": "~1.1.2",
     "waypoints": "^4.0.0"
   }
 }
