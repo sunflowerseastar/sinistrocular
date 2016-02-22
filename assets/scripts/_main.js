@@ -26,6 +26,16 @@
 					offset: '90%'
 				});
 
+				amplify.subscribe('resize', Main.common.resizeExample);
+				amplify.subscribe('scrollStart', Main.common.scrollStartExample);
+
+
+			},
+			resizeExample: function() {
+				console.log('resizeExample()');
+			},
+			scrollStartExample: function() {
+				console.log('scrollStartExample()');
 			},
 			animateInThree: function ($this) {
 				console.log('animateInThree()', $this);

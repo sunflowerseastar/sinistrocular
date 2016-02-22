@@ -22,12 +22,15 @@
 	Utilities.listener = {
 		resize: Utilities.debounce(function () {
 			// on resize debounced
+			amplify.publish('resize');
 		}, 150, false),
 		scrollStartUpAndDown: Utilities.debounce(function () {
 			// on scroll start either direction debounced
+			amplify.publish('scrollStart', $(window).scrollTop());
 		}, 300, true),
 		scrollEnd: Utilities.debounce(function () {
 			// on scroll end debounced
+			amplify.publish('scrollEnd', $(window).scrollTop());
 		}, 300, false)
 	};
 	$(window).resize(Utilities.listener.resize);
