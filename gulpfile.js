@@ -33,12 +33,12 @@ gulp.task('scripts', function() {
 				'./bower_components/amplify/lib/amplify.js',
 				'./bower_components/waypoints/lib/jquery.waypoints.js',
 				'./assets/scripts/_utilities.js',
-				'./assets/scripts/_module.js',
+				'./assets/scripts/_animation.js',
 				'./assets/scripts/_main.js'
 			])
 			.pipe(concat('main-build.js'))
-			.pipe(stripDebug())
-			.pipe(uglify())
+			//.pipe(stripDebug())
+			//.pipe(uglify())
 			.pipe(gulp.dest('assets/scripts'));
 });
 

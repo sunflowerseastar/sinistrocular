@@ -1,5 +1,10 @@
 (function(Utilities) {
 
+	Utilities.normalizeJqueryToDom = function(el) {
+		return (typeof jQuery === "function" && el instanceof jQuery) ? el[0] : el;
+	};
+
+
 	Utilities.debounce = function (func, wait, immediate) {
 		var timeout;
 		return function () {
@@ -20,15 +25,24 @@
 	};
 
 	Utilities.isElInViewport = function (el) {
-		if (typeof jQuery === "function" && el instanceof jQuery) {
-			el = el[0];
+
+		el = Utilities.normalizeJqueryToDom(el);
+
+		var top = el.offsetTop,
+				left = el.offsetLeft,
+				width = el.offsetWidth,
+				height = el.offsetHeight;
+
+		while(el.offsetParent) {
+			el = el.offsetParent;
+			top += el.offsetTop;
+			left += el.offsetLeft;
 		}
-		var rect = el.getBoundingClientRect();
 		return (
-			rect.bottom >= 0 &&
-			rect.right >= 0 &&
-			rect.top <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-			rect.left <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
+				top < (window.pageYOffset + window.innerHeight) &&
+				left < (window.pageXOffset + window.innerWidth) &&
+				(top + height) > window.pageYOffset &&
+				(left + width) > window.pageXOffset
 		);
 	};
 
