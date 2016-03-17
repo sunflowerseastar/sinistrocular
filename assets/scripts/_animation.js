@@ -37,8 +37,7 @@
 		];
 
 		$.Velocity.RunSequence(loadingSequence);
-	}
-
+	};
 
 	Animation.init = function() {
 		console.log('Animation.init()');
@@ -61,5 +60,6 @@
 		}, {
 			offset: '90%'
 		});
-	}
+	};
+
 }(window.Animation = window.Animation || {}));

@@ -6,79 +6,8 @@
 				console.log('common.init');
 
 				Animation.init();
-
-
-				amplify.subscribe('resize', Sinistrocular.common.resizeExample);
-				amplify.subscribe('scrollStart', Sinistrocular.common.playAndPauseAllVideosAppropriately);
-				amplify.subscribe('scrollEnd', Sinistrocular.common.playAndPauseAllVideosAppropriately);
-
-
-
-
+				Video.init();
 			},
-
-			playAndPauseAllVideosAppropriately: function() {
-				//console.log('playAndPauseAllVideosAppropriately()');
-
-				$('video').each(function() {
-					$this = $(this);
-					if (Utilities.isElInViewport($this)) {
-						//console.log('yes vid is in vp', $this);
-
-						// TODO: make this conditional... only replay a paused video. Don't restart a previously finished video.
-						$this[0].play();
-					} else {
-						//console.log('no vid is not in vp', $this);
-						$this[0].pause();
-					}
-				})
-
-			},
-			resizeExample: function() {
-				console.log('resizeExample()');
-			},
-			scrollStartExample: function() {
-				console.log('scrollStartExample()');
-
-
-
-
-
-
-				var $headerVideo = $('#header_video');
-
-				var $test = $('.test-el');
-
-
-				if (Utilities.isElInViewport($test)) {
-					console.log('Utilities.isElInViewport($test)', $test);
-
-				} else {
-					console.log('no', $test);
-				}
-
-
-
-
-
-
-
-
-
-				/*$('video').each(function() {
-					$this = $(this);
-					if (Utilities.isElInViewport($this)) {
-						console.log('yes vid is in vp', $this);
-
-						//$this[0].pause();
-						$this[0].play();
-					} else {
-						console.log('no vid is not in vp', $this);
-						$this[0].pause();
-					}
-				})*/
-			},
-
 			finalize: function () {
 			}
 		},

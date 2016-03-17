@@ -51,7 +51,7 @@
 			// on resize debounced
 			amplify.publish('resize');
 		}, 150, false),
-		scrollStartUpAndDown: Utilities.debounce(function () {
+		scrollStart: Utilities.debounce(function () {
 			// on scroll start either direction debounced
 			amplify.publish('scrollStart', $(window).scrollTop());
 		}, 300, true),
@@ -61,7 +61,7 @@
 		}, 300, false)
 	};
 	$(window).resize(Utilities.listener.resize);
-	$(window).scroll(Utilities.listener.scrollStartUpAndDown);
+	$(window).scroll(Utilities.listener.scrollStart);
 	$(window).scroll(Utilities.listener.scrollEnd);
 
 }(window.Utilities = window.Utilities || {}));
