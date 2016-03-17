@@ -1,9 +1,10 @@
 header#site-header {
 	position: relative;
-	border-bottom: 1px solid $border-color;
+	border-bottom: 1px solid #5b5b5b;
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
 
 	@include mq($desktop) {
-		border-bottom: none;
+		//border-bottom: none;
 	}
 	&.header-post {
 		@include clearfix();
