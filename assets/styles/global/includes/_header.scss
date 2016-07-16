@@ -1,0 +1,43 @@
+.site-header {
+
+    height: 68px;
+    overflow: hidden;
+
+    @include paint-front() {}
+
+    span {
+        float: left;
+        display: inline-block;
+        width: 120px;
+        margin: 19px 0 0 60px;
+    }
+
+    ul {
+        float: right;
+        margin-right: 40px;
+
+        li {
+            margin: 1em 1em;
+
+            a {
+                position: relative;
+                font-family: $heading-font-family;
+                color: $body-copy;
+                text-decoration: none;
+                letter-spacing: 0.08em;
+                font-size: 18px;
+
+                &:before {
+                    content: "•";
+                    @include relative-left(-17px);
+                }
+            }
+            &:first-child {
+                a:before {
+                    content: "";
+                }
+            }
+        }
+
+    }
+}

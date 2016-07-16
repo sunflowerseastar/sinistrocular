@@ -11,19 +11,19 @@
 
 
 
-$primary-color: #777;
-$secondary-color: #aaa;
+$primary-color: #707070;
+$secondary-color: #d8d8d8;
 $background-color: #f6f6f6;
 $background-color-alt: darken($background-color, 2%);
 
-$border-color: desaturate(darken($primary-color, 12%), 12%);
+$border-color: #e1e1e1;
 
-$shadow-color: #d8d8d8;
+$shadow-color: $secondary-color;
 
 
 
 $body-copy: $primary-color;
-$body-copy-alt: $secondary-color;
+$body-copy-alt: #c0c0c0;
 
 
 

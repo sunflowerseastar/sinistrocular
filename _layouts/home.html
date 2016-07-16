@@ -12,16 +12,19 @@
 
 <main>
 
-	<hero class="layout-split">
-		<div class="split split-left-2">
+	<section class="layout-split hero">
+		<div class="split" data-width="2">
 			<div class="content-insert paint-front">
-				<img src="warbler" alt="Warbler">
+				<img id="yellow_rumped_warbler" src="{{ site.static_url }}/_images/yellow-rumped-warbler__MG_0890_full.jpg" alt="Yellow-rumped Warbler">
 			</div>
 		</div>
-		<div class="split split-right-1">
-			<div class="content-wall paint-back"></div>
+		<div class="split" data-width="1">
+			<div class="content-wall paint-back">
+				<img class="logo" src="{{ site.static_url }}/_images/logo-3c.svg" />
+				<figcaption for="yellow_rumped_warbler">Yellow-rumped Warbler<span>Setophaga coronata</span></figcaption>
+			</div>
 		</div>
-	</hero>
+	</section>
 
 	<section class="content-full paint-front">
 	<div id="content-container">

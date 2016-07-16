@@ -11,3 +11,11 @@
 		}
 	}
 }
+
+
+@mixin paint-front {
+    position: relative;
+    background: #fff;
+    box-shadow: 57px 57px $shadow-color;
+}
+

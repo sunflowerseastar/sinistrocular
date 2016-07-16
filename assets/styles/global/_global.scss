@@ -38,11 +38,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-size: 1.6rem;
-	text-shadow: 4px 3px 0 $background-color-alt;
 
 	@include breakpoint-md {
 		font-size: 1.65rem;
-		text-shadow: 6px 4px 0 $background-color-alt;
 	}
 	@include breakpoint-lg {
 		font-size: 1.7rem;
@@ -54,11 +52,9 @@ h1 {
 h2 {
 	margin-top: 3rem;
 	font-size: 1.4rem;
-	text-shadow: 4px 3px 0 $background-color-alt;
 
 	@include breakpoint-md {
 		font-size: 1.45rem;
-		text-shadow: 5px 4px 0 $background-color-alt;
 	}
 	@include breakpoint-lg {
 		font-size: 1.5rem;
@@ -73,7 +69,6 @@ h2 {
 h3 {
 	margin-top: 1.5rem;
 	font-size: 1.2rem;
-	text-shadow: 3px 2px 0 $background-color-alt;
 }
 h4, h5, h6 {
 	margin-top: 1rem;
@@ -131,6 +126,53 @@ img {
 /*
  * Overall layout
  */
+
+.layout-split {
+    @include clearfix();
+
+    > .split:first-child {
+        float: left;
+    }
+    > .split:last-child {
+        float: right;
+    }
+}
+.split {
+    &[data-width="1"] {
+        width: 33.3%;
+    }
+    &[data-width="2"] {
+        width: 66.6%;
+    }
+}
+.content-insert {
+    margin: 104px 57px 104px 57px;
+    padding: 104px;
+}
+.content-full {
+    margin: 0;
+}
+.paint-front {
+    @include paint-front();
+}
+.paint-back {
+    color: $body-copy-alt;
+
+    figcaption {
+        font-size: 18px;
+
+        span {
+            @include relative-top(-10px);
+            display: block;
+            font-size: 16px;
+            font-style: italic;
+        }
+    }
+}
+.content-wall {
+    margin: 50% auto;
+    text-align: center;
+}
 
 
 #content-container {
@@ -219,12 +261,10 @@ img {
 		margin: 0.1rem 0 0;
 		font-size: $small-font-size;
 		color: $body-copy-alt;
-		text-shadow: 3px 2px 0 $background-color-alt;
 		cursor: default;
 
 		@include breakpoint-md {
 			font-size: 16px;
-			text-shadow: 5px 3px 0 $background-color-alt;
 		}
 		@include breakpoint-xl {
 			font-size: 17px;
