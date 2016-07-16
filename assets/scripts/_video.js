@@ -1,7 +1,9 @@
 (function(Video) {
 
 	var videoHelpers = {
-		determineContainer: function ($video) {
+
+
+		determineContainer: function ($video) { // TODO: figure out why this is in here (and comment) or take it out!
 			if ($video.css('transform') !== 'none' && $video.closest('.video-container').length) {
 				return $video.closest('.video-container');
 			} else {
@@ -22,12 +24,12 @@
 	};
 
 	Video.init = function() {
-		this.$videos = $('video');
-		if (!Video.$videos.length) {
+		this.$autoplayVideos = $('.video-autoplay');
+		if (!Video.$autoplayVideos.length) {
 			return;
 		}
 
-		Video.$videos.each(function() {
+		Video.$autoplayVideos.each(function() {
 			var $video = $(this);
 
 			amplify.subscribe('scrollStart', function() {
