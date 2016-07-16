@@ -6,7 +6,7 @@ $small-font-size:  $base-font-size * 0.9;
 $base-line-height: 1.85;
 
 // site-agnostic overrides
-$transition-speed-default: 400ms;
+$transition-speed-default: 500ms;
 
 
 $static-url: 'https://static.sinistrocular.com';
@@ -27,10 +27,18 @@ $IMAGE_URL-home-hero-mobile: '#{$static-url}/_photographs/#{$year}/#{$month}/#{$
 //background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");
 
 
-$_base-unit: 57px;
+
+
+$_base-unit: 20px;
 
 $unit-1: $_base_unit;
 $unit-2: $_base_unit * 2;
 $unit-3: $_base_unit * 3;
 $unit-4: $_base_unit * 4;
 $unit-5: $_base_unit * 5;
+$unit-6: $_base_unit * 6;
+$unit-7: $_base_unit * 7;
+$unit-8: $_base_unit * 8;
+$unit-9: $_base_unit * 9;
+$unit-10: $_base_unit * 10;
+$unit-16: $_base_unit * 16;

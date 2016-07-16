@@ -56,6 +56,15 @@ h2 {
     @include breakpoint-md {
         font-size: 1.8rem;
     }
+    @include breakpoint-lg {
+        font-size: 1.7em;
+    }
+    @include breakpoint-xl {
+        font-size: 1.8em;
+    }
+    @include breakpoint-xxl {
+        font-size: 1.9em;
+    }
 	a {
 		color: inherit;
 	}
@@ -128,8 +137,13 @@ td, th {
 img {
 	display: block;
 }
+span, figcaption {
+    cursor: default;
 
-
+    a {
+        cursor: pointer;
+    }
+}
 
 
 
@@ -140,30 +154,50 @@ img {
  * Overall layout
  */
 
-.layout-split {
-    @include clearfix();
+@include breakpoint-two-column {
+    .layout-split {
+        @include clearfix();
 
-    > .split:first-child {
-        float: left;
+        > .split:first-child {
+            float: left;
+        }
+        > .split:last-child {
+            float: right;
+        }
     }
-    > .split:last-child {
-        float: right;
+    .split {
+        &[data-width="1"] {
+            width: 33.3%;
+        }
+        &[data-width="2"] {
+            width: 66.6%;
+        }
     }
 }
-.split {
-    &[data-width="1"] {
-        width: 33.3%;
-    }
-    &[data-width="2"] {
-        width: 66.6%;
-    }
-}
+
 .content-inset {
-    padding: 0 $unit-2;
+    padding: $unit-2 0;
+
+    @include breakpoint-two-column {
+        padding: 0 $unit-8;
+    }
 
     &.paint-front {
-        margin: $unit-3 $unit-2 $unit-3 $unit-1;
-        padding: $unit-2;
+        margin: $unit-4 $unit-2 $unit-4 $unit-1;
+        padding: $unit-1;
+
+        @include breakpoint-sm {
+            margin: $unit-6 $unit-4 $unit-6 $unit-2;
+            padding: $unit-2;
+        }
+        @include breakpoint-md {
+            //margin: $unit-4 $unit-2 $unit-4 $unit-1;
+            padding: $unit-2;
+        }
+        @include breakpoint-two-column {
+            margin: $unit-6 $unit-4 $unit-6 $unit-2;
+            padding: $unit-4;
+        }
     }
 }
 .paint-front {
@@ -173,19 +207,26 @@ img {
     color: $body-copy-alt;
 
     figcaption {
-        font-size: 18px;
+        margin-top: 0.8em;
+        font-size: 16px;
+        letter-spacing: 0.04em;
 
         span {
-            @include relative-top(-10px);
+            @include relative-top(-8px);
             display: block;
-            font-size: 16px;
+            font-size: 14px;
             font-style: italic;
+            letter-spacing: 0.06em;
         }
     }
 }
 .content-wall {
-    margin: 50% auto;
+    margin: $unit-4 auto;
     text-align: center;
+
+    @include breakpoint-two-column {
+        margin: $unit-16 0 0;
+    }
 }
 
 
@@ -218,13 +259,23 @@ img {
 }
 
 .post-preview {
-    margin: 20rem 0;
+    margin: $unit-6 0;
+
+    @include breakpoint-sm {
+        margin: $unit-6 0;
+    }
+    @include breakpoint-md {
+        margin: $unit-8 0;
+    }
+    @include breakpoint-lg {
+        margin: $unit-16 0;
+    }
 }
 .post-header {
 	h1, h2 {
 		margin: 0;
 		padding-top: 0;
-		line-height: 1.3;
+		line-height: 1.2;
 	}
 	h3 {
 		margin: 0;
@@ -232,6 +283,14 @@ img {
 		font-size: 1.5em;
 		line-height: 1;
 	}
+    h2 {
+        @include breakpoint-sm {
+            max-width: 90%;
+        }
+        @include breakpoint-md {
+            max-width: 85%;
+        }
+    }
 	span.post-meta {
 		display: block;
 		@include relative-top();
@@ -247,12 +306,8 @@ img {
 			font-size: 12px;
 		}
 	}
-    h2 + span.post-meta {
+    h2 + div span.post-meta {
         top: -4px;
-
-        @include breakpoint-sm {
-            top: -8px;
-        }
     }
 }
 .post-excerpt {
@@ -261,10 +316,23 @@ img {
 	@include breakpoint-sm {
 		margin-top: 1.5rem;
 
-        p {
+	}
+    p {
+        max-width: 95%;
+
+        @include breakpoint-sm {
+            max-width: 90%;
+        }
+        @include breakpoint-md {
+            max-width: 70%;
+        }
+        @include breakpoint-lg {
+            max-width: 70%;
+        }
+        @include breakpoint-xl {
             max-width: 21rem;
         }
-	}
+    }
 }
 .post-content {
 	margin-top: 2rem;

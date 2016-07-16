@@ -18,5 +18,9 @@
     background: #fff;
     border: 1px solid $border-color;
     box-shadow: $unit-1 $unit-1 $shadow-color;
+
+    @include breakpoint-sm {
+        box-shadow: $unit-2 $unit-2 $shadow-color;
+    }
 }
 
