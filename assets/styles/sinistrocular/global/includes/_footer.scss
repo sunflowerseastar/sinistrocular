@@ -6,12 +6,15 @@ footer#site-footer {
 	border-top: 1px solid #ccc;
 	box-shadow: 0 0 80px rgba(0, 0, 0, 0.4);
 
-	@include mq-max($mobile) {
-		.video-container {
-			display: none;
-		}
-	}
-	@include mq($mobile) {
+    .video-container {
+        display: none;
+
+        @include breakpoint-sm {
+            display: block;
+        }
+    }
+
+	@include breakpoint-sm {
 		background: transparent;
 
 		&.footer-home {
@@ -45,10 +48,10 @@ footer#site-footer {
 			}
 		}
 	}
-	@include mq($laptop) {
+	@include breakpoint-md {
 		background-position: 20% 50%;
 	}
-	@include mq($desktop) {
+	@include breakpoint-lg {
 		background-position: 50% 50%;
 	}
 	a {
@@ -63,20 +66,20 @@ footer#site-footer {
 		width: 50%;
 		margin-left: 25%;
 
-		@include mq($mobile) {
+		@include breakpoint-sm {
 			display: none;
 		}
 	}
 	a.logo-and-title {
 		display: none;
 
-		@include mq($mobile) {
+		@include breakpoint-sm {
 			display: block;
 			position: relative;
 			top: 20%;
 			left: 2%;
 		}
-		@include mq($desktop) {
+		@include breakpoint-lg {
 			left: 0;
 		}
 	}
@@ -84,12 +87,12 @@ footer#site-footer {
 		width: 50%;
 		margin: 5% 0 0 25%;
 
-		@include mq($mobile) {
+		@include breakpoint-sm {
 			position: relative;
 			top: 20%;
 			left: -1%;
 		}
-		@include mq($desktop) {
+		@include breakpoint-lg {
 			left: -2%;
 		}
 	}

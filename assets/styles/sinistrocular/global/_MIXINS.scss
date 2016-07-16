@@ -1,5 +1,5 @@
 @mixin hover-fade($base-opacity: 0.9) {
-	@include mq($laptop) {
+	@include breakpoint-md {
 		img {
 			opacity: $base-opacity;
 			@include transition-basic();

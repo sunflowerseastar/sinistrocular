@@ -10,17 +10,19 @@
  * STYLE SETUP
  */
 
-@import "site-agnostic/_resets-and-normalization",
+@import "utility/_resets-and-normalization",
 
 // colors
 "_HEX_BANK", 								// <-- site-specific
 
 // mixed variables
-"site-agnostic/_site-agnostic-variables",
+"utility/_site-agnostic-variables",
 "sinistrocular/global/_VARIABLES", 			// <-- site-specific
 
 // site-agnostic mixins
-"site-agnostic/_site-agnostic-mixins",
+"utility/_site-agnostic-mixins",
+
+"utility/_media-queries",
 
 
 

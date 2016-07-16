@@ -7,7 +7,7 @@ body {
 	color: $body-copy;
 	background-color: $background-color;
 
-	@include mq($mobile) {
+	@include breakpoint-sm {
 		font-size: 17px;
 		line-height: 2;
 	}
@@ -40,14 +40,14 @@ h1 {
 	font-size: 1.6rem;
 	text-shadow: 4px 3px 0 $background-color-alt;
 
-	@include mq($laptop) {
+	@include breakpoint-md {
 		font-size: 1.65rem;
 		text-shadow: 6px 4px 0 $background-color-alt;
 	}
-	@include mq($desktop) {
+	@include breakpoint-lg {
 		font-size: 1.7rem;
 	}
-	@include mq(1400px) {
+	@include breakpoint-xl {
 		font-size: 1.8rem;
 	}
 }
@@ -56,14 +56,14 @@ h2 {
 	font-size: 1.4rem;
 	text-shadow: 4px 3px 0 $background-color-alt;
 
-	@include mq($laptop) {
+	@include breakpoint-md {
 		font-size: 1.45rem;
 		text-shadow: 5px 4px 0 $background-color-alt;
 	}
-	@include mq($desktop) {
+	@include breakpoint-lg {
 		font-size: 1.5rem;
 	}
-	@include mq(1400px) {
+	@include breakpoint-xl {
 		font-size: 1.6rem;
 	}
 	a {
@@ -127,26 +127,26 @@ img {
 	padding: 26% 8% 20% 8%;
 	background: $background-color;
 
-	@include mq($mobile) {
+	@include breakpoint-sm {
 		padding: 22% 4% 20% 4%;
 	}
-	@include mq($laptop) {
+	@include breakpoint-md {
 		@include padding-top-bottom(16%, 20%);
 	}
-	@include mq($desktop) {
+	@include breakpoint-lg {
 		@include padding-top-bottom(14%, 20%);
 	}
 
 	&.page {
 		padding: 10% 10% 20% 10%;
 
-		@include mq($mobile) {
+		@include breakpoint-sm {
 			padding: 10% 12% 20% 14%;
 		}
-		@include mq($laptop) {
+		@include breakpoint-md {
 			@include padding-top-bottom(12%, 20%);
 		}
-		@include mq($desktop) {
+		@include breakpoint-lg {
 			@include padding-top-bottom(14%, 20%);
 		}
 	}
@@ -163,26 +163,26 @@ img {
 	.post-preview-copy {
 		margin-top: 10%;
 
-		@include mq($mobile) {
+		@include breakpoint-sm {
 			margin-top: 6%;
 		}
-		@include mq($laptop) {
+		@include breakpoint-md {
 			margin-top: 5%;
 		}
-		@include mq($desktop) {
+		@include breakpoint-lg {
 			margin-top: 0;
 			margin-left: 65%;
 			padding-right: 4%;
 		}
 	}
-	@include mq($laptop) {
+	@include breakpoint-md {
 		margin: 12em 0;
 
 		> a {
 			@include hover-fade(0.9);
 		}
 	}
-	@include mq($desktop) {
+	@include breakpoint-lg {
 		margin: 20em 0;
 
 		img {
@@ -212,11 +212,11 @@ img {
 		text-shadow: 3px 2px 0 $background-color-alt;
 		cursor: default;
 
-		@include mq($laptop) {
+		@include breakpoint-md {
 			font-size: 16px;
 			text-shadow: 5px 3px 0 $background-color-alt;
 		}
-		@include mq(1400px) {
+		@include breakpoint-xl {
 			font-size: 17px;
 		}
 	}
@@ -224,7 +224,7 @@ img {
 .post-excerpt {
 	margin-top: 0.9rem;
 
-	@include mq($mobile) {
+	@include breakpoint-sm {
 		margin-top: 1.5rem;
 	}
 }
@@ -235,13 +235,13 @@ img {
 	img {
 		margin: 2rem 0 3rem;
 
-		@include mq($mobile) {
+		@include breakpoint-sm {
 			margin: 4rem 0 6rem;
 		}
-		@include mq($laptop) {
+		@include breakpoint-md {
 			margin: 5rem 0 7rem;
 		}
-		@include mq($desktop) {
+		@include breakpoint-lg {
 			margin: 6rem 0 8rem;
 		}
 	}
@@ -250,24 +250,24 @@ img {
 		margin: -2rem 0 2em;
 		font-size: 0.9em;
 
-		@include mq($mobile) {
+		@include breakpoint-sm {
 			margin: -5rem 0 3rem;
 		}
-		@include mq($laptop) {
+		@include breakpoint-md {
 			margin: -6rem 0 4rem;
 		}
-		@include mq($desktop) {
+		@include breakpoint-lg {
 			margin: -7rem 0 5rem;
 		}
 	}
 	p {
-		@include mq($laptop) {
+		@include breakpoint-md {
 			font-size: 18px;
 		}
-		@include mq($desktop) {
+		@include breakpoint-lg {
 			font-size: 19px;
 		}
-		@include mq(1400px) {
+		@include breakpoint-xl {
 			font-size: 20px;
 		}
 	}
@@ -300,11 +300,11 @@ $desktop: 1200px;
 
 @include mq-max($mobile) {
 }
-@include mq($mobile) {
+@include breakpoint-sm {
 }
-@include mq($laptop) {
+@include breakpoint-md {
 }
-@include mq($desktop) {
+@include breakpoint-lg {
 }
 
 

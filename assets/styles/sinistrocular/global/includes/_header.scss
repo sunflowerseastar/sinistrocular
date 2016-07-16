@@ -9,8 +9,8 @@
     ul {
 
 
-        @include mq($mobile) {
-            background: green;
+        @include breakpoint-sm {
+            background: orange;
         }
     }
 }
