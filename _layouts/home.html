@@ -5,11 +5,33 @@
 
 <body>
 
-{% include header-home.html %}
 
-<div id="content-container">
-	{{ content }}
-</div>
+
+{% include header.html %}
+
+
+<main>
+
+	<hero class="layout-split">
+		<div class="split split-left-2">
+			<div class="content-insert paint-front">
+				<img src="warbler" alt="Warbler">
+			</div>
+		</div>
+		<div class="split split-right-1">
+			<div class="content-wall paint-back"></div>
+		</div>
+	</hero>
+
+	<section class="content-full paint-front">
+	<div id="content-container">
+		{{ content }}
+	</div>
+	</section>
+
+
+</main>
+
 
 {% include footer-home.html %}
 

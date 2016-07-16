@@ -1,91 +1,16 @@
-header#site-header {
-	position: relative;
-	border-bottom: 1px solid #5b5b5b;
-	box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
+.site-header {
 
-	@include mq($desktop) {
-		//border-bottom: none;
-	}
-	&.header-post {
-		@include clearfix();
+    h1 {
+        a {
 
-		a.logo-only {
-			display: block;
-			width: 100%;
-			margin: 0 auto;
-			padding: 5%;
-			background: url($IMAGE_URL-header-non-home) no-repeat 50% 100%;
-			background-size: cover;
+        }
+    }
 
-			@include mq($laptop) {
-				padding: 3%;
-			}
-			@include mq($desktop) {
-				padding: 2%;
-			}
-			img {
-				margin: 0 auto;
-				max-width: 50px;
-
-				@include mq($laptop) {
-					max-width: 60px;
-				}
-				@include mq($desktop) {
-					max-width: 80px;
-				}
-			}
-		}
-	}
-	&.header-home {
-		height: 100%;
-		background-size: cover;
-
-		@include mq-max($mobile) {
-			background: url($IMAGE_URL-home-hero-mobile) no-repeat 53% 50% fixed;
-
-			.video-container {
-				display: none;
-			}
-		}
-		@include mq($mobile) {
-			.video-container {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				z-index: -1;
-				background-image: none;
-				background-color: transparent;
-				background-size: cover;
-				background-position: 50% 50%;
-				background-repeat: no-repeat;
-				overflow: hidden;
-
-				video {
-					margin: auto;
-					position: fixed;
-					top: 50%;
-					left: 50%;
-					z-index: -1;
-					min-width: 100%;
-					min-height: 100%;
-					transform: translate(-50%, -50%);
-					visibility: visible;
-					opacity: 1;
-				}
-			}
-		}
+    ul {
 
 
-		@include mq($laptop) {
-			background-position: 20% 50%;
-		}
-		@include mq($desktop) {
-			background-position: 50% 50%;
-		}
-	}
-	a.logo-and-title {
-		display: none;
-	}
+        @include mq($mobile) {
+            background: green;
+        }
+    }
 }
