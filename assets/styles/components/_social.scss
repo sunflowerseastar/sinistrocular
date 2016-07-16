@@ -1,0 +1,21 @@
+.social {
+
+    li {
+        a {
+            display: block;
+            width: 25px;
+            color: $body-copy;
+
+            &:before {
+                height: 7px;
+            }
+            &.icon-twitter img {
+                @include relative-top(3px);
+            }
+            &:hover img {
+                opacity: 0.6;
+                @include transition-basic();
+            }
+        }
+    }
+}

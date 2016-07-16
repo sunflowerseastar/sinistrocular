@@ -16,6 +16,7 @@
 @mixin paint-front {
     position: relative;
     background: #fff;
-    box-shadow: 57px 57px $shadow-color;
+    border: 1px solid $border-color;
+    box-shadow: $unit-1 $unit-1 $shadow-color;
 }
 

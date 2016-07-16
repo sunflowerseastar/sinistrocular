@@ -25,3 +25,12 @@ $IMAGE_URL-home-hero-mobile: '#{$static-url}/_photographs/#{$year}/#{$month}/#{$
 // Prior main 1920 post images
 //background-image: url("../images/bg-header-black-phoebe_1920.jpg");
 //background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");
+
+
+$_base-unit: 57px;
+
+$unit-1: $_base_unit;
+$unit-2: $_base_unit * 2;
+$unit-3: $_base_unit * 3;
+$unit-4: $_base_unit * 4;
+$unit-5: $_base_unit * 5;
