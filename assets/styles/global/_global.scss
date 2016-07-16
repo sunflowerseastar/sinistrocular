@@ -8,7 +8,7 @@ body {
 	background-color: $background-color;
 
 	@include breakpoint-sm {
-		font-size: 17px;
+		font-size: $base-font-size + 1;
 		line-height: 2;
 	}
 }
@@ -18,8 +18,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6 {
 	margin-bottom: 1rem;
-	font-family: $heading-font-family;
-	font-weight: 700;
+    font-weight: normal;
 	cursor: default;
 
 	a {
@@ -38,6 +37,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
 	font-size: 1.6rem;
+    font-family: $heading-font-family;
 
 	@include breakpoint-md {
 		font-size: 1.65rem;
@@ -53,15 +53,9 @@ h2 {
 	margin-top: 3rem;
 	font-size: 1.4rem;
 
-	@include breakpoint-md {
-		font-size: 1.45rem;
-	}
-	@include breakpoint-lg {
-		font-size: 1.5rem;
-	}
-	@include breakpoint-xl {
-		font-size: 1.6rem;
-	}
+    @include breakpoint-md {
+        font-size: 1.8rem;
+    }
 	a {
 		color: inherit;
 	}
@@ -81,6 +75,7 @@ h4, h5, h6 {
 p {
 	margin-top: 0;
 	margin-bottom: 1.4rem;
+    cursor: default;
 }
 a {
 	color: $body-copy-alt;
@@ -164,8 +159,12 @@ img {
     }
 }
 .content-inset {
-    margin: $unit-3 $unit-2 $unit-3 $unit-1;
-    padding: $unit-2;
+    padding: 0 $unit-2;
+
+    &.paint-front {
+        margin: $unit-3 $unit-2 $unit-3 $unit-1;
+        padding: $unit-2;
+    }
 }
 .paint-front {
     @include paint-front();
@@ -200,7 +199,7 @@ img {
 		@include padding-top-bottom(16%, 20%);
 	}
 	@include breakpoint-lg {
-		@include padding-top-bottom(14%, 20%);
+		@include padding-top-bottom(0, 20%);
 	}
 
 	&.page {
@@ -217,46 +216,9 @@ img {
 		}
 	}
 }
+
 .post-preview {
-	@include clearfix();
-	display: block;
-	margin: 8em 0;
-	color: inherit;
-
-	&:first-child {
-		margin-top: 0;
-	}
-	.post-preview-copy {
-		margin-top: 10%;
-
-		@include breakpoint-sm {
-			margin-top: 6%;
-		}
-		@include breakpoint-md {
-			margin-top: 5%;
-		}
-		@include breakpoint-lg {
-			margin-top: 0;
-			margin-left: 65%;
-			padding-right: 4%;
-		}
-	}
-	@include breakpoint-md {
-		margin: 12em 0;
-
-		> a {
-			@include hover-fade(0.9);
-		}
-	}
-	@include breakpoint-lg {
-		margin: 20em 0;
-
-		img {
-			float: left;
-			width: 55%;
-			height: auto;
-		}
-	}
+    margin: 20rem 0;
 }
 .post-header {
 	h1, h2 {
@@ -268,28 +230,40 @@ img {
 		margin: 0;
 		color: $body-copy-alt;
 		font-size: 1.5em;
-		line-height: 1.7;
+		line-height: 1;
 	}
 	span.post-meta {
 		display: block;
-		margin: 0.1rem 0 0;
+		@include relative-top();
+        margin: 0;
 		font-size: $small-font-size;
 		color: $body-copy-alt;
 		cursor: default;
 
 		@include breakpoint-md {
-			font-size: 16px;
+			font-size: 11px;
 		}
 		@include breakpoint-xl {
-			font-size: 17px;
+			font-size: 12px;
 		}
 	}
+    h2 + span.post-meta {
+        top: -4px;
+
+        @include breakpoint-sm {
+            top: -8px;
+        }
+    }
 }
 .post-excerpt {
 	margin-top: 0.9rem;
 
 	@include breakpoint-sm {
 		margin-top: 1.5rem;
+
+        p {
+            max-width: 21rem;
+        }
 	}
 }
 .post-content {
