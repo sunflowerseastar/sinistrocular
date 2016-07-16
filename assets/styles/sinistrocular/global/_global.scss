@@ -98,6 +98,14 @@ a {
 		color: lighten($body-copy-alt, 6%);
 	}
 }
+ul {
+    margin-left: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
 ul, ol {
 	margin-left: 2rem;
 }
@@ -112,6 +120,8 @@ td, th {
 img {
 	display: block;
 }
+
+
 
 
 

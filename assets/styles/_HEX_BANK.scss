@@ -13,10 +13,12 @@
 
 $primary-color: #777;
 $secondary-color: #aaa;
-$background-color: #fff;
+$background-color: #f6f6f6;
 $background-color-alt: darken($background-color, 2%);
 
 $border-color: desaturate(darken($primary-color, 12%), 12%);
+
+$shadow-color: #d8d8d8;
 
 
 

@@ -1,16 +1,28 @@
 .site-header {
 
+    height: 68px;
+
+    @include paint-front() {}
+
     h1 {
+        float: left;
+
         a {
 
         }
     }
 
     ul {
+        float: right;
 
+        li {
+            margin: 1em;
 
-        @include breakpoint-sm {
-            background: orange;
+            a {
+                font-family: $heading-font-family;
+                text-decoration: none;
+            }
         }
+
     }
 }
