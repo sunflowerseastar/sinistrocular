@@ -27,7 +27,7 @@ caption="Brooklyn subway" %}
 
 {% include helpers/figure.html
 url="_city/esb-at-night.jpg"
-caption="Manhattan at night" %}
+caption="Manhattan" %}
 
 {% include helpers/figure.html
 url="_city/ggp-windmills.jpg"

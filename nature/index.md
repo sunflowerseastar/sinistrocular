@@ -19,7 +19,7 @@ caption="Multnomah Falls, Oregon" %}
 
 {% include helpers/figure.html
 url="_nature/ocean-beach.jpg"
-caption="Ocean Beach, San Francisco, CA" %}
+caption="Ocean Beach, San Francisco" %}
 
 {% include helpers/figure.html
 url="_nature/pacific-ocean.jpg"

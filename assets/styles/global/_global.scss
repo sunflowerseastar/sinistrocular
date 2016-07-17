@@ -139,6 +139,15 @@ span, figcaption {
         cursor: pointer;
     }
 }
+figcaption {
+    display: block;
+    margin: 0.4rem 0 0;
+    font-size: 0.9em;
+
+    span {
+        font-style: italic;
+    }
+}
 
 
 
@@ -230,7 +239,7 @@ main {
 .paint-back {
     color: $body-copy-alt;
 
-    figcaption {
+    .hero-annotation {
         margin-top: 0.8em;
         font-size: 14px;
         letter-spacing: 0.02em;
@@ -375,13 +384,6 @@ main {
 		@include breakpoint-lg {
             margin: $unit-6 0;
 		}
-	}
-	figcaption {
-		display: block;
-		margin: 0.4rem 0 0;
-		font-size: 0.9em;
-        font-style: italic;
-
 	}
 	p {
         max-width: 95%;
