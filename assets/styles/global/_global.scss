@@ -90,10 +90,10 @@ ul {
 
     li {
         display: block;
-        margin: 0.9em 1em;
 
         @include breakpoint-sm {
             display: inline-block;
+            margin: 0.9em 1em;
         }
         a {
             display: block;
@@ -151,6 +151,10 @@ span, figcaption {
 /*
  * Overall layout
  */
+
+main {
+    padding-top: $unit-3; // compensate for header's height
+}
 
 @include breakpoint-two-column {
     .layout-split {

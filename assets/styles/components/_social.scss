@@ -2,7 +2,11 @@
 
     li {
         vertical-align: top;
+        @include margin-top-bottom(0.3em);
 
+        @include breakpoint-sm {
+            @include margin-top-bottom();
+        }
         a {
             display: block;
             color: $body-copy;

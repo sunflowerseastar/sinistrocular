@@ -35,6 +35,7 @@ gulp.task('scripts', function() {
 				'./assets/scripts/_utilities.js',
 				'./assets/scripts/_animation.js',
 				'./assets/scripts/_video.js',
+				'./assets/scripts/_header.js',
 				'./assets/scripts/_nav.js',
 				'./assets/scripts/_main.js'
 			])

@@ -1,10 +1,16 @@
 .site-header {
-
+    @include fixed-left-top();
+    width: 100%;
     height: $unit-3;
+    opacity: 1;
+    @include transition-s-curve(all, 1000ms);
+    z-index: 2;
     overflow: hidden;
 
-    @include paint-front();
-
+    &.js-is-scrolling-down {
+        top: -$unit-3;
+        opacity: 0;
+    }
     .logo-container {
         float: left;
         display: inline-block;
@@ -57,12 +63,13 @@
         @include absolute-right-top();
     }
     .logo-container {
-        width: 120px;
+        @include absolute-left-top($unit-2);
+        width: $unit-6;
         display: block;
-        margin: 20px auto;
+        margin: $unit-1 auto;
     }
     .social {
-        margin-top: $unit-2;
+        margin-top: $unit-1;
     }
 }
 .close-x {
