@@ -12,7 +12,7 @@ The westward stretch of ocean gives thanks to the sun by providing for amazing s
 
 {% include helpers/figure.html
 url="2015/12/ocean-beach--_MG_3024_1920.jpg" alt="Ocean Beach"
-caption ="Pacific Ocean, Pedro Point Headlands, San Pedro Rock" %}
+caption="Pacific Ocean, Pedro Point Headlands, San Pedro Rock" %}
 
 {% include helpers/figure.html
 url="2016/01/outer-sunset-_MG_5526_1920.jpg" alt="Ocean Beach and Great Highway" 
