@@ -1,0 +1,26 @@
+@mixin hover-fade($base-opacity: 0.9) {
+	@include breakpoint-md {
+		img {
+			opacity: $base-opacity;
+			@include transition-basic();
+		}
+		&:hover {
+			img {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+
+@mixin paint-front {
+    position: relative;
+    background: #fff;
+    border: 1px solid $border-color;
+    box-shadow: $unit-1 $unit-1 $shadow-color;
+
+    @include breakpoint-sm {
+        box-shadow: $unit-2 $unit-2 $shadow-color;
+    }
+}
+

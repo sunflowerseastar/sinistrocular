@@ -1,18 +1,25 @@
-<footer id="site-footer">
-	<a class="logo" href="{{ site.baseurl }}/">
-		<img src="{{ site.static_url }}/_images/logo-header-2.png">
-	</a>
-	<a class="logo-and-title" href="{{ site.baseurl }}/">
-		<img src="{{ site.static_url }}/_images/logo-footer.png">
-	</a>
-	<a class="github animation-fade-in animation-start-invisible" href="https://github.com/cozywigwam/sinistrocular" target="_blank">
-		<img src="{{ site.static_url }}/_images/github-logo.png">
-	</a>
+<footer class="site-footer" class="footer">
 
-	<div class="video-container">
-		<video autoplay muted loop>
-			<source src="{{ site.static_url }}/_videos/2016/02/MVI_6345.webm" type='video/webm;codecs="vp8, vorbis"'/>
-			<source src="{{ site.static_url }}/_videos/2016/02/MVI_6345.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
-		</video>
+	<div class="content-inset paint-front">
+		<div class="animation-fade-in animation-start-invisible">
+			{% include nav.html %}
+		</div>
+
+		{% include social.html %}
 	</div>
+
+	<div class="footer-addendum content-inset paint-back">
+		<a class="logo-sinistrocular" href="{{ site.baseurl }}/">
+			{% include svg/logo.svg %}
+			{% include svg/logo-type.svg %}
+		</a>
+		<a class="logo-poly" href="https://polyambidextro.us" target="_blank">
+			<img class="bw" src="{{site.static_url}}/_images/polyambidextrous-logo-bw.png" alt="Polyambidextrous">
+			<img class="color" src="{{site.static_url}}/_images/polyambidextrous-logo-color.png" alt="Polyambidextrous">
+		</a>
+		<p class="copyright">
+			<a href="{{site.baseurl}}/copyright">Copyright Information</a>
+		</p>
+	</div>
+
 </footer>

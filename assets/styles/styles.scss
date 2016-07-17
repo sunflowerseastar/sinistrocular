@@ -10,17 +10,19 @@
  * STYLE SETUP
  */
 
-@import "site-agnostic/_resets-and-normalization",
+@import "utility/_resets-and-normalization",
 
 // colors
 "_HEX_BANK", 								// <-- site-specific
 
 // mixed variables
-"site-agnostic/_site-agnostic-variables",
-"sinistrocular/global/_VARIABLES", 			// <-- site-specific
+"utility/_site-agnostic-variables",
+"global/_VARIABLES", 			// <-- site-specific
 
 // site-agnostic mixins
-"site-agnostic/_site-agnostic-mixins",
+"utility/_site-agnostic-mixins",
+
+"utility/_media-queries",
 
 
 
@@ -30,13 +32,16 @@
  */
 
 // fonts (regardless if webfont or system)
-"sinistrocular/global/_fonts",
+"global/_fonts",
 
 // local mixins
-"sinistrocular/global/_MIXINS",
-"sinistrocular/global/_global",
-"sinistrocular/global/includes/_header",
-"sinistrocular/global/includes/_footer",
-"sinistrocular/global/_animations";
+"global/_MIXINS",
+"global/_global",
+"components/_header",
+"components/_footer",
+"components/_hero",
+"components/_nav",
+"components/_social",
+"global/_animations";
 
 

@@ -5,8 +5,11 @@
 			init: function () {
 				console.log('common.init');
 
-				Animation.init();
+        Utility.header.init();
+
+        Animation.init();
 				Video.init();
+        Nav.init();
 			},
 			finalize: function () {
 			}

@@ -1,5 +1,35 @@
-<header id="site-header" class="header-post">
-	<a class="logo-only" href="{{ site.baseurl }}/">
-		<img src="{{ site.static_url }}/_images/logo-header-2.png">
+<div class="takeover mobile-only paint-back">
+	<span class="logo-container">
+		<a href="{{ site.baseurl }}/" alt="Home">
+			{% include svg/logo-type.svg %}
+		</a>
+	</span>
+	<a class="close-x js-toggle-mobile-nav">
+		<img src="{{ site.static_url }}/_images/close-x.png" alt="close">
 	</a>
+
+	<div class="content-inset paint-front">
+		{% include nav.html %}
+		{% include social.html %}
+	</div>
+
+</div>
+
+<header class="site-header paint-front">
+
+	<span class="logo-container">
+		<a href="{{ site.baseurl }}/" alt="Home">
+			{% include svg/logo-type.svg %}
+		</a>
+	</span>
+
+	<div class="hamburger mobile-only">
+		<a class="js-toggle-mobile-nav">
+			<img src="{{ site.static_url}}/_images/hamburger.png" alt="hamburger">
+		</a>
+	</div>
+	<div class="nav-desktop desktop-only">
+		{% include nav.html %}
+	</div>
+
 </header>

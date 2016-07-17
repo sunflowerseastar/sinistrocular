@@ -1,0 +1,114 @@
+.site-footer {
+
+    text-align: center;
+
+    @include breakpoint-sm {
+        text-align: initial;
+    }
+    ul {
+        @include margin-top-bottom($unit-2);
+
+        @include breakpoint-sm {
+            margin: 0;
+        }
+    }
+    nav {
+        ul li a {
+            font-size: 18px;
+        }
+    }
+
+    .social {
+        margin-bottom: $unit-2;
+
+        @include breakpoint-sm {
+            margin-bottom: 0;
+        }
+        li {
+            margin: 1.6em 1em;
+
+            @include breakpoint-sm {
+                margin: 0.9em 1em;
+            }
+            a {
+                img {
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .footer-addendum {
+        padding: $unit-3 $unit-5 0;
+        opacity: 0.5;
+        @include transition-basic();
+
+        &:hover {
+            opacity: 1;
+        }
+        [class|="logo"] {
+            display: block;
+            width: $unit-3;
+            margin: 0 auto;
+
+            &.logo-sinistrocular {
+                svg {
+                    g, path {
+                        stroke: $body-copy-alt;
+                        @include transition-basic();
+                    }
+                }
+                &:hover {
+                    svg {
+                        width: $unit-3;
+
+                        g, path {
+                            stroke: $body-copy;
+                        }
+                    }
+                }
+
+            }
+            &.logo-poly {
+                position: relative;
+                width: $unit-7;
+                margin-top: $unit-1;
+
+                img {
+                    @include absolute-left-top();
+
+                    &.bw {
+                        opacity: 0.6;
+                    }
+                    &.color {
+                        opacity: 0;
+                        @include transition-basic();
+                    }
+                }
+                &:hover {
+                    .color {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .copyright {
+            margin: 0;
+            padding-top: $unit-6;
+            text-align: center;
+
+            a {
+                font-size: 10px;
+                color: $body-copy-alt;
+                text-decoration: none;
+
+                &:hover {
+                    color: $body-copy-alt;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

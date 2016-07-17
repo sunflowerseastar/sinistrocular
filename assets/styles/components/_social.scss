@@ -1,0 +1,30 @@
+.social {
+
+    li {
+        vertical-align: top;
+        @include margin-top-bottom(0.3em);
+
+        @include breakpoint-sm {
+            @include margin-top-bottom();
+        }
+        a {
+            display: block;
+            color: $body-copy;
+
+            svg {
+                width: 25px;
+
+                path {
+                    fill: $body-copy;
+                    @include transition-basic();
+                }
+            }
+            &.icon-twitter svg {
+                @include relative-top(3px);
+            }
+            &:hover svg path {
+                fill: $body-copy-alt;
+            }
+        }
+    }
+}

@@ -1,15 +1,20 @@
 ---
 layout: default
 ---
-<article class="post animation-fade-in animation-start-invisible">
+
+<article class="post animation-fade-in animation-start-invisible content-inset paint-front">
+
 	<header class="post-header">
-		<h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+		<h1 class="post-title">{{ page.title }}</h1>
+		{% if page.date %}
 		<span class="post-meta">
-			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+			<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
 		</span>
+		{% endif %}
 	</header>
 
-	<div class="post-content" itemprop="articleBody">
+	<div class="post-content">
 		{{ content }}
 	</div>
+
 </article>

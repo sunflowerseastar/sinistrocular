@@ -3,12 +3,18 @@
 	Animation.animateInThree = function ($this) {
 		//console.log('animateInThree()', $this);
 
+		/*
+
+		// unused
+
 		$.Velocity.RegisterEffect("upFadeIn", {
 			defaultDuration: 5000,
 			calls: [
 				[{ translateY: -10, opacity: 1 }]
 			]
 		});
+
+		*/
 
 		$animation1 = $this.find('.animation-item-1');
 		$animation2 = $this.find('.animation-item-2');
@@ -17,21 +23,21 @@
 		var loadingSequence = [
 			{
 				e: $animation1,
-				p : "upFadeIn",
+				p : "fadeIn",
 				o : { duration: 800 }
 			},
 			{
 				e: $animation2,
-				p : "upFadeIn",
+				p : "fadeIn",
 				o : { duration: 1100,
-					delay: 400,
+					delay: 500,
 					sequenceQueue: false }
 			},
 			{
 				e: $animation3,
-				p : "upFadeIn",
+				p : "fadeIn",
 				o : { duration: 1500,
-					delay: 400,
+					delay: 800,
 					sequenceQueue: false  }
 			}
 		];

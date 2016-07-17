@@ -5,13 +5,34 @@
 
 <body>
 
-{% include header-home.html %}
+{% include header.html %}
 
-<div id="content-container">
-	{{ content }}
-</div>
+<main>
 
-{% include footer-home.html %}
+	<section class="layout-split hero">
+		<div class="split" data-width="2">
+			<div class="content-inset paint-front animation-fade-in animation-start-invisible">
+				<img id="yellow_rumped_warbler" class="" src="{{ site.static_url }}/_images/yellow-rumped-warbler__MG_0890_full.jpg" alt="Yellow-rumped Warbler">
+			</div>
+		</div>
+		<div class="split" data-width="1">
+			<div class="content-wall paint-back animation-fade-in animation-start-invisible">
+				{% include svg/logo.svg %}
+
+				<figcaption for="yellow_rumped_warbler">Yellow-rumped Warbler<span>Setophaga coronata</span></figcaption>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-full paint-front">
+		<div class="content-full-inner">
+			{{ content }}
+		</div>
+	</section>
+
+</main>
+
+{% include footer.html %}
 
 </body>
 
