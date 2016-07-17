@@ -27,7 +27,7 @@ caption ="Great Blue Heron" %}
 Vultures inhabited the wooded trail that lead to the western edge of the lagoon. A Say's phoebe and a yellow-rumped warbler (not pictured) bounced between lookout spots in the open scrub. Inside the woods, the usual suspects went about their day.
 
 {% include helpers/figure.html
-url="2016/02/turkey-vulture-_MG_3839_1920" alt="Turkey Vulture"
+url="2016/02/turkey-vulture-_MG_3839_1920.jpg" alt="Turkey Vulture"
 caption ="Turkey Vulture" %}
 
 {% include helpers/figure.html
@@ -35,7 +35,7 @@ url="2016/02/says-phoebe-_MG_3903_Jan_02_2016_1920.jpg" alt="Say's Phoebe"
 caption ="Say's Phoebe" %}
 
 {% include helpers/figure.html
-url="golden-crowned-sparrow-female_MG_3930_1920.jpg" alt="Golden-crowned Sparrow"
+url="2016/02/golden-crowned-sparrow-female_MG_3930_1920.jpg" alt="Golden-crowned Sparrow"
 caption ="Golden-crowned Sparrow" %}
 
 {% include helpers/figure.html
