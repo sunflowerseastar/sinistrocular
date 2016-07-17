@@ -1,13 +1,17 @@
 .social {
 
     li {
+
         a {
             display: block;
-            width: 25px;
             color: $body-copy;
 
             &:before {
                 height: 7px;
+            }
+            img {
+                width: 25px;
+
             }
             &.icon-twitter img {
                 @include relative-top(3px);

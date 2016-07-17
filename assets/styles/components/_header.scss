@@ -1,6 +1,6 @@
 .site-header {
 
-    height: 68px;
+    height: $unit-3;
     overflow: hidden;
 
     @include paint-front();
@@ -8,8 +8,13 @@
     span {
         float: left;
         display: inline-block;
-        width: 120px;
-        margin: 19px 0 0 60px;
+        width: $unit-4;
+        margin: 19px 0 0 $unit-1;
+
+        @include breakpoint-sm {
+            //width: $unit-6;
+            margin: 19px 0 0 $unit-2;
+        }
     }
 
     nav {

@@ -1,0 +1,19 @@
+.hero {
+    .content-inset.paint-front {
+        padding: $unit-1;
+
+        @include breakpoint-xs {
+            padding: $unit-2;
+        }
+        @include breakpoint-md {
+            padding: $unit-3;
+        }
+        @include breakpoint-lg {
+            padding: $unit-4;
+        }
+    }
+    .logo {
+        width: 44px;
+        margin: 0 auto;
+    }
+}

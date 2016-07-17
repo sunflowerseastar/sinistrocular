@@ -1,5 +1,39 @@
 .site-footer {
 
+    text-align: center;
+
+    @include breakpoint-sm {
+        text-align: initial;
+    }
+    ul {
+        @include margin-top-bottom($unit-2);
+
+        @include breakpoint-sm {
+            margin: 0;
+        }
+    }
+
+    .social {
+        margin-bottom: $unit-2;
+
+        @include breakpoint-sm {
+            margin-bottom: 0;
+        }
+        li {
+            margin: 1.6em 1em;
+
+            @include breakpoint-sm {
+                margin: 0.9em 1em;
+            }
+            a {
+                img {
+                    position: relative;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
     .logo {
         width: 44px;
         margin: 0 auto;
