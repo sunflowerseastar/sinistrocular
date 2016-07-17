@@ -3,8 +3,6 @@ layout: page
 title: City
 ---
 
-My early years were in the country, where the family dog slept outside. But even then, the energy and legends of the cities drew me.
-
 {% include helpers/figure.html
 url="_city/4th-avenue.jpg"
 caption="4th Avenue, Brooklyn" %}
