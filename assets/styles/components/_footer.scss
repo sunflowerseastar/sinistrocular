@@ -41,16 +41,30 @@
     }
 
     .footer-addendum {
-        @include padding-top-bottom($unit-2, $unit-4);
+        padding: $unit-3 $unit-5 $unit-5;
 
         .logo {
+            display: inline-block;
             width: 120px;
             margin: 0 auto;
 
-            img {
-                display: inline-block;
+            svg {
+                width: $unit-3;
+
+                g, path {
+                    stroke: $body-copy-alt;
+                    @include transition-basic();
+                }
+            }
+            &:hover {
+                svg {
+                    width: $unit-3;
+
+                    g, path {
+                        stroke: $body-copy;
+                    }
+                }
             }
         }
     }
-
 }
