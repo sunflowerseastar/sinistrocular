@@ -96,7 +96,7 @@
     left: $left;
     top: $top;
 }
-@mixin padding-lr($left: 0, $ight: 0) {
+@mixin padding-lr($left: 0, $right: 0) {
     padding-left: $left;
     padding-right: $right;
 }
@@ -104,7 +104,7 @@
     padding-top: $top;
     padding-bottom: $bottom;
 }
-@mixin margin-lr($left: 0, $ight: 0) {
+@mixin margin-lr($left: 0, $right: 0) {
     margin-left: $left;
     margin-right: $right;
 }

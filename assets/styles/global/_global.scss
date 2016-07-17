@@ -77,9 +77,6 @@ a {
 	@include transition-basic();
     cursor: pointer;
 
-	&:visited {
-		color: inherit;
-	}
 	&:hover {
 		color: lighten($body-copy-alt, 6%);
 	}
@@ -177,6 +174,20 @@ main {
     }
 }
 
+.content-full {
+    padding: $unit-4 $unit-2;
+
+    @include breakpoint-sm {
+        padding: $unit-2 $unit-3;
+    }
+    @include breakpoint-md {
+        @include padding-top-bottom($unit-10, $unit-10);
+    }
+    @include breakpoint-lg {
+        @include padding-top-bottom($unit-16, $unit-16);
+    }
+}
+
 .content-inset {
     padding: $unit-2 0;
 
@@ -186,7 +197,7 @@ main {
 
     &.paint-front {
         margin: $unit-4 $unit-2 $unit-4 $unit-1;
-        padding: $unit-1;
+        padding: $unit-2 $unit-1;
 
         @include breakpoint-xs {
             padding: $unit-2;
@@ -221,15 +232,29 @@ main {
 
     figcaption {
         margin-top: 0.8em;
-        font-size: 16px;
-        letter-spacing: 0.04em;
+        font-size: 14px;
+        letter-spacing: 0.02em;
 
         span {
             @include relative-top(-8px);
             display: block;
-            font-size: 14px;
+            font-size: 12px;
             font-style: italic;
-            letter-spacing: 0.06em;
+            letter-spacing: 0.03em;
+        }
+        @include breakpoint-sm {
+            font-size: 15px;
+
+            span {
+                font-size: 13px;
+            }
+        }
+        @include breakpoint-md {
+            font-size: 16px;
+
+            span {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -243,33 +268,6 @@ main {
 }
 
 
-.content-full {
-	padding: $unit-4 $unit-2;
-
-	@include breakpoint-sm {
-        padding: $unit-2 $unit-3;
-	}
-	@include breakpoint-md {
-		@include padding-top-bottom($unit-10, $unit-10);
-	}
-	@include breakpoint-lg {
-		@include padding-top-bottom($unit-16, $unit-16);
-	}
-
-	&.page {
-		padding: 10% 10% 20% 10%;
-
-		@include breakpoint-sm {
-			padding: 10% 12% 20% 14%;
-		}
-		@include breakpoint-md {
-			@include padding-top-bottom(12%, 20%);
-		}
-		@include breakpoint-lg {
-			@include padding-top-bottom(14%, 20%);
-		}
-	}
-}
 
 .post-preview + .post-preview {
     margin-top: $unit-6;

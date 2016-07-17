@@ -71,6 +71,10 @@
     .social {
         margin-top: $unit-1;
     }
+    ul li a {
+        display: inline-block;
+        @include padding-lr(2em, 2em);
+    }
 }
 .close-x {
     float: right;

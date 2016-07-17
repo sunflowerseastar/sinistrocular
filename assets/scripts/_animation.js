@@ -24,20 +24,20 @@
 			{
 				e: $animation1,
 				p : "fadeIn",
-				o : { duration: 800 }
+				o : { duration: 650 }
 			},
 			{
 				e: $animation2,
 				p : "fadeIn",
-				o : { duration: 1100,
-					delay: 500,
+				o : { duration: 900,
+					delay: 350,
 					sequenceQueue: false }
 			},
 			{
 				e: $animation3,
 				p : "fadeIn",
-				o : { duration: 1500,
-					delay: 800,
+				o : { duration: 2000,
+					delay: 400,
 					sequenceQueue: false  }
 			}
 		];

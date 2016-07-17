@@ -13,7 +13,14 @@
         }
     }
     svg {
-        width: 44px;
+        width: 32px;
         margin: 0 auto;
+
+        @include breakpoint-sm {
+            width: 38px;
+        }
+        @include breakpoint-md {
+            width: 44px;
+        }
     }
 }
