@@ -63,7 +63,7 @@
         @include absolute-right-top();
     }
     .logo-container {
-        @include absolute-left-top($unit-2);
+        @include absolute-left-top(23px);
         width: $unit-6;
         display: block;
         margin: $unit-1 auto;
@@ -75,7 +75,7 @@
 .close-x {
     float: right;
     display: block;
-    padding: 21px 20px 0 0px;
+    padding: 21px 20px 0 0;
 
     img {
         width: 20px;

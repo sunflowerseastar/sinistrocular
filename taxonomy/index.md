@@ -1,5 +1,5 @@
 ---
-layout: collection
+layout: page
 title: Taxonomy
 ---
 
