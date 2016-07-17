@@ -194,11 +194,14 @@ span, figcaption {
             margin: $unit-6 $unit-4 $unit-6 $unit-2;
             padding: $unit-4;
         }
-        @include breakpoint-xl {
-            padding: $unit-6;
-        }
-        @include breakpoint-xxl {
-            padding: 10%;
+
+        &.post {
+            @include breakpoint-xl {
+                padding: $unit-6;
+            }
+            @include breakpoint-xxl {
+                padding: 10%;
+            }
         }
     }
 }

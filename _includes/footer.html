@@ -1,8 +1,6 @@
 <footer class="site-footer" class="footer">
 
-
 	<div class="content-inset paint-front">
-
 		<nav>
 			<ul>
 				<li><a href="{{ site.baseurl }}/aves">Aves</a></li>
@@ -16,37 +14,31 @@
 		<ul class="social">
 			<li>
 				<a class="github animation-fade-in animation-start-invisible" href="https://github.com/cozywigwam/sinistrocular" target="_blank">
-					<img src="{{ site.baseurl }}/assets/svg/icon-github.svg">
+					{% include svg/icon-github.svg %}
 				</a>
 			</li>
 			<li>
 				<a class="github animation-fade-in animation-start-invisible icon-twitter" href="https://github.com/cozywigwam/sinistrocular" target="_blank">
-					<img src="{{ site.baseurl }}/assets/svg/icon-twitter.svg">
+					{% include svg/icon-twitter.svg %}
 				</a>
 			</li>
 			<li>
 				<a class="github animation-fade-in animation-start-invisible" href="https://github.com/cozywigwam/sinistrocular" target="_blank">
-					<img src="{{ site.baseurl }}/assets/svg/icon-instagram.svg">
+					{% include svg/icon-instagram.svg %}
 				</a>
 			</li>
 			<li>
 				<a class="github animation-fade-in animation-start-invisible" href="https://github.com/cozywigwam/sinistrocular" target="_blank">
-					<img src="{{ site.baseurl }}/assets/svg/icon-flickr.svg">
+					{% include svg/icon-flickr.svg %}
 				</a>
 			</li>
 		</ul>
-
 	</div>
 
-
-
-	<div class="content-inset paint-back">
+	<div class="footer-addendum content-inset paint-back">
 		<a class="logo" href="{{ site.baseurl }}/">
-			<img class="logo" src="{{ site.baseurl }}/assets/svg/logo.svg" />
+			{% include svg/logo-and-type.svg %}
 		</a>
 	</div>
-
-
-
 
 </footer>

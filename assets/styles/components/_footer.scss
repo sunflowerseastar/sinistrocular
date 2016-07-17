@@ -12,6 +12,11 @@
             margin: 0;
         }
     }
+    nav {
+        ul li a {
+            font-size: 18px;
+        }
+    }
 
     .social {
         margin-bottom: $unit-2;
@@ -34,9 +39,18 @@
             }
         }
     }
-    .logo {
-        width: 44px;
-        margin: 0 auto;
+
+    .footer-addendum {
+        @include padding-top-bottom($unit-2, $unit-4);
+
+        .logo {
+            width: 120px;
+            margin: 0 auto;
+
+            img {
+                display: inline-block;
+            }
+        }
     }
 
 }

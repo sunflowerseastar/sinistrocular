@@ -1,24 +1,26 @@
 .social {
 
     li {
+        vertical-align: top;
+        //border: 1px solid magenta;
 
         a {
             display: block;
             color: $body-copy;
 
-            &:before {
-                height: 7px;
-            }
-            img {
+            svg {
                 width: 25px;
 
+                path {
+                    fill: $body-copy;
+                    @include transition-basic();
+                }
             }
-            &.icon-twitter img {
+            &.icon-twitter svg {
                 @include relative-top(3px);
             }
-            &:hover img {
-                opacity: 0.6;
-                @include transition-basic();
+            &:hover svg path {
+                fill: $body-copy-alt;
             }
         }
     }
