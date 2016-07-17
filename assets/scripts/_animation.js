@@ -30,14 +30,14 @@
 				e: $animation2,
 				p : "fadeIn",
 				o : { duration: 1100,
-					delay: 400,
+					delay: 500,
 					sequenceQueue: false }
 			},
 			{
 				e: $animation3,
 				p : "fadeIn",
 				o : { duration: 1500,
-					delay: 400,
+					delay: 800,
 					sequenceQueue: false  }
 			}
 		];
