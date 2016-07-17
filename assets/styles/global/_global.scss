@@ -77,7 +77,7 @@ a {
 	@include transition-basic();
 
 	&:visited {
-		color: $body-copy-alt;
+		color: inherit;
 	}
 	&:hover {
 		color: lighten($body-copy-alt, 6%);
@@ -103,6 +103,9 @@ ul {
             letter-spacing: 0.08em;
             text-decoration: none;
 
+            &:active {
+                color: $body-copy-darken;
+            }
         }
         @include breakpoint-sm {
             a {

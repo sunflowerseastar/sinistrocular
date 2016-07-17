@@ -22,6 +22,7 @@ $shadow-color: $secondary-color;
 
 
 $body-copy: $primary-color;
+$body-copy-darken: darken($body-copy, 20%);
 $body-copy-alt: #c0c0c0;
 
 
