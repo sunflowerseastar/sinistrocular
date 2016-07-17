@@ -5,12 +5,22 @@
 
     @include paint-front();
 
-    span {
+    .logo-container {
         float: left;
         display: inline-block;
         width: $unit-4;
         margin: 19px 0 0 $unit-1;
 
+        svg path {
+            stroke: $primary-color;
+            @include transition-basic();
+        }
+        &:hover {
+            svg path {
+                //fill: darken($primary-color, 10%);
+                stroke: #000;
+            }
+        }
         @include breakpoint-sm {
             //width: $unit-6;
             margin: 19px 0 0 $unit-2;

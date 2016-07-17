@@ -1,17 +1,11 @@
 <header class="site-header">
 
-	<span><a href="{{ site.baseurl }}/" alt="Home">
-		{% include svg/logo-type.svg %}
-	</a></span>
+	<span class="logo-container">
+		<a href="{{ site.baseurl }}/" alt="Home">
+			{% include svg/logo-type.svg %}
+		</a>
+	</span>
 
-	<nav>
-		<ul>
-			<li><a href="{{ site.baseurl }}/aves">Aves</a></li>
-			<li><a href="{{ site.baseurl }}/lund">Lund</a></li>
-			<li><a href="{{ site.baseurl }}/polis">Polis</a></li>
-			<li><a href="{{ site.baseurl }}/taxonomy">Taxonomy</a></li>
-			<li><a href="{{ site.baseurl }}/about">About</a></li>
-		</ul>
-	</nav>
+	{% include nav.html %}
 
 </header>
