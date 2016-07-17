@@ -35,21 +35,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
 	}
 }
-h1 {
-	font-size: 1.6rem;
-    font-family: $heading-font-family;
-
-	@include breakpoint-md {
-		font-size: 1.65rem;
-	}
-	@include breakpoint-lg {
-		font-size: 1.7rem;
-	}
-	@include breakpoint-xl {
-		font-size: 1.8rem;
-	}
-}
-h2 {
+h1, h2 {
 	margin-top: 3rem;
 	font-size: 1.4rem;
 
@@ -348,85 +334,79 @@ span, figcaption {
     }
 }
 .post-content {
-	margin-top: 2rem;
+	margin-top: $unit-2;
+
+    @include breakpoint-sm {
+        margin-top: $unit-3;
+    }
+    @include breakpoint-md {
+        //margin-top: $unit-4;
+    }
+    @include breakpoint-lg {
+        //margin-top: $unit-6;
+    }
 }
 .post {
-	img {
+	p + figure {
 		margin: $unit-2 0;
 
 		@include breakpoint-sm {
-            margin: $unit-2 0;
-		}
-		@include breakpoint-md {
             margin: $unit-3 0;
 		}
 		@include breakpoint-lg {
-            margin: $unit-3 0 0;
+            margin: $unit-4 0;
 		}
 	}
-	img + em {
-		display: block;
-		margin: -2rem 0 2em;
-		font-size: 0.9em;
+	figure + figure {
+		margin: $unit-3 0;
 
 		@include breakpoint-sm {
-			margin: -5rem 0 3rem;
-		}
-		@include breakpoint-md {
-			margin: -6rem 0 4rem;
+            margin: $unit-4 0;
 		}
 		@include breakpoint-lg {
-			margin: -7rem 0 5rem;
+            margin: $unit-6 0;
 		}
+	}
+	figcaption {
+		display: block;
+		margin: 0.4rem 0 0;
+		font-size: 0.9em;
+        font-style: italic;
+
 	}
 	p {
         max-width: 95%;
-		@include breakpoint-md {
-			//font-size: 18px;
+
+		@include breakpoint-sm {
+            max-width: 70%;
 		}
 		@include breakpoint-lg {
-			//font-size: 19px;
-		}
-		@include breakpoint-xl {
-			//font-size: 20px;
+            max-width: 40rem;
 		}
 	}
 }
+
 
 
 
 /*
+// reference
+$screen-xs: 480px;
+$screen-sm: 768px;
+$screen-md: 992px;
+$screen-lg: 1200px;
+$screen-xl: 1400px;
+$screen-xxl: 1600px;
+$screen-xs-max: ($screen-sm - 1);
+$screen-sm-max: ($screen-md - 1);
+$screen-md-max: ($screen-lg - 1);
 
-// from _site-agnostic-variables.scss
-
-$small: 460px;
-$mobile: 600px;
-$laptop: 800px;
-$desktop: 1200px;
-
-
-// from _site-agnostic-mixins.scss
-
-@mixin mq($min) {
-	@media screen and (min-width: $min) {
-		@content;
-	}
-}
-@mixin mq-max($max) {
-	@media screen and (max-width: $max - 1) {
-		@content;
-	}
-}
-
-@include mq-max($mobile) {
-}
-@include breakpoint-sm {
-}
-@include breakpoint-md {
-}
-@include breakpoint-lg {
-}
-
-
-
+@include breakpoint-xs-max {}
+@include breakpoint-xs {}
+@include breakpoint-sm {}
+@include breakpoint-md {}
+@include breakpoint-lg {}
+@include breakpoint-xl {}
+@include breakpoint-xxl {}
 */
+
