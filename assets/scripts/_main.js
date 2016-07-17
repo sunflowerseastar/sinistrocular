@@ -3,10 +3,11 @@
 	var Sinistrocular = {
 		'common': {
 			init: function () {
-				console.log('common.init');
+				console.log('common.init2');
 
 				Animation.init();
 				Video.init();
+        Nav.init();
 			},
 			finalize: function () {
 			}

@@ -1,3 +1,23 @@
+	<div class="takeover mobile-only paint-back">
+		<a class="close-x js-toggle-mobile-nav">
+			<img src="{{ site.static_url }}/_images/close-x.png" alt="close">
+		</a>
+
+		<div class="content-inset paint-front">
+
+			<span class="logo-container">
+				<a href="{{ site.baseurl }}/" alt="Home">
+					{% include svg/logo-type.svg %}
+				</a>
+			</span>
+
+
+			{% include nav.html %}
+			{% include social.html %}
+		</div>
+
+	</div>
+
 <header class="site-header">
 
 	<span class="logo-container">
@@ -6,6 +26,13 @@
 		</a>
 	</span>
 
-	{% include nav.html %}
+	<div class="hamburger mobile-only">
+		<a class="js-toggle-mobile-nav">
+			<img src="{{ site.static_url}}/_images/hamburger.png" alt="hamburger">
+		</a>
+	</div>
+	<div class="nav-desktop desktop-only">
+		{% include nav.html %}
+	</div>
 
 </header>

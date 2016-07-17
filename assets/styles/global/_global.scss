@@ -75,6 +75,7 @@ p {
 a {
 	color: $body-copy-alt;
 	@include transition-basic();
+    cursor: pointer;
 
 	&:visited {
 		color: inherit;

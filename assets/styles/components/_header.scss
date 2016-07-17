@@ -26,9 +26,51 @@
             margin: 19px 0 0 $unit-2;
         }
     }
+    .hamburger {
+        float: right;
 
-    nav {
+        a {
+            display: block;
+            padding: 21px 20px 0 0px;
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+    .nav-desktop {
         float: right;
         margin-right: 40px;
+    }
+}
+.takeover {
+    @include fixed-all();
+    background-color: $background-color;
+    display: none;
+    z-index: 3;
+    text-align: center;
+
+    &.active {
+        display: block;
+    }
+    .close-takeover {
+        @include absolute-right-top();
+    }
+    .logo-container {
+        width: 120px;
+        display: block;
+        margin: 20px auto;
+    }
+    .social {
+        margin-top: $unit-2;
+    }
+}
+.close-x {
+    float: right;
+    display: block;
+    padding: 21px 20px 0 0px;
+
+    img {
+        width: 20px;
     }
 }
