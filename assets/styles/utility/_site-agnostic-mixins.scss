@@ -1,0 +1,139 @@
+/*
+
+  /\\ \\       /\\
+/\\    /\\ /\  /\\
+ /\\         /\/\ /\   /\\
+   /\\    /\\  /\\   /\   /\\ /\\\\\
+      /\\ /\\  /\\  /\\\\\ /\\
+/\\    /\\/\\  /\\  /\
+  /\\ \\  /\\   /\\   /\\\\
+                                               /\\              /\\
+                                               /\\   /\         /\\
+   /\\       /\\   /\\ /\\     /\\     /\\\\ /\/\ /\      /\\\  /\\
+ /\\  /\\  /\\  /\\ /\\  /\\ /\\  /\\ /\\      /\\  /\\ /\\     /\
+/\\   /\\ /\\   /\\ /\\  /\\/\\    /\\  /\\\   /\\  /\\/\\      /\
+/\\   /\\  /\\  /\\ /\\  /\\ /\\  /\\     /\\  /\\  /\\ /\\
+  /\\ /\\\     /\\ /\\\  /\\   /\\    /\\ /\\   /\\ /\\   /\\\  /\\
+            /\\
+
+*/
+
+// Common utilities
+@mixin clearfix() {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+@mixin vertical-align($position: relative) {
+    .csstransforms & {
+        position: $position;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+// My shortcuts and helpers
+@mixin absolute-right-top($right: 0, $top: 0) {
+    position: absolute;
+    right: $right;
+    top: $top;
+}
+@mixin absolute-left-top($left: 0, $top: 0) {
+    position: absolute;
+    left: $left;
+    top: $top;
+}
+@mixin absolute-right-bottom($right: 0, $bottom: 0) {
+    position: absolute;
+    right: $right;
+    bottom: $bottom;
+}
+@mixin absolute-left-bottom($left: 0, $bottom: 0) {
+    position: absolute;
+    left: $left;
+    bottom: $bottom;
+}
+@mixin absolute-left-right-bottom($left: 0, $right: 0, $bottom: 0) {
+    position: absolute;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+@mixin absolute-all($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+@mixin relative-top($top: 0) {
+    position: relative;
+    top: $top;
+}
+@mixin relative-right($right: 0) {
+    position: relative;
+    right: $right;
+}
+@mixin relative-bottom($bottom: 0) {
+    position: relative;
+    bottom: $bottom;
+}
+@mixin relative-left($left: 0) {
+    position: relative;
+    left: $left;
+}
+@mixin fixed-all($top: 0, $right: 0, $bottom: 0, $left: 0) {
+    position: fixed;
+    top: $top;
+    left: $left;
+    right: $right;
+    bottom: $bottom;
+}
+@mixin fixed-left-top($left: 0, $top: 0) {
+    position: fixed;
+    left: $left;
+    top: $top;
+}
+@mixin padding-lr($left: 0, $ight: 0) {
+    padding-left: $left;
+    padding-right: $right;
+}
+@mixin padding-top-bottom($top: 0, $bottom: 0) {
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+@mixin margin-lr($left: 0, $ight: 0) {
+    margin-left: $left;
+    margin-right: $right;
+}
+@mixin margin-top-bottom($top: 0, $bottom: 0) {
+    margin-top: $top;
+    margin-bottom: $bottom;
+}
+@mixin transition-basic($property: all, $duration: $transition-speed-default) {
+    transition: $property $duration;
+}
+@mixin transition-s-curve($property: all, $duration: $transition-speed-default) {
+    transition: $property $duration cubic-bezier(0.3, 0.8, 0.1, 0.95);
+}
+@mixin vertical-align($position: relative) {
+    .csstransforms & {
+        position: $position;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+
+
+// in progress ones...
+
+@mixin pseudo($w: 0, $h: 0, $display: block) {
+    content: "";
+    display: $display;
+    width: $w;
+    height: $h;
+}
