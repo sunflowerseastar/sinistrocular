@@ -219,7 +219,7 @@ main {
             padding: $unit-3;
         }
         @include breakpoint-lg {
-            margin: $unit-6 $unit-4 $unit-6 $unit-2;
+            margin: $unit-6 $unit-2 $unit-6 $unit-2;
             padding: $unit-4;
         }
 
@@ -366,16 +366,6 @@ main {
 }
 .post {
 	p + figure {
-		margin: $unit-2 0;
-
-		@include breakpoint-sm {
-            margin: $unit-3 0;
-		}
-		@include breakpoint-lg {
-            margin: $unit-4 0;
-		}
-	}
-	figure + figure {
 		margin: $unit-3 0;
 
 		@include breakpoint-sm {
@@ -383,6 +373,16 @@ main {
 		}
 		@include breakpoint-lg {
             margin: $unit-6 0;
+		}
+	}
+	figure + figure {
+		margin: $unit-3 0;
+
+		@include breakpoint-sm {
+            margin: $unit-6 0;
+		}
+		@include breakpoint-lg {
+            margin: $unit-12 0;
 		}
 	}
 	p {

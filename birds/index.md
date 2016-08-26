@@ -9,7 +9,11 @@ Over time, the familiarity of their cadences and rhythms blessed my mornings as 
  
  One day, particularly besotted with curiosity, I installed a phone application that could present my local birds with vocalization samples. Not knowing a pelican from a picid, I decided it made the most sense to start at the top and click through them all. Slowly but surely (several weeks and months!), I found some matches. As you'd expect, the first few IDs were of extremely rare and exotic species, including the mysterious American robin, the elusive song sparrow, and the scarcely-encountered northern cardinal.
  
-My bird photography is partly my journey into the world of avian knowledge and partly my hope to share their peace, power, and marvels. Please feel free to view more of my work on [Flickr](https://www.flickr.com/photos/semitone/) and/or follow me on [Twitter](https://twitter.com/cozywigwam) & [Instagram](https://www.instagram.com/sinistrocular/).
+My bird photography is partly my journey into the world of avian knowledge and partly my hope to share their peace, power, and marvels. Please feel free to view more of my work on [Flickr] and/or follow me on [Twitter] & [Instagram].
+
+[Twitter]: https://twitter.com/scolopacid
+[Instagram]: https://www.instagram.com/sinistrocular
+[Flickr]: https://www.flickr.com/photos/semitone
 
 {% include helpers/figure.html
 url="_birds/allens-hummingbird.jpg"

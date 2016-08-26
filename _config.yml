@@ -26,7 +26,9 @@ collections:
 permalink:           pretty
 #relative_permalinks: true
 
-#twitter_username: cozywigwam
+flickr_username: semitone
+instagram_username: sinistrocular
+twitter_username: scolopacid
 github_username:  cozywigwam
 
 # Build settings
