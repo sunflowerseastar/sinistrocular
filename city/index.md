@@ -63,6 +63,10 @@ caption="New York City" %}
 url="_city/nyc-2.jpg"
 caption="New York City" %}
 
+{% include helpers/figure.html
+url="_city/downtown-brooklyn.jpg"
+caption="Downtown Brooklyn" %}
+
 
 
 

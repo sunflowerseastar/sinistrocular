@@ -32,12 +32,24 @@ url="_birds/brown-pelicans.jpg"
 caption="Brown Pelicans (<span>Pelecanus occidentalis</span>)" %}
 
 {% include helpers/figure.html
+url="_birds/brown-pelican.jpg"
+caption="Brown Pelican (<span>Pelecanus occidentalis</span>)" %}
+
+{% include helpers/figure.html
 url="_birds/fox-sparrow.jpg"
 caption="Fox Sparrow (<span>Passerella Iliaca</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/great-blue-heron.jpg"
 caption="Great Blue Heron (<span>Ardea herodias</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/marbled-godwit.jpg"
+caption="Marbled Godwit (<span>Limosa fedoa</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/flock-marbled-godwits-and-willets.jpg"
+caption="Mixed flock Marbled Godwits and Willets (<span>Limosa fedoa</span>, <span>Tringa semipalmata</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/hawk-sf.jpg"
