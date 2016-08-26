@@ -9,12 +9,14 @@ static_url: https://static.sinistrocular.com
 github_url: https://github.com/cozywigwam/sinistrocular/blob/master
 baseurl: ""
 
-#files to exclude, array
 exclude:
   - README.md
   - __reference
   - node_modules
   - bower_components
+
+collections:
+  - categories
 
 # Syntax highlighting
 #highlighter:         pygments

@@ -3,37 +3,30 @@ layout: home
 ---
 
 <div class="post-list">
-	{% for post in site.posts %}
+  {% assign ordered_categories = site.categories | sort: 'sort_order' %}
+  {% for category in ordered_categories %}
 
-	<div class="post-preview layout-split">
+  <div class="post-preview layout-split animation-group">
 
-		<div class="split post-preview-visual" data-width="2">
+    <div class="split post-preview-visual animation-item-1" data-width="2">
+      <div class="content-inset">
+        <a href="{{ category.title | downcase }}">
+          <img src={{ site.static_url }}{{ category.photo_main }} data-animation="1">
+        </a>
+        <figcaption>{{ category.caption }}</figcaption>
+      </div>
+    </div>
 
-			<div class="content-inset">
-				<a href="{{ post.url | prepend: site.baseurl }}">
-					<img src={{ site.static_url }}{{ post.photo_main }}>
-				</a>
-			</div>
+    <div class="split post-preview-copy" data-width="1">
+      <div class="post-header">
+        <h2 class="animation-start-invisible animation-item-2" data-animation="2"><a href="{{ category.title | downcase }}">{{ category.title }}</a></h2>
+      </div>
 
-		</div>
+      <div class="post-excerpt animation-start-invisible animation-item-3" data-animation="3">
+        <p>{{ category.content }}</p>
+      </div>
+    </div>
+  </div>
 
-
-		<div class="split post-preview-copy animation-group" data-width="1">
-
-			<div class="post-header">
-				<h2 class="animation-start-invisible animation-item-1" data-animation="1"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-				<div class="animation-start-invisible animation-item-2">
-					<span class="post-meta " data-animation="2">{{ post.date | date: "%B %-d, %Y" }}</span>
-
-				</div>
-			</div>
-
-			<div class="post-excerpt animation-start-invisible animation-item-3" data-animation="2">
-				<p>{{ post.intro }}</p>
-			</div>
-
-		</div>
-	</div>
-
-	{% endfor %}
+  {% endfor %}
 </div>
