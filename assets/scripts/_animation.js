@@ -1,24 +1,32 @@
 (function(Animation) {
 
+  Animation.animateInTwo = function ($this) {
+    console.log('animateintwo()');
+    $animation1 = $this.find('[data-animation-item=1]');
+    $animation2 = $this.find('[data-animation-item=2]');
+
+    var loadingSequence = [
+      {
+        e: $animation1,
+        p : "fadeIn",
+        o : { duration: 850 }
+      },
+      {
+        e: $animation2,
+        p : "fadeIn",
+        o : { duration: 1400,
+          delay: 650,
+          sequenceQueue: false }
+      }
+    ];
+
+    $.Velocity.RunSequence(loadingSequence);
+  };
+
 	Animation.animateInThree = function ($this) {
-		//console.log('animateInThree()', $this);
-
-		/*
-
-		// unused
-
-		$.Velocity.RegisterEffect("upFadeIn", {
-			defaultDuration: 5000,
-			calls: [
-				[{ translateY: -10, opacity: 1 }]
-			]
-		});
-
-		*/
-
-		$animation1 = $this.find('.animation-item-1');
-		$animation2 = $this.find('.animation-item-2');
-		$animation3 = $this.find('.animation-item-3');
+    $animation1 = $this.find('[data-animation-item=1]');
+    $animation2 = $this.find('[data-animation-item=2]');
+		$animation3 = $this.find('[data-animation-item=3]');
 
 		var loadingSequence = [
 			{
@@ -46,19 +54,27 @@
 	};
 
 	Animation.init = function() {
-		console.log('Animation.init()');
+		// console.log('Animation.init()');
 
 		$('.animation-group').waypoint(function(direction) {
-			if (!$(this.element).hasClass('animation-complete')) {
-				Animation.animateInThree($(this.element));
-				$(this.element).addClass('animation-complete')
+      var $el = $(this.element);
+
+			if (!$el.hasClass('animation-complete')) {
+        if ($el.data('animation-group') === 2) {
+          Animation.animateInTwo($el);
+        } else {
+          Animation.animateInThree($el);
+        }
+
+        $el.addClass('animation-complete')
 			}
 		}, {
 			offset: '75%'
 		});
 
 		$('.animation-fade-in').waypoint(function(direction) {
-			$el = $(this.element);
+			var $el = $(this.element);
+
 			if (!$el.hasClass('animation-complete')) {
 				$el.velocity({ opacity: 1}, 2500, "easeOutQuart")
 						.addClass('animation-complete')

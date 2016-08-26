@@ -34,7 +34,6 @@
       }
     },
     onScrollUp: function (scroll) {
-      console.log('onScrollUp');
       var $header = Utility.header.$header,
           $body = Utility.header.$body;
 
@@ -43,7 +42,6 @@
       }
     },
     onScrollDown: function (scroll) {
-      console.log('onScrollDown');
       var $header = Utility.header.$header,
           $body = Utility.header.$body;
 
