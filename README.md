@@ -1,4 +1,4 @@
-Photography and birds.
+Photography jekyll site.
 
 [Copyright](https://sinistrocular.com/copyright/)
 
