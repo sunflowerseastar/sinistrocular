@@ -26,9 +26,6 @@
                     @include transition-basic();
                 }
             }
-            &.icon-twitter svg {
-                @include relative-top(3px);
-            }
             &:hover svg path {
                 fill: $body-copy-alt;
             }

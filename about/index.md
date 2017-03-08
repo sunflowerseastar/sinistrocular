@@ -3,12 +3,19 @@ layout: page
 title: About
 ---
 
-Hi, my name is Grant Surratt. Welcome to my photography website.
+Hi, my name is Grant Surratt. Thank you for visiting my photography website. More can be found on [Instagram] and [Flickr].
 
-I have eleven years' worth of posts on [Flickr]. More recently, I've been having fun foisting cute dog pictures on my friends on [Instagram] (plus some vidoes and timelapse efforts), and I occasionally "tweet" on [Twitter]. I love this Twitter feed because it's basically all birds.
+Some personal information:
+
+- grew up in Georgia
+- started shooting in the early 2000s
+- loves birds
+- enjoys balancing chunky geometric shapes
+- seeks beauty, understanding, reality, nature
+
+Here's a picture of me following some Acorn Woodpeckers:
 
 {% include helpers/figure.html url="_about/me-shooting-sugarloaf-ridge.jpg" caption="Sugarloaf Ridge State Park, Sonoma County, CA" %}
 
-[Twitter]: https://twitter.com/scolopacid
 [Instagram]: https://www.instagram.com/sinistrocular
 [Flickr]: https://www.flickr.com/photos/semitone
