@@ -1,3 +1,0 @@
-Each photograph should have its own copyright information in the file's metadata. If the metadata is missing or indicates that it is copyrighted, then it is copyright 2016 Grant Surratt, all rights reserved.
-
-If the photo's metadata indicates that it is CC BY-NC-SA 4.0, then it is subject to the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license](http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).

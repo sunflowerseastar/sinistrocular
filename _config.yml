@@ -1,12 +1,12 @@
 #Jekyll config file
 
 # Setup
-name: Grant Surratt
-author: Grant Surratt
+name: Grant Surlyn
+author: Grant Surlyn
 title: Sinsitrocular
 url: http://sinistrocular.com
 static_url: https://static.sinistrocular.com
-github_url: https://github.com/cozywigwam/sinistrocular/blob/master
+github_url: https://github.com/sunflowerseastar/sinistrocular/blob/master
 baseurl: ""
 
 exclude:
@@ -14,6 +14,7 @@ exclude:
   - __reference
   - node_modules
   - bower_components
+  - source
 
 collections:
   - categories
@@ -23,12 +24,10 @@ collections:
 
 # Permalinks
 # Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+permalink: pretty
 #relative_permalinks: true
 
-flickr_username: semitone
-instagram_username: sinistrocular
-github_username:  cozywigwam
+github_username: sunflowerseastar
 
 # Build settings
 markdown: kramdown

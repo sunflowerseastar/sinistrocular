@@ -1,10 +1,10 @@
 {
   "name": "Sinistrocular",
-  "author": "Grant Surratt",
+  "author": "Grant Surlyn",
   "homepage": "https://sinistrocular.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cozywigwam/sinistrocular"
+    "url": "https://github.com/sunflowerseastar/sinistrocular"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
