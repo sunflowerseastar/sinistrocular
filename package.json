@@ -6,6 +6,11 @@
     "type": "git",
     "url": "https://github.com/sunflowerseastar/sinistrocular"
   },
+  "scripts": {
+    "start": "jekyll serve",
+    "build": "jekyll build",
+    "deploy": "scripts/deploy.sh"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
