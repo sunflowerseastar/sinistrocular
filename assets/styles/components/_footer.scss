@@ -4,22 +4,23 @@
   @include breakpoint-sm {
     text-align: initial;
   }
-  ul {
-    @include margin-top-bottom($unit-2);
-
-    @include breakpoint-sm {
-      margin: 0;
-    }
-  }
   nav {
-    ul li a {
-      font-size: 16px;
-
+    ul {
       @include breakpoint-sm {
-        font-size: 14px;
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
       }
-      @include breakpoint-md {
-        font-size: 18px;
+      li a {
+        font-size: 16px;
+
+        @include breakpoint-sm {
+          font-size: 14px;
+        }
+        @include breakpoint-md {
+          font-size: 18px;
+        }
       }
     }
   }

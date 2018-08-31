@@ -294,6 +294,18 @@ main {
         margin-top: $unit-16;
     }
 }
+.post-preview-copy {
+
+  @include breakpoint-lg {
+    padding-top: $unit-2;
+  }
+  @include breakpoint-xl {
+	  padding-top: $unit-4;
+  }
+  @include breakpoint-xxl {
+	  padding-top: $unit-6;
+  }
+}
 .post-header {
 	h1, h2 {
 		margin: 0;
