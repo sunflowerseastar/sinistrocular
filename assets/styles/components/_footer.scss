@@ -1,121 +1,99 @@
 .site-footer {
+  text-align: center;
 
-    text-align: center;
+  @include breakpoint-sm {
+    text-align: initial;
+  }
+  ul {
+    @include margin-top-bottom($unit-2);
 
     @include breakpoint-sm {
-        text-align: initial;
+      margin: 0;
     }
-    ul {
-        @include margin-top-bottom($unit-2);
+  }
+  nav {
+    ul li a {
+      font-size: 16px;
 
-        @include breakpoint-sm {
-            margin: 0;
-        }
+      @include breakpoint-sm {
+        font-size: 14px;
+      }
+      @include breakpoint-md {
+        font-size: 18px;
+      }
     }
-    nav {
-        ul li a {
-            font-size: 16px;
+  }
 
-			@include breakpoint-sm {
-				font-size: 14px;
-			}
-			@include breakpoint-md {
-				font-size: 18px;
-			}
-        }
+  .footer-addendum {
+    padding: $unit-3 $unit-5 0;
+    opacity: 0.5;
+    @include transition-basic();
+
+    &:hover {
+      opacity: 1;
     }
+    [class|='logo'] {
+      display: block;
+      width: $unit-3;
+      margin: 0 auto;
 
-    .social {
-        margin-bottom: $unit-2;
-
-        @include breakpoint-sm {
-            margin-bottom: 0;
+      &.logo-sinistrocular {
+        svg {
+          g,
+          path {
+            stroke: $body-copy-alt;
+            @include transition-basic();
+          }
         }
-        li {
-            margin: 1.6em 1em;
+        &:hover {
+          svg {
+            width: $unit-3;
 
-            @include breakpoint-sm {
-                margin: 0.9em 1em;
+            g,
+            path {
+              stroke: $body-copy;
             }
-            a {
-                img {
-                    position: relative;
-                    left: 50%;
-                    transform: translateX(-50%);
-                }
-            }
+          }
         }
-    }
+      }
+      &.logo-poly {
+        position: relative;
+        width: $unit-7;
+        margin-top: $unit-1;
 
-    .footer-addendum {
-        padding: $unit-3 $unit-5 0;
-        opacity: 0.5;
-        @include transition-basic();
+        img {
+          @include absolute-left-top();
+
+          &.bw {
+            opacity: 0.6;
+          }
+          &.color {
+            opacity: 0;
+            @include transition-basic();
+          }
+        }
+        &:hover {
+          .color {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .copyright {
+      margin: 0;
+      padding-top: $unit-6;
+      text-align: center;
+
+      a {
+        font-size: 10px;
+        color: $body-copy-alt;
+        text-decoration: none;
 
         &:hover {
-            opacity: 1;
+          color: $body-copy-alt;
+          text-decoration: underline;
         }
-        [class|="logo"] {
-            display: block;
-            width: $unit-3;
-            margin: 0 auto;
-
-            &.logo-sinistrocular {
-                svg {
-                    g, path {
-                        stroke: $body-copy-alt;
-                        @include transition-basic();
-                    }
-                }
-                &:hover {
-                    svg {
-                        width: $unit-3;
-
-                        g, path {
-                            stroke: $body-copy;
-                        }
-                    }
-                }
-
-            }
-            &.logo-poly {
-                position: relative;
-                width: $unit-7;
-                margin-top: $unit-1;
-
-                img {
-                    @include absolute-left-top();
-
-                    &.bw {
-                        opacity: 0.6;
-                    }
-                    &.color {
-                        opacity: 0;
-                        @include transition-basic();
-                    }
-                }
-                &:hover {
-                    .color {
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-        .copyright {
-            margin: 0;
-            padding-top: $unit-6;
-            text-align: center;
-
-            a {
-                font-size: 10px;
-                color: $body-copy-alt;
-                text-decoration: none;
-
-                &:hover {
-                    color: $body-copy-alt;
-                    text-decoration: underline;
-                }
-            }
-        }
+      }
     }
+  }
 }
