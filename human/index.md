@@ -4,15 +4,8 @@ title: Human
 ---
 
 {% include helpers/figure.html
-url="_human/boy-pointing.jpg" %}
-
-{% include helpers/figure.html
 url="_human/central-park-in-the-fall.jpg"
 caption="NYC Central Park in the fall" %}
-
-{% include helpers/figure.html
-url="_human/club-bartender.jpg"
-caption="A club bartender in Atlanta" %}
 
 {% include helpers/figure.html
 url="_human/cormorant-fishing.jpg"
@@ -30,6 +23,10 @@ url="_human/girl-bubble.jpg"
 caption="Mother and daughter in Prospect Park, Brooklyn" %}
 
 {% include helpers/figure.html
+url="_human/club-bartender.jpg"
+caption="A club bartender in Atlanta" %}
+
+{% include helpers/figure.html
 url="_human/nyc-marathon.jpg"
 caption="NYC Marathon" %}
 
@@ -40,5 +37,3 @@ caption="U. S. Coast Guard rescue drill off San Francisco's Pacific coast" %}
 {% include helpers/figure.html
 url="_human/tillman-snow.jpg"
 caption="A first experience of snow" %}
-
-
