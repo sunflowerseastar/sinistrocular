@@ -4,36 +4,35 @@ title: Human
 ---
 
 {% include helpers/figure.html
-url="_human/central-park-in-the-fall.jpg"
-caption="NYC Central Park in the fall" %}
+url="_human/nyc-marathon.jpg"
+caption="NYC Marathon" %}
 
 {% include helpers/figure.html
 url="_human/cormorant-fishing.jpg"
-caption="Cormorant fishing in Gifu, Japan" %}
+caption="Cormorant fishing" %}
 
 {% include helpers/figure.html
 url="_human/elvis-in-pool.jpg" %}
 
 {% include helpers/figure.html
-url="_human/fire-eater.jpg"
-caption="A club performer in Atlanta" %}
+url="_human/rescue.jpg" %}
 
 {% include helpers/figure.html
-url="_human/girl-bubble.jpg"
-caption="Mother and daughter in Prospect Park, Brooklyn" %}
+url="_human/club-bartender.jpg" %}
 
 {% include helpers/figure.html
-url="_human/club-bartender.jpg"
-caption="A club bartender in Atlanta" %}
+url="_human/fire-eater.jpg" %}
 
 {% include helpers/figure.html
-url="_human/nyc-marathon.jpg"
-caption="NYC Marathon" %}
+url="_human/sunset-surfer__MG_9382_full.jpg" %}
 
 {% include helpers/figure.html
-url="_human/rescue.jpg"
-caption="U. S. Coast Guard rescue drill off San Francisco's Pacific coast" %}
+url="_human/central-park-in-the-fall.jpg"
+caption="Central Park" %}
 
 {% include helpers/figure.html
-url="_human/tillman-snow.jpg"
-caption="A first experience of snow" %}
+url="_human/tillman-snow.jpg" %}
+
+{% include helpers/figure.html
+url="_human/iris-on-blanket__MG_7053_1920.jpg"
+caption="My daughter, Iris ❤" %}
