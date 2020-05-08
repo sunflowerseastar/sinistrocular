@@ -15,3 +15,4 @@ assets/_photographs
 assets/_videos
 main-build.js
 scripts/
+.jekyll-cache
