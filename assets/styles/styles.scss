@@ -3,42 +3,31 @@
 
 @charset "utf-8";
 
-
-
-
 /*
  * STYLE SETUP
  */
 
-@import "utility/_resets-and-normalization",
+@import 'utility/_resets-and-normalization';
 
 // colors
-"_HEX_BANK", 								// <-- site-specific
+@import '_HEX_BANK';
 
 // mixed variables
-"utility/_site-agnostic-variables",
-"global/_VARIABLES", 			// <-- site-specific
+@import 'utility/_site-agnostic-variables';
+@import 'global/_VARIABLES';
 
 // site-agnostic mixins
-"utility/_site-agnostic-mixins",
+@import 'utility/_site-agnostic-mixins';
+@import 'utility/_media-queries';
 
-"utility/_media-queries",
-
-
-
-
-/*
- * SITE STYLES
- */
-
-// fonts (regardless if webfont or system)
-"global/_fonts",
+// fonts
+@import 'global/_fonts';
 
 // local mixins
-"global/_MIXINS",
-"global/_global",
-"components/_header",
-"components/_footer",
-"components/_hero",
-"components/_nav",
-"global/_animations";
+@import 'global/_MIXINS';
+@import 'global/_global';
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/_hero';
+@import 'components/_nav';
+@import 'global/_animations';

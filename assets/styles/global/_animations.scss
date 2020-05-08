@@ -1,13 +1,12 @@
-
 .animation-start-invisible {
-	position: relative;
-	opacity: 0;
+  position: relative;
+  opacity: 0;
 }
 
 .animation-group {
-	.animation-item-1,
-	.animation-item-2,
-	.animation-item-3 {
-		position: relative;
-	}
+  .animation-item-1,
+  .animation-item-2,
+  .animation-item-3 {
+    position: relative;
+  }
 }

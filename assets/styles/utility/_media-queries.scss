@@ -12,83 +12,83 @@ $screen-sm-max: ($screen-md - 1);
 $screen-md-max: ($screen-lg - 1);
 
 @mixin breakpoint-custom($breakpoint) {
-    @media (min-width: #{$breakpoint}) {
-        @content;
-    }
+  @media (min-width: #{$breakpoint}) {
+    @content;
+  }
 }
 @mixin breakpoint-max($breakpoint) {
-    @media (max-width: #{$breakpoint}) {
-        @content;
-    }
+  @media (max-width: #{$breakpoint}) {
+    @content;
+  }
 }
 @mixin breakpoint-xs {
-    @include breakpoint-custom($screen-xs) {
-        @content;
-    }
+  @include breakpoint-custom($screen-xs) {
+    @content;
+  }
 }
 @mixin breakpoint-sm {
-    @include breakpoint-custom($screen-sm) {
-        @content;
-    }
+  @include breakpoint-custom($screen-sm) {
+    @content;
+  }
 }
 
 @mixin breakpoint-fluid-sm {
-    @media (min-width: $screen-sm-max) and (min-height: $screen-vert-md - 1) {
-        @content;
-    }
+  @media (min-width: $screen-sm-max) and (min-height: $screen-vert-md - 1) {
+    @content;
+  }
 }
 
 @mixin breakpoint-fluid-md {
-    @media (min-width: $screen-vert-md) and (min-height: $screen-sm + 1) {
-        @content;
-    }
+  @media (min-width: $screen-vert-md) and (min-height: $screen-sm + 1) {
+    @content;
+  }
 }
 
 @mixin breakpoint-fluid-lg {
-    @media (min-width: $screen-vert-md) and (min-height: $screen-sm + 126) {
-        @content;
-    }
+  @media (min-width: $screen-vert-md) and (min-height: $screen-sm + 126) {
+    @content;
+  }
 }
 
 @mixin breakpoint-fluid-xl {
-    @media (min-width: $screen-vert-md) and (min-height: $screen-sm + 251) {
-        @content;
-    }
+  @media (min-width: $screen-vert-md) and (min-height: $screen-sm + 251) {
+    @content;
+  }
 }
 
 @mixin breakpoint-md {
-    @include breakpoint-custom($screen-md) {
-        @content;
-    }
+  @include breakpoint-custom($screen-md) {
+    @content;
+  }
 }
 @mixin breakpoint-lg {
-    @include breakpoint-custom($screen-lg) {
-        @content;
-    }
+  @include breakpoint-custom($screen-lg) {
+    @content;
+  }
 }
 @mixin breakpoint-xl {
-    @include breakpoint-custom($screen-xl) {
-        @content;
-    }
+  @include breakpoint-custom($screen-xl) {
+    @content;
+  }
 }
 @mixin breakpoint-xxl {
-    @include breakpoint-custom($screen-xxl) {
-        @content;
-    }
+  @include breakpoint-custom($screen-xxl) {
+    @content;
+  }
 }
 @mixin breakpoint-two-column {
-    @include breakpoint-custom($screen-lg) {
-        @content;
-    }
+  @include breakpoint-custom($screen-lg) {
+    @content;
+  }
 }
 
 .mobile-only {
-    @include breakpoint-sm {
-        display: none !important;
-    }
+  @include breakpoint-sm {
+    display: none !important;
+  }
 }
 .desktop-only {
-    @include breakpoint-max($screen-xs-max) {
-        display: none !important;
-    }
+  @include breakpoint-max($screen-xs-max) {
+    display: none !important;
+  }
 }

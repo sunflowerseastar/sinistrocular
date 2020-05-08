@@ -1,26 +1,26 @@
 .hero {
-    .content-inset.paint-front {
-        padding: $unit-1;
+  .content-inset.paint-front {
+    padding: $unit-1;
 
-        @include breakpoint-xs {
-            padding: $unit-2;
-        }
-        @include breakpoint-md {
-            padding: $unit-3;
-        }
-        @include breakpoint-lg {
-            padding: $unit-4;
-        }
+    @include breakpoint-xs {
+      padding: $unit-2;
     }
-    svg {
-        width: 32px;
-        margin: 0 auto;
+    @include breakpoint-md {
+      padding: $unit-3;
+    }
+    @include breakpoint-lg {
+      padding: $unit-4;
+    }
+  }
+  svg {
+    width: 32px;
+    margin: 0 auto;
 
-        @include breakpoint-sm {
-            width: 38px;
-        }
-        @include breakpoint-md {
-            width: 44px;
-        }
+    @include breakpoint-sm {
+      width: 38px;
     }
+    @include breakpoint-md {
+      width: 44px;
+    }
+  }
 }

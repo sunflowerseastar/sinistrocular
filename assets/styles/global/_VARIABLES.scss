@@ -1,16 +1,14 @@
 // Looking for color values? See [sass_dir]/_HEX_BANK.scss
 
-$base-font-size:   14px;
+$base-font-size: 14px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.9;
+$small-font-size: $base-font-size * 0.9;
 $base-line-height: 1.85;
 
 // site-agnostic overrides
 $transition-speed-default: 500ms;
 
-
 $static-url: 'https://static.sinistrocular.com';
-
 
 $IMAGE_URL-header-non-home: '#{$static-url}/_images/COMMITSWAP_FILE_bg-header-non-home.jpg';
 $IMAGE_URL-footer: '#{$static-url}/_images/COMMITSWAP_FILE_bg-footer.jpg';
@@ -25,9 +23,6 @@ $IMAGE_URL-home-hero-mobile: '#{$static-url}/_photographs/#{$year}/#{$month}/#{$
 // Prior main 1920 post images
 //background-image: url("../images/bg-header-black-phoebe_1920.jpg");
 //background-image: url("../images/2016/01/outer-sunset-_MG_5526_1920.jpg");
-
-
-
 
 $_base-unit: 20px;
 

@@ -1,84 +1,84 @@
 .site-header {
-    @include fixed-left-top();
-    width: 100%;
-    height: $unit-3;
-    opacity: 1;
-    @include transition-s-curve(all, 1000ms);
-    z-index: 2;
-    overflow: hidden;
+  @include fixed-left-top();
+  width: 100%;
+  height: $unit-3;
+  opacity: 1;
+  @include transition-s-curve(all, 1000ms);
+  z-index: 2;
+  overflow: hidden;
 
-    &.js-is-scrolling-down {
-        top: -$unit-3;
-        opacity: 0;
-    }
-    .logo-container {
-        float: left;
-        display: inline-block;
-        width: $unit-4;
-        margin: 19px 0 0 $unit-1;
+  &.js-is-scrolling-down {
+    top: -$unit-3;
+    opacity: 0;
+  }
+  .logo-container {
+    float: left;
+    display: inline-block;
+    width: $unit-4;
+    margin: 19px 0 0 $unit-1;
 
-        svg path {
-            stroke: $primary-color;
-            @include transition-basic();
-        }
-        &:hover {
-            svg path {
-                //fill: darken($primary-color, 10%);
-                stroke: #000;
-            }
-        }
-        @include breakpoint-sm {
-            //width: $unit-6;
-            margin: 19px 0 0 $unit-2;
-        }
+    svg path {
+      stroke: $primary-color;
+      @include transition-basic();
     }
-    .hamburger {
-        float: right;
+    &:hover {
+      svg path {
+        //fill: darken($primary-color, 10%);
+        stroke: #000;
+      }
+    }
+    @include breakpoint-sm {
+      //width: $unit-6;
+      margin: 19px 0 0 $unit-2;
+    }
+  }
+  .hamburger {
+    float: right;
 
-        a {
-            display: block;
-            padding: 21px 20px 0 0px;
+    a {
+      display: block;
+      padding: 21px 20px 0 0px;
 
-            img {
-                width: 20px;
-            }
-        }
+      img {
+        width: 20px;
+      }
     }
-    .nav-desktop {
-        float: right;
-        margin-right: 40px;
-    }
+  }
+  .nav-desktop {
+    float: right;
+    margin-right: 40px;
+  }
 }
 .takeover {
-    @include fixed-all();
-    background-color: $background-color;
-    display: none;
-    z-index: 3;
-    text-align: center;
+  @include fixed-all();
+  background-color: $background-color;
+  display: none;
+  z-index: 3;
+  text-align: center;
 
-    &.active {
-        display: block;
-    }
-    .close-takeover {
-        @include absolute-right-top();
-    }
-    .logo-container {
-        @include absolute-left-top(23px);
-        width: $unit-6;
-        display: block;
-        margin: $unit-1 auto;
-    }
-    ul li a {
-        display: inline-block;
-        @include padding-lr(2em, 2em);
-    }
+  &.active {
+    display: block;
+  }
+  .close-takeover {
+    @include absolute-right-top();
+  }
+  .logo-container {
+    @include absolute-left-top(23px);
+    width: $unit-6;
+    display: block;
+    margin: $unit-1 auto;
+  }
+  ul li a {
+    display: inline-block;
+    @include padding-lr(2em, 2em);
+  }
 }
 .close-x {
-    float: right;
-    display: block;
-    padding: 21px 20px 0 0;
+  float: right;
+  display: block;
+  padding: 21px 20px 0 0;
 
-    img {
-        width: 20px;
-    }
+  img {
+    width: 20px;
+  }
 }
