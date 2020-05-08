@@ -56,6 +56,10 @@ url="_birds/great-blue-heron.jpg"
 caption="Great Blue Heron (<span>Ardea herodias</span>)" %}
 
 {% include helpers/figure.html
+url="_birds/great-blue-heron-at-ggp-north-lake__MG_1950_full.jpg"
+caption="Great Blue Heron (<span>Ardea herodias</span>)" %}
+
+{% include helpers/figure.html
 url="_birds/snowy-egret-at-ocean-beach_RE-EDIT__MG_9614-Edit_1920.jpg"
 caption="Snowy Egret (<span>Egretta thula</span>)" %}
 
@@ -72,12 +76,24 @@ url="_birds/two-symmetrical-hooded-mergansers__MG_2524_1920.jpg"
 caption="Hooded Mergansers (<span>Lophodytes cucullatus</span>)" %}
 
 {% include helpers/figure.html
+url="_birds/two-headed-mergansers-crossing__MG_2501_1920.jpg"
+caption="Hooded Mergansers (<span>Lophodytes cucullatus</span>)" %}
+
+{% include helpers/figure.html
 url="_birds/hawk-sf.jpg"
+caption="Red-tailed hawk (<span>Buteo jamaicensis</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/red-tailed-hawk-fort-funston__MG_4366_full.jpg"
 caption="Red-tailed hawk (<span>Buteo jamaicensis</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/immature-red-shouldered-hawk__MG_8046_full_1848.jpg"
 caption="Red-shouldered Hawk (<span>Buteo lineatus</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/white-tailed-kite-in-flight-2__MG_3171-Edit_1920.jpg"
+caption="White-tailed Kite (<span>Elanus leucurus</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/dunlin-running__MG_7767_full_1732.jpg"
@@ -93,6 +109,10 @@ caption="Marbled Godwit (<span>Limosa fedoa</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/whimbrel-dancing__MG_8552_1920.jpg"
+caption="Whimbrel (<span>Numenius phaeopus</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/whimbrel__MG_4046_full.jpg"
 caption="Whimbrel (<span>Numenius phaeopus</span>)" %}
 
 {% include helpers/figure.html
@@ -122,6 +142,14 @@ caption="Semipalmated Sandpiper (<span>Calidris pusilla</span>)" %}
 {% include helpers/figure.html
 url="_birds/spotted-dove__MG_0889_1920.jpg"
 caption="Spotted Dove (<span>Spilopelia chinensis</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/two-great-horned-owls-fort-funston__MG_0459_full.jpg"
+caption="Great Horned Owls (<span>Bubo virginianus</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/white-headed-woodpecker__MG_5854-Edit_1920.jpg"
+caption="White-headed Woodpecker (<span>Leuconotopicus albolarvatus</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/yellow-billed-cuckoo__MG_5344_1920.jpg"
@@ -156,6 +184,10 @@ url="_birds/allens-hummingbird__MG_8216_full_1668.jpg"
 caption="Allen's Hummingbird (<span>Selasphorus sasin</span>)" %}
 
 {% include helpers/figure.html
+url="_birds/allens-hummingbird-in-flight__MG_3725_1920.jpg"
+caption="Allen's Hummingbird (<span>Selasphorus sasin</span>)" %}
+
+{% include helpers/figure.html
 url="_birds/northern-flicker__MG_4595_1920.jpg"
 caption="Northern Flicker (<span>Colaptes auratus</span>)" %}
 
@@ -169,6 +201,14 @@ caption="Eastern Phoebe (<span>Sayornis phoebe</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/black-phoebe.jpg"
+caption="Black Phoebe (<span>Sayornis nigricans</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/black-phoebe-2__MG_3669_full.jpg"
+caption="Black Phoebe (<span>Sayornis nigricans</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/black-phoebe__MG_1922_full.jpg"
 caption="Black Phoebe (<span>Sayornis nigricans</span>)" %}
 
 {% include helpers/figure.html
@@ -194,6 +234,10 @@ caption="Yellow Warbler (<span>Setophaga petechia</span>)" %}
 {% include helpers/figure.html
 url="_birds/yellow_warbler_FULL(_MG_1900).jpg"
 caption="Yellow Warbler (<span>Setophaga petechia</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/townsends-warbler__MG_1414_full.jpg"
+caption="Townsend's Warbler (<span>Setophaga townsendi</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/canada-warbler__MG_6776_1920.jpg"
