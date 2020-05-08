@@ -3,19 +3,23 @@
 
 {% include head.html %}
 
-<body>
+  <body class="on-ready">
 
 {% include header.html %}
+
+  <script>
+   console.log('hi')
+  </script>
 
 <main>
 
 	<section class="layout-split hero">
-		<div class="split" data-width="2">
+		<div class="split width-2">
 			<div class="content-inset paint-front animation-fade-in animation-start-invisible">
 				<img id="cedar_waxwing" class="" src="{{ site.static_url }}/_photographs/_birds/cedar-waxwing__MG_4843_FULL_1920.jpg" alt="Cedar Waxwing">
 			</div>
 		</div>
-		<div class="split" data-width="1">
+		<div class="split width-1">
 			<div class="content-wall paint-back animation-fade-in animation-start-invisible">
 				{% include svg/logo.svg %}
 

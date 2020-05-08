@@ -1,12 +1,27 @@
-.animation-start-invisible {
+.on-ready {
   position: relative;
+  transition: opacity 2.6s ease-in-out;
   opacity: 0;
+}
+.complete,
+.complete .animation-item-1,
+.complete .animation-item-2,
+.complete .animation-item-3 {
+  opacity: 1;
 }
 
 .animation-group {
+}
   .animation-item-1,
   .animation-item-2,
   .animation-item-3 {
     position: relative;
   }
-}
+  .animation-item-1 {
+
+  }
+  .animation-item-2 {
+
+  }
+  .animation-item-3 {
+  }

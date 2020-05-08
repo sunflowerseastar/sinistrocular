@@ -6,23 +6,23 @@ layout: home
   {% assign ordered_categories = site.categories | sort: 'sort_order' %}
   {% for category in ordered_categories %}
 
-  <div class="post-preview layout-split animation-group" data-animation-group="2">
+  <div class="post-preview layout-split">
 
-    <div class="split post-preview-visual" data-width="2">
+    <div class="split width-2 post-preview-visual">
       <div class="content-inset">
         <a href="{{ category.title | downcase }}">
-          <img src={{ site.static_url }}{{ category.photo_main }} data-animation="1">
+          <img src={{ site.static_url }}{{ category.photo_main }}>
         </a>
         <figcaption>{{ category.caption }}</figcaption>
       </div>
     </div>
 
-    <div class="split post-preview-copy" data-width="1">
+    <div class="split width-1 post-preview-copy">
       <div class="post-header">
-        <h2 class="animation-start-invisible" data-animation-item="1"><a href="{{ category.title | downcase }}">{{ category.title }}</a></h2>
+        <h2><a href="{{ category.title | downcase }}">{{ category.title }}</a></h2>
       </div>
 
-      <div class="post-excerpt animation-start-invisible" data-animation-item="2">
+      <div class="post-excerpt">
         <p>{{ category.content }}</p>
       </div>
     </div>
