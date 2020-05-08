@@ -57,28 +57,6 @@
           }
         }
       }
-      &.logo-poly {
-        position: relative;
-        width: $unit-7;
-        margin-top: $unit-1;
-
-        img {
-          @include absolute-left-top();
-
-          &.bw {
-            opacity: 0.6;
-          }
-          &.color {
-            opacity: 0;
-            @include transition-basic();
-          }
-        }
-        &:hover {
-          .color {
-            opacity: 1;
-          }
-        }
-      }
     }
     .copyright {
       margin: 0;
