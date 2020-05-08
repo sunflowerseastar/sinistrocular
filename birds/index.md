@@ -5,9 +5,9 @@ title: Birds
 
 Every morning I would wake and think, "Lo, what birds doth yonder sing?" Could I see them from my bedroom window? Nay! The view was blocked.
 
-Over time, the familiarity of their cadences and rhythms blessed my mornings as I made coffee and contemplated the day's activities, but I still didn't know them past "the bird with the triplets" or "that one with the repeated lead-in note."
+Over time, the familiarity of their cadences and rhythms blessed my mornings as I made coffee and contemplated the day’s activities, but I still didn’t know them past "the bird with the triplets" or "that one with the repeated lead-in note."
  
- One day, particularly besotted with curiosity, I installed an app with vocalizations on my phone. Not knowing a pelican from a picid, I decided it made the most sense to start at the top and click through them all. Slowly but surely (several weeks and months!), I found some matches. As you'd expect, the first few IDs were of extremely rare and exotic species, including the mysterious American robin, the elusive Song sparrow, and the scarcely-encountered Northern cardinal.
+One day, particularly besotted with curiosity, I installed an app with vocalizations on my phone. Not knowing a pelican from a picid, I decided it made the most sense to start at the top and click through them all. Slowly but surely (several weeks and months!), I found some matches. As you’d expect, the first few IDs were of extremely rare and exotic species, including the mysterious American robin, the elusive Song sparrow, and the scarcely-encountered Northern cardinal.
  
 My bird photography is partly my journey into the world of avian knowledge and partly my hope to share their peace, power, and marvels.
 
