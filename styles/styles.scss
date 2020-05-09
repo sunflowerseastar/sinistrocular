@@ -3,31 +3,18 @@
 
 @charset "utf-8";
 
-/*
- * STYLE SETUP
- */
+@import 'reset';
 
-@import 'utility/_resets-and-normalization';
-
-// colors
 @import 'colors';
-
-// mixed variables
-@import 'utility/_site-agnostic-variables';
 @import 'variables';
-
-// site-agnostic mixins
-@import 'utility/_site-agnostic-mixins';
-@import 'utility/_media-queries';
-
-// fonts
+@import 'mixins';
+@import 'media-queries';
 @import 'fonts';
-
-// local mixins
 @import 'global';
+@import 'animations';
+
 @import 'components/_header';
 @import 'components/_footer';
 @import 'components/_hero';
 @import 'components/_nav';
 @import 'components/_slideshow';
-@import 'animations';
