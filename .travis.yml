@@ -15,5 +15,4 @@ before_install:
   - gem install jekyll
 
 install:
-  - git submodule update --init
   - jekyll build
