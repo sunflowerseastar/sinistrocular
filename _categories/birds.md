@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Birds"
-photo_main: /_photographs/_birds/spotted-towhee.jpg
-caption: "Spotted Towhee (<span>Pipilo maculatus</span>)"
+photo_main: /_photographs/_birds/great-blue-heron-at-ggp-north-lake__MG_1950_full.jpg
+caption: "Great Blue Heron (<span>Ardea herodias</span>)"
 sort_order: 1
 ---
 
-The avian presence is a joy for our brief lifespans on this planet, and a treasure that our future generations deserve.
+Birds birds birds birds birds birds birds!
