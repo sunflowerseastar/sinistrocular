@@ -15,10 +15,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic|Alegreya:400,400italic|Alegreya+SC:400' rel='stylesheet' type='text/css'>
 
   <script>
-   document.onreadystatechange = function() {
-     if (document.readyState === 'complete') {
+   document.addEventListener('readystatechange', event => {
+     if (event.target.readyState === 'complete') {
        document.querySelector('.on-ready').classList.add('complete')
      }
-   };
+   });
   </script>
 </head>

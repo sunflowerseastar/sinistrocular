@@ -1,6 +1,6 @@
 .on-ready {
   position: relative;
-  transition: opacity 2.6s ease-in-out;
+  @include transition-basic(opacity, $transition-speed-long);
   opacity: 0;
 }
 .complete,

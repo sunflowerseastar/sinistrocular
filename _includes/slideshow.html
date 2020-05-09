@@ -1,12 +1,40 @@
 <script>
- console.log('hi slideshow')
+ document.addEventListener('readystatechange', event => {
+   if (event.target.readyState === 'complete') {
+     const SLIDESHOW_TRANSITION_DURATION = 6000;
+     const imgs = document.querySelectorAll('#images-container img');
+     const len = imgs.length;
+     const captions = document.querySelectorAll('.slideshow-caption');
+
+     let counter = 1;
+
+     setInterval(() => {
+       imgs.forEach((img, i) =>
+         i > counter % len ? img.classList.remove('showing') : img.classList.add('showing'))
+       captions.forEach((caption, i) =>
+         i === counter % len ? caption.classList.add('showing') : caption.classList.remove('showing'))
+       counter++;
+     }, SLIDESHOW_TRANSITION_DURATION);
+   }
+ });
 </script>
 <section class="layout-split hero">
 	<div class="split width-2">
 		<div class="content-inset paint-front">
 		  <div id="images-container">
-        <img class="in" src="{{ site.static_url }}/_photographs/_birds/cedar-waxwing__MG_4843_FULL_1920.jpg" alt="Cedar Waxwing">
-        <img class="" src="{{ site.static_url }}/_photographs/_birds/ring-necked-duck-female-lloyd-sunrise_RE-EDIT__MG_7212_1920.jpg" alt="Ring-necked Duck">
+        <img class="slideshow-img showing" src="{{ site.static_url }}/_photographs/_birds/cedar-waxwing__MG_4843_FULL_1920.jpg" alt="Cedar Waxwing">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/ring-necked-duck-female-lloyd-sunrise_RE-EDIT__MG_7212_1920.jpg" alt="Ring-necked Duck">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/white-crowned-sparrow-on-curved-branch__MG_0227_1920.jpg" alt="White-crowned Sparrow">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/brown-pelicans-flying-ocean-beach__MG_1348_1920.jpg" alt="">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/cormorant-sunset-2__MG_7914_1920.jpg" alt="Double-Crested Cormorant">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/great-blue-heron-at-ggp-north-lake__MG_1950_full.jpg" alt="Great Blue Heron">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/allens-hummingbird.jpg" alt="Allen's Hummingbird">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/two-headed-mergansers-crossing__MG_2501_1920.jpg" alt="Hooded Mergansers">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/red-tailed-hawk-fort-funston__MG_4366_full.jpg" alt="Red-tailed Hawk">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/dunlin-running__MG_7767_full_1732.jpg" alt="">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/long-billed-curlew-over-ocean-beach__MG_8543_sRGB_1920.jpg" alt="">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/marbled-godwits-and-whimbrels-in-flight__MG_7731_1920.jpg" alt="">
+        <img class="slideshow-img " src="{{ site.static_url }}/_photographs/_birds/allens-hummingbird-2__MG_4001_full_1675.jpg" alt="Allen's Hummingbird">
       </div>
 		</div>
 	</div>
@@ -15,8 +43,19 @@
 			{% include svg/logo.svg %}
 
       <div id="captions-container">
-			<p class="slideshow-caption in">Cedar Waxwing<span>Bombycilla cedrorum</span></p>
-			<p class="slideshow-caption">Ring-necked Duck<span>Aythya collari</span></p>
+        <p class="slideshow-caption showing">Cedar Waxwing<span>Bombycilla cedrorum</span></p>
+        <p class="slideshow-caption">Ring-necked Duck<span>Aythya collari</span></p>
+        <p class="slideshow-caption">White-crowned Sparrow<span>Zonotrichia leucophrys</span></p>
+        <p class="slideshow-caption">Brown Pelicans<span>Pelecanus occidentalis</span></p>
+        <p class="slideshow-caption">Double-Crested Cormorant<span>Phalacrocorax auritus</span></p>
+        <p class="slideshow-caption">Great Blue Heron<span>Ardea herodias</span></p>
+        <p class="slideshow-caption">Allen's Hummingbird<span>Selasphorus sasin</span></p>
+        <p class="slideshow-caption">Hooded Mergansers<span>Lophodytes cucullatus</span></p>
+        <p class="slideshow-caption">Red-tailed Hawk<span>Buteo jamaicensis</span></p>
+        <p class="slideshow-caption">Dunlin<span>Calidris alpina</span></p>
+        <p class="slideshow-caption">Long-billed Curlew<span>Numenius americanus</span></p>
+        <p class="slideshow-caption">Marbled Godwits and Whimbrels<span>Limosa fedoa, Numenius phaeopus</span></p>
+        <p class="slideshow-caption">Allen's Hummingbird<span>Selasphorus sasin</span></p>
       </div>
 		</div>
 	</div>
