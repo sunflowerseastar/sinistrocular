@@ -6,9 +6,6 @@ node_js:
   - stable
 
 before_install:
-  - npm install -g gulp
-  - npm install -g grunt-cli
-  - npm install -g bower
   - rvm list
   - rvm install ruby
   - rvm use ruby --default
