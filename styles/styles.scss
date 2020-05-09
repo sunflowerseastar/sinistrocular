@@ -10,24 +10,24 @@
 @import 'utility/_resets-and-normalization';
 
 // colors
-@import '_HEX_BANK';
+@import 'colors';
 
 // mixed variables
 @import 'utility/_site-agnostic-variables';
-@import 'global/_VARIABLES';
+@import 'variables';
 
 // site-agnostic mixins
 @import 'utility/_site-agnostic-mixins';
 @import 'utility/_media-queries';
 
 // fonts
-@import 'global/_fonts';
+@import 'fonts';
 
 // local mixins
-@import 'global/_global';
+@import 'global';
 @import 'components/_header';
 @import 'components/_footer';
 @import 'components/_hero';
 @import 'components/_nav';
 @import 'components/_slideshow';
-@import 'global/_animations';
+@import 'animations';
