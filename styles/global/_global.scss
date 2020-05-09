@@ -255,33 +255,6 @@ main {
 .paint-back {
   color: $body-copy-alt;
 
-  .hero-annotation {
-    margin-top: 0.8em;
-    font-size: 14px;
-    letter-spacing: 0.02em;
-
-    span {
-      @include relative-top(-8px);
-      display: block;
-      font-size: 12px;
-      font-style: italic;
-      letter-spacing: 0.03em;
-    }
-    @include breakpoint-sm {
-      font-size: 15px;
-
-      span {
-        font-size: 13px;
-      }
-    }
-    @include breakpoint-md {
-      font-size: 16px;
-
-      span {
-        font-size: 14px;
-      }
-    }
-  }
 }
 .content-wall {
   margin: $unit-4 auto;

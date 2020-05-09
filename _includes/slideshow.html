@@ -1,0 +1,23 @@
+<script>
+ console.log('hi slideshow')
+</script>
+<section class="layout-split hero">
+	<div class="split width-2">
+		<div class="content-inset paint-front">
+		  <div id="images-container">
+        <img class="in" src="{{ site.static_url }}/_photographs/_birds/cedar-waxwing__MG_4843_FULL_1920.jpg" alt="Cedar Waxwing">
+        <img class="" src="{{ site.static_url }}/_photographs/_birds/ring-necked-duck-female-lloyd-sunrise_RE-EDIT__MG_7212_1920.jpg" alt="Ring-necked Duck">
+      </div>
+		</div>
+	</div>
+	<div class="split width-1">
+		<div class="content-wall paint-back animation-fade-in animation-start-invisible">
+			{% include svg/logo.svg %}
+
+      <div id="captions-container">
+			<p class="slideshow-caption in">Cedar Waxwing<span>Bombycilla cedrorum</span></p>
+			<p class="slideshow-caption">Ring-necked Duck<span>Aythya collari</span></p>
+      </div>
+		</div>
+	</div>
+</section>
