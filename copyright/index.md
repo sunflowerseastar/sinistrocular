@@ -2,6 +2,5 @@
 layout: post
 title: Copyright Information
 ---
-### Photography
 
-Photographs are individually copyrighted (all rights reserved if unmarked).
+Photographs are all copyrighted with all rights reserved unless indicated as otherwise.
