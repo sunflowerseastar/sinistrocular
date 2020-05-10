@@ -9,7 +9,7 @@ body {
 
   @include breakpoint-sm {
     font-size: $base-font-size + 1;
-    line-height: 1.8;
+    line-height: 1.75;
   }
 }
 
@@ -77,7 +77,7 @@ h6 {
  */
 p {
   margin-top: 0;
-  margin-bottom: 1.4rem;
+  margin-bottom: 2rem;
   cursor: default;
 }
 a {
@@ -103,7 +103,7 @@ figcaption {
 figcaption {
   display: block;
   margin: 0.4rem 0 0;
-  font-size: 0.9em;
+  font-size: 0.85em;
 
   span {
     font-style: italic;
@@ -118,7 +118,7 @@ main {
   padding-top: $unit-3; // compensate for header's height
 }
 
-@include breakpoint-two-column {
+@include breakpoint-lg {
   .layout-split {
     @include clearfix();
 
@@ -156,12 +156,12 @@ main {
 .content-inset {
   padding: $unit-2 0;
 
-  @include breakpoint-two-column {
+  @include breakpoint-lg {
     padding: 0 $unit-8;
   }
 
   &.paint-front {
-    margin: $unit-4 $unit-2 $unit-4 $unit-1;
+    margin: $unit-2 $unit-2 $unit-2 $unit-1;
     padding: $unit-2 $unit-1;
 
     @include breakpoint-xs {
@@ -203,10 +203,16 @@ main {
   color: $body-copy-alt;
 }
 .content-wall {
-  margin: $unit-4 auto;
+  margin: $unit-3 auto $unit-8;
   text-align: center;
 
-  @include breakpoint-two-column {
+  @include breakpoint-md {
+    margin-top: $unit-4;
+  }
+  @include breakpoint-md {
+    margin-bottom: $unit-10;
+  }
+  @include breakpoint-lg {
     margin: $unit-16 0 0;
   }
 }

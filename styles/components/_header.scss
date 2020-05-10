@@ -2,10 +2,14 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 0 $unit-2;
+  padding: 0 $unit-1;
   @include transition-s-curve(all, 1000ms);
   opacity: 1;
   z-index: 2;
+
+  @include breakpoint-sm {
+    padding: 0 $unit-2;
+  }
 }
 .logo-container {
   position: relative;
@@ -31,15 +35,12 @@
   }
 }
 .hamburger {
-  float: right;
+  display: block;
+  margin-right: -0.8em;
+  padding: 1.2em 0.8em;
 
-  a {
-    display: block;
-    padding: 21px 20px 0 0px;
-
-    img {
-      width: 20px;
-    }
+  img {
+    width: $unit-1;
   }
 }
 .takeover {
