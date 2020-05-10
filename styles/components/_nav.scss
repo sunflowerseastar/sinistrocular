@@ -1,5 +1,5 @@
 nav {
-  ul.inline {
+  ul {
     margin: 0;
     list-style: none;
   }
@@ -12,7 +12,7 @@ nav {
     a {
       display: block;
       position: relative;
-      padding: 1.2em 0.9em;
+      padding: 1.2em 1.1em;
       font-family: $heading-font-family;
       font-weight: 400;
       color: $primary-light;
