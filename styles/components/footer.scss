@@ -24,55 +24,42 @@
       }
     }
   }
+}
+.footer-addendum {
+  padding: $unit-3 $unit-5 0;
+  opacity: 0.5;
+  @include transition-basic();
 
-  .footer-addendum {
-    padding: $unit-3 $unit-5 0;
-    opacity: 0.5;
-    @include transition-basic();
+  &:hover {
+    opacity: 1;
+  }
+}
+.logo-sinistrocular {
+  display: block;
+  width: $unit-3;
+  margin: 0 auto;
+
+  svg {
+    g,
+    path {
+      stroke: $body-copy-alt;
+      @include transition-basic();
+    }
+  }
+}
+.copyright {
+  margin: 0;
+  padding: $unit-6 0 4px;
+  text-align: center;
+
+  a {
+    font-size: 10px;
+    color: $body-copy-alt;
+    text-decoration: none;
 
     &:hover {
-      opacity: 1;
-    }
-    [class|='logo'] {
-      display: block;
-      width: $unit-3;
-      margin: 0 auto;
-
-      &.logo-sinistrocular {
-        svg {
-          g,
-          path {
-            stroke: $body-copy-alt;
-            @include transition-basic();
-          }
-        }
-        &:hover {
-          svg {
-            width: $unit-3;
-
-            g,
-            path {
-              stroke: $body-copy;
-            }
-          }
-        }
-      }
-    }
-    .copyright {
-      margin: 0;
-      padding-top: $unit-6;
-      text-align: center;
-
-      a {
-        font-size: 10px;
-        color: $body-copy-alt;
-        text-decoration: none;
-
-        &:hover {
-          color: $body-copy-alt;
-          text-decoration: underline;
-        }
-      }
+      color: $body-copy-alt;
+      text-decoration: underline;
     }
   }
 }

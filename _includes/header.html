@@ -1,16 +1,15 @@
 <div class="takeover mobile-only paint-back">
-	<span class="logo-container">
-		<a href="{{ site.baseurl }}/" alt="Home">
-			{% include svg/logo-type.svg %}
-		</a>
-	</span>
 	<a class="close-x js-toggle-mobile-nav">
 		<img src="{{ site.static_url }}/_images/close-x.png" alt="close">
 	</a>
-
-	<div class="content-inset paint-front">
-		{% include nav.html %}
-	</div>
+  <div class="takeover-nav-container">
+    <div class="content-inset paint-front">
+      {% include nav.html %}
+    </div>
+	  <a class="logo-sinistrocular" href="{{ site.baseurl }}/">
+		  {% include svg/logo.svg %}
+	  </a>
+  </div>
 </div>
 
 <header class="site-header paint-front">
