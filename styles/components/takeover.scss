@@ -1,0 +1,24 @@
+.takeover {
+  @include fixed-all();
+  background-color: $background-color;
+  display: none;
+  z-index: 3;
+  text-align: center;
+
+  &.active {
+    display: block;
+  }
+  .close-takeover {
+    @include absolute-right-top();
+  }
+  .logo-container {
+    @include absolute-left-top(23px);
+    width: $unit-6;
+    display: block;
+    margin: $unit-1 auto;
+  }
+  ul li a {
+    display: inline-block;
+    @include padding-lr(2em, 2em);
+  }
+}
