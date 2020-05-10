@@ -11,24 +11,19 @@
 	<div class="content-inset paint-front">
 		{% include nav.html %}
 	</div>
-
 </div>
 
 <header class="site-header paint-front">
-
-	<span class="logo-container">
-		<a href="{{ site.baseurl }}/" alt="Home">
-			{% include svg/logo-type.svg %}
-		</a>
-	</span>
+  <a class="logo-container" href="{{ site.baseurl }}/" alt="Home">
+    {% include svg/logo-type.svg %}
+  </a>
 
 	<div class="hamburger mobile-only">
 		<a class="js-toggle-mobile-nav">
 			<img src="{{ site.static_url}}/_images/hamburger.png" alt="hamburger">
 		</a>
 	</div>
-	<div class="nav-desktop desktop-only">
+	<div class="desktop-only">
 		{% include nav.html %}
 	</div>
-
 </header>

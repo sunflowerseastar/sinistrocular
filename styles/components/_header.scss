@@ -1,52 +1,45 @@
 .site-header {
-  @include fixed-left-top();
-  width: 100%;
-  height: $unit-3;
-  opacity: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 $unit-2;
   @include transition-s-curve(all, 1000ms);
+  opacity: 1;
   z-index: 2;
-  overflow: hidden;
+}
+.logo-container {
+  position: relative;
+  display: inline-block;
+  margin-left: -$unit-1;
+  padding: 0 $unit-1;
+  line-height: 0;
 
-  &.js-is-scrolling-down {
-    top: -$unit-3;
-    opacity: 0;
-  }
-  .logo-container {
-    float: left;
-    display: inline-block;
+  svg {
+    position: relative;
+    top: 50%;
     width: $unit-4;
-    margin: 19px 0 0 $unit-1;
-
+    transform: translateY(-50%);
+  }
+  svg path {
+    stroke: $primary-color;
+    @include transition-basic();
+  }
+  &:hover {
     svg path {
-      stroke: $primary-color;
-      @include transition-basic();
-    }
-    &:hover {
-      svg path {
-        //fill: darken($primary-color, 10%);
-        stroke: #000;
-      }
-    }
-    @include breakpoint-sm {
-      //width: $unit-6;
-      margin: 19px 0 0 $unit-2;
+      stroke: #000;
     }
   }
-  .hamburger {
-    float: right;
+}
+.hamburger {
+  float: right;
 
-    a {
-      display: block;
-      padding: 21px 20px 0 0px;
+  a {
+    display: block;
+    padding: 21px 20px 0 0px;
 
-      img {
-        width: 20px;
-      }
+    img {
+      width: 20px;
     }
-  }
-  .nav-desktop {
-    float: right;
-    margin-right: 40px;
   }
 }
 .takeover {

@@ -90,7 +90,11 @@
   margin-top: $top;
   margin-bottom: $bottom;
 }
-@mixin transition-basic($property: all, $duration: $transition-speed-default, $easing: $transition-easing-default) {
+@mixin transition-basic(
+  $property: all,
+  $duration: $transition-speed-default,
+  $easing: $transition-easing-default
+) {
   transition: $property $duration $easing;
 }
 @mixin transition-s-curve(

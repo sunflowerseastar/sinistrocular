@@ -86,61 +86,8 @@ a {
   cursor: pointer;
 
   &:hover {
-    color: lighten($body-copy-alt, 6%);
+    color: $body-copy-darken;
   }
-}
-ul {
-  margin: -10px 0 30px 30px;
-}
-ul.inline {
-  margin: 0;
-  list-style: none;
-
-  li {
-    display: block;
-
-    @include breakpoint-sm {
-      display: inline-block;
-      margin: 0.9em 1em;
-    }
-    a {
-      display: block;
-      position: relative;
-      font-family: $heading-font-family;
-      color: $body-copy;
-      font-size: 14px;
-      letter-spacing: 0.08em;
-      text-decoration: none;
-
-      &:active {
-        color: $body-copy-darken;
-      }
-    }
-    @include breakpoint-sm {
-      a {
-        &:before {
-          content: '•';
-          display: block;
-          height: 1px;
-          @include relative-left(-18px);
-        }
-      }
-      &:first-child {
-        a:before {
-          color: #fff;
-        }
-      }
-    }
-  }
-}
-ol,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-td,
-th {
-  padding: 0.25rem 0.5rem;
 }
 img {
   display: block;
