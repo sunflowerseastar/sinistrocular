@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Human"
-photo_main: /_photographs/_human/tillman-snow.jpg
+photo_main: /_photographs/_human/fire-eater.jpg
 caption: "First taste of snow"
 sort_order: 4
 ---

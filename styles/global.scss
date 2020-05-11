@@ -124,6 +124,9 @@ svg {
 svg:hover {
   stroke: red;
 }
+ul {
+  cursor: default;
+}
 
 /*
  * Overall layout
@@ -165,35 +168,57 @@ main {
   }
 }
 
-.slideshow-img-container {
+.post-preview-img-container {
   position: relative;
   display: block;
   z-index: 1;
+  overflow: hidden;
 
   figcaption {
     position: absolute;
-    bottom: 0.5vh;
-    right: 3vw;
+    bottom: 5px;
+    right: 12px;
     font-style: italic;
     z-index: 2;
   }
+  img {
+    @include transition-s-curve(all, $transition-speed-long);
+
+    @include breakpoint-lg {
+      filter: blur(2px);
+    }
+  }
   &:after {
-    content: "";
+    // content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #000;
-    @include transition-basic();
+    background-image: radial-gradient(#999, #000);
+    @include transition-s-curve(opacity, $transition-speed-long);
     pointer-events: none;
-    opacity: 0.4;
+    opacity: 0.1;
+
+    @include breakpoint-sm {
+      opacity: 0.2;
+    }
+    @include breakpoint-md {
+      opacity: 0.3;
+    }
+    @include breakpoint-lg {
+      opacity: 0.4;
+      filter: blur(3px);
+    }
   }
   &:hover {
     color: #fff;
 
+    img {
+      filter: blur(0);
+    }
     &:after {
-      opacity: 0.1;
+      opacity: 0.02;
     }
   }
 }
@@ -282,13 +307,29 @@ main {
     }
   }
   figure + figure {
-    margin: $unit-3 0;
+    margin: $unit-10 0;
 
     @include breakpoint-sm {
-      margin: $unit-6 0;
+      margin: $unit-16 0;
     }
     @include breakpoint-lg {
-      margin: $unit-12 0;
+      margin: $unit-28 0;
+    }
+    @include breakpoint-xl {
+      margin: $unit-32 0;
+    }
+  }
+  figure:last-child {
+    margin: $unit-6 0;
+
+    @include breakpoint-sm {
+      margin: $unit-10 0;
+    }
+    @include breakpoint-lg {
+      margin: $unit-14 0;
+    }
+    @include breakpoint-xl {
+      margin: $unit-16 0;
     }
   }
   p {

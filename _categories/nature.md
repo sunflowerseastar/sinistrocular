@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nature"
-photo_main: /_photographs/_nature/clouds.jpg
+photo_main: /_photographs/_nature/ocean-beach--_MG_3024.jpg
 caption: "A painting in the sky"
 sort_order: 2
 ---

@@ -5,8 +5,9 @@ $base-font-weight: 400;
 $small-font-size: $base-font-size * 0.9;
 $base-line-height: 1.75;
 
-$transition-speed-default: 500ms;
+$transition-speed-default: 400ms;
 $transition-speed-long: 2.6s;
+$transition-speed-extra-long: 4.6s;
 $transition-easing-default: ease-in-out;
 
 $_base-unit: 18px;
@@ -20,4 +21,8 @@ $unit-6: $_base_unit * 6;
 $unit-8: $_base_unit * 8;
 $unit-10: $_base_unit * 10;
 $unit-12: $_base_unit * 12;
+$unit-14: $_base_unit * 14;
 $unit-16: $_base_unit * 16;
+$unit-20: $_base_unit * 20;
+$unit-28: $_base_unit * 28;
+$unit-32: $_base_unit * 32;

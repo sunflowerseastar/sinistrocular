@@ -15,9 +15,10 @@
     }
     a {
       color: $body-copy-alt;
+      font-size: 12px;
 
       &:hover {
-        color: $body-copy;
+        color: $primary-light;
       }
     }
   }
