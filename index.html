@@ -6,26 +6,15 @@ layout: home
   {% assign ordered_categories = site.categories | sort: 'sort_order' %}
   {% for category in ordered_categories %}
 
-  <div class="post-preview layout-split">
+  <div class="post-preview">
 
-    <div class="split width-2 post-preview-visual">
-      <div class="content-inset">
-        <a href="{{ category.title | downcase }}">
-          <img src={{ site.static_url }}{{ category.photo_main }}>
-        </a>
-        <figcaption>{{ category.caption }}</figcaption>
-      </div>
+    <div class="base-padding-1">
+      <a class="slideshow-img-container" href="{{ category.title | downcase }}">
+        <img src={{ site.static_url }}{{ category.photo_main }}>
+        <figcaption>{{ category.title }}</figcaption>
+      </a>
     </div>
 
-    <div class="split width-1 post-preview-copy">
-      <div class="post-header">
-        <h2><a href="{{ category.title | downcase }}">{{ category.title }}</a></h2>
-      </div>
-
-      <div class="post-excerpt">
-        <p>{{ category.content }}</p>
-      </div>
-    </div>
   </div>
 
   {% endfor %}

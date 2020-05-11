@@ -5,16 +5,15 @@
 
   <body class="on-ready">
 
+{% include takeover.html %}
 {% include header.html %}
 
 <main>
 
   {% include slideshow.html %}
 
-	<section class="content-full paint-front">
-		<div class="content-full-inner">
-			{{ content }}
-		</div>
+	<section class="extra-padding-top-bottom paint-front">
+    {{ content }}
 	</section>
 
 </main>

@@ -9,6 +9,20 @@
   bottom: 0;
   width: 100%;
 }
+.slideshow-caption-section {
+  margin: $unit-3 auto $unit-8;
+  text-align: center;
+
+  @include breakpoint-md {
+    margin-top: $unit-4;
+  }
+  @include breakpoint-md {
+    margin-bottom: $unit-10;
+  }
+  @include breakpoint-lg {
+    margin: $unit-16 0 0;
+  }
+}
 #captions-container {
   position: relative;
 }

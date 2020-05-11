@@ -12,21 +12,17 @@
         left: 50%;
         transform: translateX(-50%);
       }
-      li a {
-        font-size: 16px;
+    }
+    a {
+      color: $body-copy-alt;
 
-        @include breakpoint-sm {
-          font-size: 14px;
-        }
-        @include breakpoint-md {
-          font-size: 18px;
-        }
+      &:hover {
+        color: $body-copy;
       }
     }
   }
 }
 .footer-addendum {
-  padding: $unit-3 $unit-5 0;
   opacity: 0.5;
   @include transition-basic();
 
@@ -38,14 +34,6 @@
   display: block;
   width: $unit-3;
   margin: 0 auto;
-
-  svg {
-    g,
-    path {
-      stroke: $body-copy-alt;
-      @include transition-basic();
-    }
-  }
 }
 .copyright {
   margin: 0;

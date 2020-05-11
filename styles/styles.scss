@@ -11,11 +11,11 @@
 @import 'media-queries';
 @import 'fonts';
 @import 'global';
+@import 'utilities';
 @import 'animations';
 
+@import 'components/takeover';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/hero';
 @import 'components/nav';
-@import 'components/takeover';
 @import 'components/slideshow';

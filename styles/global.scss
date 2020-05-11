@@ -109,6 +109,21 @@ figcaption {
     font-style: italic;
   }
 }
+svg {
+  width: 32px;
+  margin: 0 auto;
+  @include transition-basic();
+
+  @include breakpoint-sm {
+    width: 38px;
+  }
+  @include breakpoint-md {
+    width: 44px;
+  }
+}
+svg:hover {
+  stroke: red;
+}
 
 /*
  * Overall layout
@@ -139,56 +154,6 @@ main {
   }
 }
 
-.content-full {
-  padding: $unit-4 $unit-2;
-
-  @include breakpoint-sm {
-    padding: $unit-2 $unit-3;
-  }
-  @include breakpoint-md {
-    @include padding-top-bottom($unit-10, $unit-10);
-  }
-  @include breakpoint-lg {
-    @include padding-top-bottom($unit-16, $unit-16);
-  }
-}
-
-.content-inset {
-  padding: $unit-2 0;
-
-  @include breakpoint-lg {
-    padding: 0 $unit-8;
-  }
-
-  &.paint-front {
-    margin: $unit-2 $unit-2 $unit-2 $unit-1;
-    padding: $unit-2 $unit-1;
-
-    @include breakpoint-xs {
-      padding: $unit-2;
-    }
-    @include breakpoint-sm {
-      margin: $unit-6 $unit-4 $unit-6 $unit-2;
-      padding: $unit-3;
-    }
-    @include breakpoint-md {
-      padding: $unit-3;
-    }
-    @include breakpoint-lg {
-      margin: $unit-6 $unit-2 $unit-6 $unit-2;
-      padding: $unit-4;
-    }
-
-    &.post {
-      @include breakpoint-xl {
-        padding: $unit-6;
-      }
-      @include breakpoint-xxl {
-        padding: 10%;
-      }
-    }
-  }
-}
 .paint-front {
   position: relative;
   background: #fff;
@@ -199,24 +164,39 @@ main {
     box-shadow: $unit-2 $unit-2 $shadow-color;
   }
 }
-.paint-back {
-  color: $body-copy-alt;
-}
-.content-wall {
-  margin: $unit-3 auto $unit-8;
-  text-align: center;
 
-  @include breakpoint-md {
-    margin-top: $unit-4;
+.slideshow-img-container {
+  position: relative;
+  display: block;
+  z-index: 1;
+
+  figcaption {
+    position: absolute;
+    bottom: 0.5vh;
+    right: 3vw;
+    font-style: italic;
+    z-index: 2;
   }
-  @include breakpoint-md {
-    margin-bottom: $unit-10;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    @include transition-basic();
+    pointer-events: none;
+    opacity: 0.4;
   }
-  @include breakpoint-lg {
-    margin: $unit-16 0 0;
+  &:hover {
+    color: #fff;
+
+    &:after {
+      opacity: 0.1;
+    }
   }
 }
-
 .post-preview + .post-preview {
   margin-top: $unit-6;
 
@@ -228,17 +208,6 @@ main {
   }
   @include breakpoint-lg {
     margin-top: $unit-16;
-  }
-}
-.post-preview-copy {
-  @include breakpoint-lg {
-    padding-top: $unit-2;
-  }
-  @include breakpoint-xl {
-    padding-top: $unit-4;
-  }
-  @include breakpoint-xxl {
-    padding-top: $unit-6;
   }
 }
 .post-header {
@@ -299,19 +268,6 @@ main {
     @include breakpoint-xl {
       max-width: 21rem;
     }
-  }
-}
-.post-content {
-  margin-top: $unit-2;
-
-  @include breakpoint-sm {
-    margin-top: $unit-3;
-  }
-  @include breakpoint-md {
-    //margin-top: $unit-4;
-  }
-  @include breakpoint-lg {
-    //margin-top: $unit-6;
   }
 }
 .post {

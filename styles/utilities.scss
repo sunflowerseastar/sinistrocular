@@ -1,0 +1,62 @@
+.base-padding-1 {
+  padding: $unit-2 0;
+
+  @include breakpoint-lg {
+    padding: 0 $unit-8;
+  }
+}
+
+.base-padding-2 {
+  margin: $unit-2 $unit-2 $unit-2 $unit-1;
+  padding: $unit-2 $unit-1;
+
+  @include breakpoint-xs {
+    padding: $unit-2;
+  }
+  @include breakpoint-sm {
+    margin: $unit-6 $unit-4 $unit-6 $unit-2;
+    padding: $unit-3;
+  }
+  @include breakpoint-md {
+    padding: $unit-3;
+  }
+  @include breakpoint-lg {
+    margin: $unit-6 $unit-2 $unit-6 $unit-2;
+    padding: $unit-4;
+  }
+}
+
+.extra-padding {
+  @include breakpoint-xl {
+    padding: $unit-6;
+  }
+  @include breakpoint-xxl {
+    padding: 10%;
+  }
+}
+
+.extra-padding-top {
+  margin-top: $unit-2;
+
+  @include breakpoint-sm {
+    margin-top: $unit-3;
+  }
+}
+
+.extra-padding-top-bottom {
+  padding: $unit-4 $unit-2;
+
+  @include breakpoint-sm {
+    padding: $unit-2 $unit-3;
+  }
+  @include breakpoint-md {
+    @include padding-top-bottom($unit-10, $unit-10);
+  }
+  @include breakpoint-lg {
+    @include padding-top-bottom($unit-16, $unit-16);
+  }
+}
+
+.color-body-copy-alt {
+  color: $body-copy-alt;
+}
