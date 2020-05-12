@@ -60,3 +60,24 @@
 .color-body-copy-alt {
   color: $body-copy-alt;
 }
+
+@include breakpoint-lg {
+  .layout-split {
+    @include clearfix();
+
+    > .split:first-child {
+      float: left;
+    }
+    > .split:last-child {
+      float: right;
+    }
+  }
+  .split {
+    &.width-1 {
+      width: 33.3%;
+    }
+    &.width-2 {
+      width: 66.6%;
+    }
+  }
+}

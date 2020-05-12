@@ -136,27 +136,6 @@ main {
   padding-top: $unit-3; // compensate for header's height
 }
 
-@include breakpoint-lg {
-  .layout-split {
-    @include clearfix();
-
-    > .split:first-child {
-      float: left;
-    }
-    > .split:last-child {
-      float: right;
-    }
-  }
-  .split {
-    &.width-1 {
-      width: 33.3%;
-    }
-    &.width-2 {
-      width: 66.6%;
-    }
-  }
-}
-
 .paint-front {
   position: relative;
   background: #fff;
@@ -188,31 +167,8 @@ main {
       filter: blur(2px);
     }
   }
-  &:after {
-    // content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-image: radial-gradient(#999, #000);
-    @include transition-s-curve(opacity, $transition-speed-long);
-    pointer-events: none;
-    opacity: 0.1;
-
-    @include breakpoint-sm {
-      opacity: 0.2;
-    }
-    @include breakpoint-md {
-      opacity: 0.3;
-    }
-    @include breakpoint-lg {
-      opacity: 0.4;
-      filter: blur(3px);
-    }
-  }
   &:hover {
-    color: #fff;
+    color: $body-copy-alt;
 
     img {
       filter: blur(0);
@@ -313,10 +269,10 @@ main {
       margin: $unit-12 0;
     }
     @include breakpoint-lg {
-      margin: $unit-24 0;
+      margin: $unit-20 0;
     }
     @include breakpoint-xl {
-      margin: $unit-32 0;
+      margin: $unit-24 0;
     }
   }
   figure:last-child {
@@ -343,24 +299,3 @@ main {
     }
   }
 }
-
-/*
-// reference
-$screen-xs: 480px;
-$screen-sm: 768px;
-$screen-md: 992px;
-$screen-lg: 1200px;
-$screen-xl: 1400px;
-$screen-xxl: 1600px;
-$screen-xs-max: ($screen-sm - 1);
-$screen-sm-max: ($screen-md - 1);
-$screen-md-max: ($screen-lg - 1);
-
-@include breakpoint-xs-max {}
-@include breakpoint-xs {}
-@include breakpoint-sm {}
-@include breakpoint-md {}
-@include breakpoint-lg {}
-@include breakpoint-xl {}
-@include breakpoint-xxl {}
-*/

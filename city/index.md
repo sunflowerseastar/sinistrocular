@@ -53,15 +53,15 @@ caption="Manhattan Bridge" %}
 
 {% include helpers/figure.html
 url="_city/manhattan-skyline-2.jpg"
-caption="Manhattan" %}
+caption="NYC" %}
 
 {% include helpers/figure.html
 url="_city/nyc.jpg"
-caption="New York City" %}
+caption="NYC" %}
 
 {% include helpers/figure.html
 url="_city/nyc-2.jpg"
-caption="New York City" %}
+caption="NYC" %}
 
 {% include helpers/figure.html
 url="_city/downtown-brooklyn.jpg"
