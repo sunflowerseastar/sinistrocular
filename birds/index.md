@@ -68,11 +68,11 @@ url="_birds/ring-necked-duck-female-lloyd-sunrise_RE-EDIT__MG_7212_1920.jpg"
 caption="Ring-necked Duck female (<span>Aythya collari</span>)" %}
 
 {% include helpers/figure.html
-url="_birds/two-symmetrical-hooded-mergansers__MG_2524_1920.jpg"
+url="_birds/two-headed-mergansers-crossing__MG_2501_1920.jpg"
 caption="Hooded Mergansers (<span>Lophodytes cucullatus</span>)" %}
 
 {% include helpers/figure.html
-url="_birds/two-headed-mergansers-crossing__MG_2501_1920.jpg"
+url="_birds/two-male-hooded-mergansers_C__MG_1198_1920.jpg"
 caption="Hooded Mergansers (<span>Lophodytes cucullatus</span>)" %}
 
 {% include helpers/figure.html
@@ -86,6 +86,10 @@ caption="Red-tailed hawk (<span>Buteo jamaicensis</span>)" %}
 {% include helpers/figure.html
 url="_birds/white-tailed-kite-in-flight-2__MG_3171-Edit_1920.jpg"
 caption="White-tailed Kite (<span>Elanus leucurus</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/hawaiian-gallinule__MG_3258_1920.jpg"
+caption="Hawaiian Gallinule (<span>Gallinula galeata sandvicensis</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/dunlin-running__MG_7767_full_1732.jpg"
@@ -128,8 +132,16 @@ url="_birds/sanderling-2_MG_4387_FULL.jpg"
 caption="Sanderling (<span>Calidris alba</span>)" %}
 
 {% include helpers/figure.html
+url="_birds/sanderling__MG_2605_full_1989.jpg"
+caption="Sanderling (<span>Calidris alba</span>)" %}
+
+{% include helpers/figure.html
 url="_birds/semipalmated-sandpiper-point-pleasant-nj__MG_9309_1920.jpg"
 caption="Semipalmated Sandpiper (<span>Calidris pusilla</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/heermans-gull__MG_0096_full.jpg"
+caption="Heerman's Gull (<span>Larus heermanni</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/spotted-dove__MG_0889_1920.jpg"
@@ -212,6 +224,18 @@ url="_birds/townsends-solitaire__MG_4382_1920.jpg"
 caption="Townsend's Solitaire (<span>Myadestes townsendi</span>)" %}
 
 {% include helpers/figure.html
+url="_birds/townsends-warbler__MG_1414_1920.jpg"
+caption="Townsend's Warbler (<span>Setophaga townsendi</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/townsends-warbler__MG_2638_1920.jpg"
+caption="Townsend's Warbler (<span>Setophaga townsendi</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/townsends-warbler__MG_2652_1920.jpg"
+caption="Townsend's Warbler (<span>Setophaga townsendi</span>)" %}
+
+{% include helpers/figure.html
 url="_birds/western-scrub-jay_BRIGHTEN__MG_9377-Edit_1920.jpg"
 caption="California Scrub Jay (<span>Aphelocoma californica</span>)" %}
 
@@ -280,6 +304,10 @@ url="_birds/song-sparrow__MG_3842_1920.jpg"
 caption="Song Sparrow (<span>Melospiza Melodia</span>)" %}
 
 {% include helpers/figure.html
+url="_birds/savannah-sparrow-country-house__MG_4682_full_1826.jpg"
+caption="Savannah Sparrow (<span>Passerculus sandwichensis</span>)" %}
+
+{% include helpers/figure.html
 url="_birds/house-sparrow-female__MG_5706_full_1929.jpg"
 caption="House Sparrow (<span>Passer domesticus</span>)" %}
 
@@ -306,3 +334,12 @@ caption="Bobolink male (<span>Dolichonyx oryzivorus</span>)" %}
 {% include helpers/figure.html
 url="_birds/bobolink-female__MG_1721_1920.jpg"
 caption="Bobolink female (<span>Dolichonyx oryzivorus</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/japanese-white-eye__MG_3396_1920.jpg"
+caption="Japanese White-eye (<span>Zosterops japonicus</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/white-rumped-shama__MG_3161_1920.jpg"
+caption="White-rumped Shama (<span>Copsychus malabaricus</span>)" %}
+

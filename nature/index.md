@@ -47,6 +47,10 @@ url="_nature/trinity-alps-trees.jpg"
 caption="Trinity Alps" %}
 
 {% include helpers/figure.html
+url="_nature/trinity-alps-canyon-creek_IMG_0579_1920.jpg"
+caption="Trinity Alps" %}
+
+{% include helpers/figure.html
 url="_nature/trinity-alps-rock-ridge-with-snow_DSC06699_1920.jpg"
 caption="Trinity Alps" %}
 
@@ -60,6 +64,9 @@ caption="Fort Funston" %}
 
 {% include helpers/figure.html
 url="_nature/presidio-trees-square-1__MG_8200-Edit_1920.jpg" %}
+
+{% include helpers/figure.html
+url="_nature/trees-mcbryde-garden__MG_3352_1920.jpg" %}
 
 {% include helpers/figure.html
 url="_nature/moon__MG_6823_full_1290.jpg" %}
@@ -78,10 +85,6 @@ caption="Eastern Tiger Swallowtail (<span>Papilio glaucus</span>)" %}
 {% include helpers/figure.html
 url="_nature/monarch-butterfly__MG_5894_1920.jpg"
 caption="Monarch Butterfly (<span>Danaus plexippus</span>)" %}
-
-{% include helpers/figure.html
-url="_nature/cabbage-white-butterfly-2__MG_0342_1920.jpg"
-caption="Cabbage White Buttefly (<span>Pieris rapae</span>)" %}
 
 {% include helpers/figure.html
 url="_nature/flowers-at-uluwatu-temple__MG_0895-Edit_1920.jpg"
