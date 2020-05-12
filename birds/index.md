@@ -68,10 +68,6 @@ url="_birds/ring-necked-duck-female-lloyd-sunrise_RE-EDIT__MG_7212_1920.jpg"
 caption="Ring-necked Duck female (<span>Aythya collari</span>)" %}
 
 {% include helpers/figure.html
-url="_birds/ring-necked-duck-male__MG_7149_1920.jpg"
-caption="Ring-necked Duck male (<span>Aythya collari</span>)" %}
-
-{% include helpers/figure.html
 url="_birds/two-symmetrical-hooded-mergansers__MG_2524_1920.jpg"
 caption="Hooded Mergansers (<span>Lophodytes cucullatus</span>)" %}
 
@@ -86,10 +82,6 @@ caption="Red-tailed hawk (<span>Buteo jamaicensis</span>)" %}
 {% include helpers/figure.html
 url="_birds/red-tailed-hawk-fort-funston__MG_4366_full.jpg"
 caption="Red-tailed hawk (<span>Buteo jamaicensis</span>)" %}
-
-{% include helpers/figure.html
-url="_birds/immature-red-shouldered-hawk__MG_8046_full_1848.jpg"
-caption="Red-shouldered Hawk (<span>Buteo lineatus</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/white-tailed-kite-in-flight-2__MG_3171-Edit_1920.jpg"
@@ -228,10 +220,6 @@ url="_birds/cedar-waxwing__MG_4843_FULL_1920.jpg"
 caption="Cedar Waxwing (<span>Bombycilla cedrorum</span>)" %}
 
 {% include helpers/figure.html
-url="_birds/yellow-warbler__MG_8545_1920.jpg"
-caption="Yellow Warbler (<span>Setophaga petechia</span>)" %}
-
-{% include helpers/figure.html
 url="_birds/yellow_warbler_FULL(_MG_1900).jpg"
 caption="Yellow Warbler (<span>Setophaga petechia</span>)" %}
 
@@ -264,24 +252,20 @@ url="_birds/fox-sparrow.jpg"
 caption="Fox Sparrow (<span>Passerella Iliaca</span>)" %}
 
 {% include helpers/figure.html
-url="_birds/song-sparrow.jpg"
-caption="Song Sparrow (<span>Melospiza melodia</span>)" %}
-
-{% include helpers/figure.html
-url="_birds/white-crowned-sparrow-in-flowers__MG_8108-Edit_1920.jpg"
-caption="White-crowned Sparrow (<span>Zonotrichia leucophrys</span>)" %}
-
-{% include helpers/figure.html
-url="_birds/white-crowned-sparrow-in-grass__MG_7341_1920.jpg"
-caption="White-crowned Sparrow (<span>Zonotrichia leucophrys</span>)" %}
-
-{% include helpers/figure.html
 url="_birds/white-crowned-sparrow-on-curved-branch__MG_0227_1920.jpg"
 caption="White-crowned Sparrow (<span>Zonotrichia leucophrys</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/white-crowned-sparrow-presidio__MG_8095_1500_full.jpg"
 caption="White-crowned Sparrow (<span>Zonotrichia leucophrys</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/white-crowned-sparrow.jpg"
+caption="White-crowned sparrow (<span>Zonotrichia leucophrys</span>)" %}
+
+{% include helpers/figure.html
+url="_birds/song-sparrow.jpg"
+caption="Song Sparrow (<span>Melospiza melodia</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/song-sparrow-2_FULL.jpg"
@@ -302,10 +286,6 @@ caption="House Sparrow (<span>Passer domesticus</span>)" %}
 {% include helpers/figure.html
 url="_birds/eurasion-tree-sparrow__MG_0883_1920.jpg"
 caption="Eurasion Tree Sparrow (<span>Passer montanus</span>)" %}
-
-{% include helpers/figure.html
-url="_birds/white-crowned-sparrow.jpg"
-caption="White-crowned sparrow (<span>Zonotrichia leucophrys</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/baltimore-oriole-prospect-park__MG_0939_1920.jpg"
