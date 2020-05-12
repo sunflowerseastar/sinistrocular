@@ -22,6 +22,10 @@
   @include breakpoint-lg {
     margin: $unit-16 0 0;
   }
+
+  svg {
+    max-width: $unit-2x;
+  }
 }
 #captions-container {
   position: relative;

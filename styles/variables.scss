@@ -14,7 +14,9 @@ $_base-unit: 18px;
 
 $unit-1: $_base_unit;
 $unit-2: $_base_unit * 2;
+$unit-2x: $_base_unit * 2.5; // special for logo
 $unit-3: $_base_unit * 3;
+$unit-3x: $_base_unit * 3.5; // special for logo
 $unit-4: $_base_unit * 4;
 $unit-5: $_base_unit * 5;
 $unit-6: $_base_unit * 6;
@@ -24,5 +26,5 @@ $unit-12: $_base_unit * 12;
 $unit-14: $_base_unit * 14;
 $unit-16: $_base_unit * 16;
 $unit-20: $_base_unit * 20;
-$unit-28: $_base_unit * 28;
+$unit-24: $_base_unit * 24;
 $unit-32: $_base_unit * 32;
