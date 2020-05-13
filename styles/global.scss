@@ -110,19 +110,8 @@ figcaption {
 }
 svg {
   width: 100%;
-  max-width: $unit-3x;
   margin: 0 auto;
   @include transition-basic();
-
-  @include breakpoint-sm {
-    width: 38px;
-  }
-  @include breakpoint-md {
-    width: 44px;
-  }
-}
-svg:hover {
-  stroke: red;
 }
 ul {
   cursor: default;
@@ -153,6 +142,24 @@ main {
   z-index: 1;
   overflow: hidden;
 
+  &:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    @include transition-basic(opacity, $transition-speed-short);
+    background-image: radial-gradient(#aaa, #333);
+    opacity: 0.14;
+
+    @include breakpoint-lg {
+      content: '';
+    }
+  }
+  &:hover:after {
+    opacity: 0;
+  }
   figcaption {
     position: absolute;
     bottom: 5px;
@@ -160,22 +167,8 @@ main {
     font-style: italic;
     z-index: 2;
   }
-  img {
-    @include transition-s-curve(all, $transition-speed-long);
-
-    @include breakpoint-lg {
-      filter: blur(2px);
-    }
-  }
   &:hover {
     color: $body-copy-alt;
-
-    img {
-      filter: blur(0);
-    }
-    &:after {
-      opacity: 0.02;
-    }
   }
 }
 .post-preview + .post-preview {
@@ -297,5 +290,14 @@ main {
     @include breakpoint-lg {
       max-width: 40rem;
     }
+  }
+}
+.logo-sinistrocular {
+  display: block;
+  width: $unit-3x;
+  margin: 0 auto;
+
+  @include breakpoint-sm {
+    width: $unit-4;
   }
 }

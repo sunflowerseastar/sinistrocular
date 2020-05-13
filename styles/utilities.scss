@@ -7,25 +7,31 @@
 }
 
 .base-padding-2 {
-  margin: $unit-2 $unit-2 $unit-2 $unit-1;
+  margin: $unit-2;
   padding: $unit-2 $unit-1;
 
   @include breakpoint-xs {
     padding: $unit-2;
   }
   @include breakpoint-sm {
-    margin: $unit-6 $unit-4 $unit-6 $unit-2;
+    margin: $unit-6 $unit-2;
     padding: $unit-3;
   }
   @include breakpoint-md {
     padding: $unit-3;
   }
   @include breakpoint-lg {
-    margin: $unit-6 $unit-2 $unit-6 $unit-2;
     padding: $unit-4;
   }
 }
 
+.extra-margin-right {
+  margin: $unit-2 $unit-2 $unit-2 $unit-1;
+
+  @include breakpoint-sm {
+    margin: $unit-6 $unit-4 $unit-6 $unit-2;
+  }
+}
 .extra-padding {
   @include breakpoint-xl {
     padding: $unit-6;
@@ -80,4 +86,8 @@
       width: 66.6%;
     }
   }
+}
+
+.flex-1 {
+  flex: 1;
 }
