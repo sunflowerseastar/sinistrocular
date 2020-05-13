@@ -6,15 +6,11 @@ layout: home
   {% assign ordered_categories = site.categories | sort: 'sort_order' %}
   {% for category in ordered_categories %}
 
-  <div class="post-preview">
-
-    <div class="base-padding-1">
-      <a class="post-preview-img-container" href="{{ category.title | downcase }}">
-        <img src={{ site.static_url }}{{ category.photo_main }}>
-        <figcaption>{{ category.title }}</figcaption>
-      </a>
-    </div>
-
+  <div class="post-preview base-padding-1 js-fade-in">
+    <a class="post-preview-img-container" href="{{ category.title | downcase }}">
+      <img src={{ site.static_url }}{{ category.photo_main }}>
+      <figcaption>{{ category.title }}</figcaption>
+    </a>
   </div>
 
   {% endfor %}

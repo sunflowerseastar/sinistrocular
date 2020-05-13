@@ -1,25 +1,15 @@
-.on-ready {
+.js-body-fade-in {
   position: relative;
   @include transition-basic(opacity, $transition-speed-long);
   opacity: 0;
 }
-.complete,
-.complete .animation-item-1,
-.complete .animation-item-2,
-.complete .animation-item-3 {
+.js-body-fade-in.complete {
   opacity: 1;
 }
-
-.animation-group {
+.js-fade-in {
+  @include transition-basic(opacity, $transition-speed-medium);
+  opacity: 0;
 }
-.animation-item-1,
-.animation-item-2,
-.animation-item-3 {
-  position: relative;
-}
-.animation-item-1 {
-}
-.animation-item-2 {
-}
-.animation-item-3 {
+.js-fade-in.in {
+  opacity: 1;
 }
