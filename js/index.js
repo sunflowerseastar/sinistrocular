@@ -69,7 +69,9 @@ document.addEventListener('readystatechange', event => {
       'scroll',
       debounce(() => fadeInIfInViewport(elsToFadeIn), 300)
     );
+    window.onresize = debounce(() => fadeInIfInViewport(elsToFadeIn), 350);
   }
+
   if (event.target.readyState === 'complete') {
     document.querySelector('.js-body-fade-in').classList.add('complete');
 
