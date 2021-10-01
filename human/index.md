@@ -34,5 +34,5 @@ caption="Central Park" %}
 url="_human/tillman-snow.jpg" %}
 
 {% include helpers/figure.html
-url="_human/iris-on-blanket__MG_7053_1920.jpg"
+url="_human/iris-reading__MG_1541_1920.jpg"
 caption="My daughter, Iris ❤" %}

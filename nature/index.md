@@ -63,9 +63,6 @@ url="_nature/fort-funston_DSC06030_1920.jpg"
 caption="Fort Funston" %}
 
 {% include helpers/figure.html
-url="_nature/presidio-trees-square-1__MG_8200-Edit_1920.jpg" %}
-
-{% include helpers/figure.html
 url="_nature/trees-mcbryde-garden__MG_3352_1920.jpg" %}
 
 {% include helpers/figure.html

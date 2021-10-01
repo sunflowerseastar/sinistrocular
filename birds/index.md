@@ -132,10 +132,6 @@ url="_birds/spotted-dove__MG_0889_1920.jpg"
 caption="Spotted Dove (<span>Spilopelia chinensis</span>)" %}
 
 {% include helpers/figure.html
-url="_birds/yellow-billed-cuckoo__MG_5344_1920.jpg"
-caption="Yellow-billed Cuckoo (<span>Coccyzus americanus</span>)" %}
-
-{% include helpers/figure.html
 url="_birds/collared-kingfisher-2b__MG_1008_full.jpg"
 caption="Collared Kingfisher (<span>Todiramphus chloris</span>)" %}
 
@@ -166,10 +162,6 @@ caption="Allen’s Hummingbird (<span>Selasphorus sasin</span>)" %}
 {% include helpers/figure.html
 url="_birds/allens-hummingbird-in-flight__MG_3725_1920.jpg"
 caption="Allen’s Hummingbird (<span>Selasphorus sasin</span>)" %}
-
-{% include helpers/figure.html
-url="_birds/northern-flicker__MG_4595_1920.jpg"
-caption="Northern Flicker (<span>Colaptes auratus</span>)" %}
 
 {% include helpers/figure.html
 url="_birds/flycatcher-in-trinity-alps__MG_9171_full.jpg"
