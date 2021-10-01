@@ -9,6 +9,7 @@
   "scripts": {
     "start": "jekyll serve",
     "build": "jekyll build",
-    "deploy": "scripts/deploy.sh"
+    "deploy": "scripts/deploy.sh",
+    "photos": "scripts/rsync-photographs.sh"
   }
 }
