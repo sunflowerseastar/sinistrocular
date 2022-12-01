@@ -1,0 +1,5 @@
+* Sinistrocular
+
+Personal photo website. Mostly birds. =)
+
+It's a Jekyll setup with an old sass style structure.
